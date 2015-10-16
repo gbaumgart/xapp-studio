@@ -1,0 +1,499 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<script type="text/javascript">
+    (function(){var a=function(e){this.t={};this.tick=function(e,i,d){d=void 0!=d?d:(new Date).getTime();this.t[e]=[d,i]};this.tick("start",null,e)},b=new a;window.jstiming={Timer:a,load:b};if(window.performance&&window.performance.timing){var c=window.performance.timing,f=window.jstiming.load,g=c.navigationStart,h=c.responseStart;0<g&&h>=g&&(f.tick("_wtsrt",void 0,g),f.tick("wtsrt_","_wtsrt",h),f.tick("tbsd_","wtsrt_"))}
+        try{var j=null;window.chrome&&window.chrome.csi&&(j=Math.floor(window.chrome.csi().pageT),f&&0<g&&(f.tick("_tbnd",void 0,window.chrome.csi().startE),f.tick("tbnd_","_tbnd",g)));null==j&&window.gtbExternal&&(j=window.gtbExternal.pageT());null==j&&window.external&&(j=window.external.pageT,f&&0<g&&(f.tick("_tbnd",void 0,window.external.startE),f.tick("tbnd_","_tbnd",g)));j&&(window.jstiming.pt=j)}catch(k){};})();
+</script>
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0;                     user-scalable=no;">
+<title>Powered by Google Docs</title>
+<style type="text/css">
+
+
+
+    html>body .goog-inline-block {
+        display: -moz-inline-box;
+        display: inline-block;
+    }
+
+
+    .goog-inline-block {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    * html .goog-inline-block {
+        display: inline;
+    }
+
+
+    *:first-child+html .goog-inline-block {
+        display: inline;
+    }
+</style>
+
+<style type="text/css">
+
+    .goog-custom-button {
+        background:
+            #ddd
+            repeat-x scroll left top;
+        cursor: pointer;
+
+        -moz-user-select: none;
+    }
+
+    .goog-custom-button-active {
+        background-color: #bbb !important;
+        background-position: left bottom !important;
+    }
+
+    .goog-custom-button-disabled {
+        cursor: default !important;
+        color: #888;
+    }
+
+    .goog-custom-button-outer-box, .goog-custom-button-inner-box {
+        border-color: #bbb;
+        border-style: solid;
+        vertical-align: top;
+    }
+
+    .goog-custom-button-outer-box {
+        border-width: 1px 0pt;
+        margin: 0pt;
+        padding: 0pt;
+    }
+
+    .goog-custom-button-inner-box {
+        border-width: 0pt 1px;
+        margin: 0pt -1px;
+    }
+
+
+    * html .goog-custom-button-inner-box {
+
+        left: -1px;
+
+    }
+
+
+
+
+
+    *:first-child+html .goog-custom-button-inner-box {
+
+        left: -1px;
+
+    }
+
+
+
+</style>
+<style type="text/css">
+    .controlbar-mobile {
+        -webkit-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/icon_sprites_1.png")
+            0 0 24 18;
+        -moz-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/icon_sprites_1.png")
+            0 0 24 18;
+        border-width: 0 0 4px 0;
+        line-height: 44px;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 4px;
+        margin-bottom: -7px;
+        text-shadow: #FFF 0px 1px 1px;
+        height: 44px;
+    }
+
+    .mobile-button {
+        font: normal normal 13px Arial;
+        text-shadow: #fff 0 1px 0;
+        font-weight: bold;
+        color: #2e4987;
+        margin: 6px 6px;
+        padding: 2px;
+        border-width: 4px 4px 5px 4px;
+        line-height: 22px;
+        position: relative;
+        z-index: 0;
+        min-height: 19px;
+        min-width: 19px;
+        float: left;
+
+        background: none;
+    }
+
+    .goog-custom-button-disabled .mobile-icon {
+        opacity: 0.25;
+    }
+
+    .mobile-button-normal {
+        -webkit-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/button_normal_1.png")
+            4 4 5 4;
+        -moz-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/button_normal_1.png")
+            4 4 5 4;
+    }
+
+    .mobile-button-pill-left {
+        -webkit-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/pill_left_1.png")
+            4 1 5 4;
+        -moz-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/pill_left_1.png")
+            4 1 5 4;
+        margin-right: 0;
+        padding-right: 5px;
+        border-right-width: 1px;
+    }
+
+    .mobile-button-pill-right {
+        -webkit-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/pill_right_1.png")
+            4 4 5 1;
+        -moz-border-image:
+            url("//www.gstatic.com/docs/gview/images/m/pill_right_1.png")
+            4 4 5 1;
+        margin-left: 0;
+        padding-left: 5px;
+        border-left-width: 1px;
+    }
+
+    .mobile-button-zoom-out {
+        margin-top: 5px;
+        width: 25px;
+        height: 22px;
+    }
+
+    .mobile-button-zoom-in {
+        margin-top: 5px;
+        width: 25px;
+        height: 22px;
+    }
+
+    .mobile-icon-zoom-out {
+        background:
+            url("//www.gstatic.com/docs/gview/images/m/icon_sprites_1.png")
+            no-repeat 0 0px;
+        height: 18px;
+        width: 18px;
+        margin-left: 3px;
+        margin-top: 2px;
+    }
+
+    .mobile-icon-zoom-in {
+        background:
+            url("//www.gstatic.com/docs/gview/images/m/icon_sprites_1.png")
+            no-repeat 0 -18px;
+        height: 18px;
+        width: 18px;
+        margin-left: 3px;
+        margin-top: 2px;
+    }
+
+    .mobile-button-left {
+        height: 22px;
+        width: 25px;
+        margin-top: 5px;
+    }
+
+    .mobile-button-right {
+        height: 22px;
+        width: 25px;
+        margin-top: 5px;
+    }
+
+    .mobile-icon-left {
+        background:
+            url("//www.gstatic.com/docs/gview/images/m/icon_sprites_1.png")
+            no-repeat 0 -36px;
+        height: 18px;
+        width: 18px;
+        margin-top: 2px;
+        margin-left: 3px;
+    }
+
+    .mobile-icon-right {
+        background:
+            url("//www.gstatic.com/docs/gview/images/m/icon_sprites_1.png")
+            no-repeat 0 -54px;
+        height: 18px;
+        width: 18px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    .mobile-nav-buttons {
+        float: right;
+    }
+</style>
+
+
+<style type="text/css">.view { background-color: #ebebeb; width: 100%; } #content-pane { background-color: #ebebeb; border: 0; height: 100%; outline: none; overflow: auto; position: fixed; text-align: center; width: 100%; } * html #content-pane { position: absolute !important; } #page-pane { color: #666; } .page-element { padding: 24px 0; z-index: 0; margin-bottom: 60px; } .highlight { position: absolute; font-size: 0; line-height: 0; cursor: text; border-style: none; } .selection-highlight { opacity: 0.20; -moz-opacity: 0.20; -khtml-opacity: 0.20; filter: alpha(opacity=20); background-color: #28F; } .search-highlight { opacity: 0.50; -moz-opacity: 0.50; -khtml-opacity: 0.50; filter: alpha(opacity=50); background-color: #FF6; } .selected-highlight { background-color: #FF9632 !important; } .corner-tl, .corner-br { width: 0; border-style: solid solid none !important; } .corner-tr, .corner-bl { width: 0; border-style: solid none none solid !important; } .corner-bg { z-index: 4; } .corner-tl-fg, .corner-tr-fg { border-color: #ebebeb transparent; z-index: 5; } .corner-br-fg, .corner-bl-fg { border-color: transparent #ebebeb; z-index: 5; } .transparent-highlight { display: none; } .document-link { position: absolute; font-size: 0; z-index: 10; } .goog-useragent-ie .document-link { background-color: #000; opacity: 0.00; -moz-opacity: 0.00; -khtml-opacity: 0.00; filter: alpha(opacity=0); } .highlight-pane { position: relative; } .goog-useragent-ie .highlight-pane { position: absolute; zoom: 1; } .rubberband { border: 1px dashed green; width: 0; height: 0; position: absolute; z-index: 5; } #selection-content { position: absolute; left: 0; top: -48px; width: 32px; height: 32px; } table.gaialinks span { white-space: nowrap; } .noselect .page-image, .noselect .highlight { cursor: auto; } .page-image { border: 1px #dadada solid; cursor: text; margin: 0 8px; } .error-message-strong { font-size: 14px; font-weight: bold; } .error-message { line-height: 2em; text-align: center; color: #000; margin: 50px 42px 0; } .goog-inline-follow { vertical-align: top; } .goog-inline-follow-pad { vertical-align: top; margin-left: 12px; } #loading { text-align: left; margin: 50px auto 100px; width: 30%; } .goog-custom-button-disabled .goog-menu-button-dropdown, .goog-custom-button-disabled .apps-share-sprite { opacity: 0.40; -moz-opacity: 0.40; -khtml-opacity: 0.40; filter: alpha(opacity=40); } .progress-bar-horizontal { border: 1px #999 solid; padding: 1px; width: 100%; } .progress-bar-thumb { background-color: #ccc; height: 8px; width: 20%; } #spinner { position: absolute; display: inherit; } #page-footer { position: absolute; text-align: center; color: #A0A0A0; z-index: 1; white-space: nowrap; visibility: hidden; } #dd-url, #logout-url { padding: 20 0px; } #desktop-url { padding: 20 20 20 0px; } #view-in-desktop { padding-left: 20px; } #password-div { background: white; border: 1px solid black; width: 350px; padding: 1em; margin: 20px auto; } .docs-title-strut { margin-bottom: -20px; } .accessibility-text { font-size: 1px; height: 1px !important; left: -999em !important; overflow: hidden !important; position: fixed !important; top: 50% !important; width: 1px !important; } * html .accessibility-text { position: absolute !important; }</style>
+<style type="text/css">
+    div.CSS_SHORTCUTS_HELP_POPUP {
+        left: 10%;
+        width: 80%;
+        top: 10%;
+
+        z-index: 1002;
+        color: #dd0;
+
+        position: absolute;
+        text-align: center;
+        text-shadow: #000 1px 1px 7px;
+        font-weight: bold;
+
+        background: #000 none repeat scroll 0;
+        overflow: hidden;
+        padding: 1em;
+    }
+
+    @media print {
+        div.CSS_SHORTCUTS_HELP_POPUP {
+            display: none !important;
+        }
+    }
+
+    table.CSS_SHORTCUTS_HELP_POPUP_HEADER,
+    table.CSS_SHORTCUTS_HELP_POPUP_CONTENT {
+        width: 100%;
+    }
+
+    .CSS_SHORTCUTS_HELP_POPUP_HEADER_TABLE_ELEMENT {
+        padding-bottom: 0.8ex;
+    }
+
+    .CSS_SHORTCUTS_HELP_POPUP_TITLE {
+        color: #fff;
+        font-size: 15px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .CSS_SHORTCUTS_HELP_POPUP_TEAROFF_LINK_CONTAINER {
+        color: #dd0;
+        text-align: right;
+    }
+
+    .CSS_SHORTCUTS_HELP_POPUP_TEAROFF_LINK {
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: underline;
+        color: #dd0;
+    }
+
+    table.CSS_SHORTCUTS_HELP_POPUP_CONTENT {
+        color: #dd0;
+        border-top: 1px solid #999;
+        font-size: 13px;
+    }
+
+    .CSS_SHORTCUTS_HELP_POPUP_CONTENT_HEADER {
+        color: #dd0;
+        padding-top: 1em;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .CSS_SHORTCUTS_HELP_POPUP_CONTENT_ELEMENT {
+        vertical-align: top;
+        padding-top: 0.15em;
+    }
+
+    table.CSS_SHORTCUTS_HELP_POPUP_CONTENT td.CSS_SHORTCUTS_HELP_POPUP_KEY {
+        font-weight: bold;
+        padding-right: 0.3em;
+        text-align: right;
+        white-space: nowrap;
+        color: #dd0;
+        font-size: 13px;
+    }
+
+    table.CSS_SHORTCUTS_HELP_POPUP_CONTENT
+      td.CSS_SHORTCUTS_HELP_POPUP_DESCRIPTION {
+        font-weight: normal;
+        text-align: left;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    span.CSS_SHORTCUTS_HELP_POPUP_AUXILIARY_WORD {
+        font-weight: normal;
+        font-size: 11px;
+        color: #fff;
+    }
+
+    span.CSS_SHORTCUTS_HELP_POPUP_KEY_MNEMONIC {
+        font-family: "Courier New";
+        color: #dd0;
+    }
+</style>
+<style type="text/css">
+    html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: arial, sans-serif;
+        font-size: 13px;
+        color: #000;
+        height: 100%;
+
+
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    }
+
+
+    #gview {
+        position: static;
+    }
+
+    #docs-editor {
+        overflow: hidden;
+    }
+
+
+    #docs-opt-bar {
+        display: block !important;
+    }
+</style>
+</head>
+<body class="goog-useragent-webkit "><noscript><div>Your browser must support javascript.</div>
+</noscript>
+
+<div id="gview"><div class="view" id="view"><textarea id="selection-content" cols="1" rows="1" readonly tabindex="-1"></textarea>
+    <div id="controlbar" class="controlbar controlbar-mobile"><div id="controlbarZoomOutButton" class="mobile-button                                              mobile-button-pill-left                                              mobile-button-zoom-out                                              goog-custom-button"><div id="mobile-icon-zoom-out" class="mobile-icon mobile-icon-zoom-out"></div></div><div id="controlbarZoomInButton" class="mobile-button                                             mobile-button-pill-right                                             mobile-button-zoom-in                                             goog-custom-button"><div id="mobile-icon-zoom-in" class="mobile-icon mobile-icon-zoom-in"></div></div><span id="controlbarPageNumber" class="mobile-page-numbers"></span><div id="mobile-nav-buttons" class="mobile-nav-buttons"><div id="controlbarBackButton" class="mobile-button mobile-button-pill-left mobile-button-left                   goog-custom-button"><div id="mobile-icon-left" class="mobile-icon mobile-icon-left"></div></div><div id="controlbarForwardButton" class="mobile-button                                                mobile-button-pill-right                                                mobile-button-right                                                goog-custom-button"><div id="mobile-icon-right" class="mobile-icon mobile-icon-right"></div></div></div></div>
+
+    <div id="content-pane" class="gview-scrollbar jfk-scrollbar"><div id="page-pane" class="noselect"></div>
+        <div id="loading">Loading...
+            <div class="progress-bar-horizontal"><div id="progress-bar-thumb" class="progress-bar-thumb"></div></div></div>
+
+        <div id="page-footer"><a id="dd-url" href="http://www.pearls-media.com/users/test3.pdf">Download</a>
+
+            <br>
+            <br>
+<span id="view-in-desktop">View in Mobile
+|
+<a id="desktop-url" href="https://docs.google.com/unsupported?continue=https://docs.google.com/viewer?url%3Dhttp://www.pearls-media.com/users/test3.pdf%26chrome%3Dtrue%26overridemobile%3Dtrue%26chrome%3Dtrue&amp;cancel=https://docs.google.com/viewer?url%3Dhttp://www.pearls-media.com/users/test3.pdf%26chrome%3Dtrue">Desktop</a></span>
+            <br>
+            &copy;2010 Google</div></div>
+    <div id="spinner" class="spinner"></div></div></div>
+<script type="text/javascript" src="https://docs.google.com/gview/resources_gview/client/js/569217469-gview_local_gview_base_mod.js"></script>
+
+<script type="text/javascript">
+
+
+
+    var _docs_flag_initialData = {"gv_int_native":false,"tpc":true,"buildLabel":"fe_i48_34502441.1_20121002-1806","buildClNumber":"34509880","docs-show_debug_info":false,"ondlburl":"\/\/docs.google.com","enable_kennedy":true,"enable_feedback":false,"enable_feedback_button":false};
+
+    var gviewElement = document.getElementById('gview');
+    var config = {
+        'api': false,
+        'csi': true,
+        'ddUrl': "http://www.pearls-media.com/users/test3.pdf",
+        'element': gviewElement,
+        'embedded': false,
+        'efh': true,
+        'minimal': false,
+        'mobile': true,
+        'initialQuery': "",
+        'oivUrl': "https://docs.google.com/viewer?url\x3dhttp://www.pearls-media.com/users/test3.pdf\x26chrome\x3dtrue",
+        'gdUrl' : "http://docs.google.com",
+        'pid': "url",
+        'sh': false,
+
+        'userAuthenticated': false,
+        'sessId': null,
+        'domain': null,
+        'redirMs': 10000
+    };
+
+    var gviewApp = _createGView(config);
+    gviewApp.setProgress(50);
+
+
+
+
+    window.jstiming.load.name = 'mobile_view';
+
+
+
+    window.jstiming.load.tick('_dt');
+
+
+
+    window.onresize = window.onorientationchange = handleResize;
+
+    document.body.onunload = dispose;
+
+    function handleResize(e) {
+        resizeApp(false);
+    };
+
+    function resizeApp(force) {
+        if (gviewApp) {
+            var viewportSize = getViewportSize();
+            var gviewOffset = getPageOffset(gviewElement);
+            viewportSize.height = Math.max(
+                    viewportSize.height - gviewOffset.y, 0);
+            gviewApp.resize(viewportSize, force);
+        }
+    };
+
+    function dispose() {
+        window.onresize = null;
+        if (gviewApp) {
+            gviewApp.dispose();
+            gviewApp = null;
+        }
+    };
+</script>
+
+
+<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/doclist/images/icon_9_pdf_favicon.ico">
+<script type="text/javascript">
+    gviewApp.setFileData({expId:'PDF-URL',filename:'test3.pdf',mimeType:'application/pdf'});
+
+
+    window.jstiming.load.tick('dt', '_dt');
+
+    gviewApp.setProgress(80);
+
+
+
+    window.jstiming.load.tick('_ct');
+
+</script>
+
+
+
+<script type="text/javascript">
+    window.jstiming.load.tick('ct', '_ct');
+</script>
+
+<script type="text/javascript">
+
+    gviewApp.setProgress(90);
+
+    gviewApp.setDisplayData(
+            {svUrl:'?url\75http://www.pearls-media.com/users/test3.pdf\46chrome\75true\46docid\75a9bed0f532ad32422056f6864e331f6c\46chan\75EwAAAOBMm7T4PoAzNBRJMx9K13nDUi2%2BWwTrutDmBtb7clB/\46a\75sv',ulUrl:'?url\75http://www.pearls-media.com/users/test3.pdf\46chrome\75true\46docid\75a9bed0f532ad32422056f6864e331f6c\46chan\75EwAAAOBMm7T4PoAzNBRJMx9K13nDUi2%2BWwTrutDmBtb7clB/\46a\75v',biUrl:'?url\75http://www.pearls-media.com/users/test3.pdf\46chrome\75true\46docid\75a9bed0f532ad32422056f6864e331f6c\46chan\75EwAAAOBMm7T4PoAzNBRJMx9K13nDUi2%2BWwTrutDmBtb7clB/\46a\75bi',chanId:'EwAAAOBMm7T4PoAzNBRJMx9K13nDUi2+WwTrutDmBtb7clB/',gpUrl:'https://doc-0s-8g-docsviewer.googleusercontent.com/viewer/securedownload/dsn1aovipa7l846lsfcf94nedj8q2p4u/miod5g40pokfvfiq3g50h2h9cd8lrol6/1350464400000/dXJs/AGZ5hq8BgbJY1gwaOYx83cPOdNw6/aHR0cDovL3d3dy5wZWFybHMtbWVkaWEuY29tL3VzZXJzL3Rlc3QzLnBkZg\75\75?a\75gp\46filename\75test3.pdf\46chan\75EwAAAOBMm7T4PoAzNBRJMx9K13nDUi2%2BWwTrutDmBtb7clB/\46docid\75a9bed0f532ad32422056f6864e331f6c\46sec\75AHSqidb-jyMEkoJlOrwVxA8QkS5Dp9LMXk468fu0Rf7JYuOdKF9-_cPTV0I85ZOQRNiQX66_2sS2',docId:'a9bed0f532ad32422056f6864e331f6c',numPages:8,gtUrl:'?url\75http://www.pearls-media.com/users/test3.pdf\46chrome\75true\46docid\75a9bed0f532ad32422056f6864e331f6c\46chan\75EwAAAOBMm7T4PoAzNBRJMx9K13nDUi2%2BWwTrutDmBtb7clB/\46a\75gt',thWidth:138,dlUrl:'http://www.pearls-media.com/users/test3.pdf',thHeight:184});
+    gviewApp.finalizeApp();
+
+    window.jstiming.load.tick('prt');
+
+</script>
+
+</body></html>

@@ -1,0 +1,71 @@
+/*
+#navigation ul {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.42) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0.42))) !important;
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.42) 100%) !important;
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.42) 100%) !important;
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.42) 100%) !important;
+    background: linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.42) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#6b000000',GradientType=0 ) !important;
+    border: 0px !important;
+    border-width: 0px;
+}
+#navigation {
+    position: absolute;
+    top: 11px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))) !important;
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%) !important;
+    background: -o-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%) !important;
+    background: -ms-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%) !important;
+    border: 0px !important;
+    border-width: 0px;
+}
+*/
+.applicationManagerTab
+{
+    box-shadow: -5px 3px 3px #888888;
+}
+#main
+{
+    /*margin: 0px 0px !important;*/
+    position: relative !important;
+    margin-bottom: 10px !important;
+}
+body{
+    /*background-color: white !important;*/
+    /*
+    background-image: url("../images/bg4.jpg") !important;
+    background-size: 100% 100%;*/
+}
+#wrapper
+{
+    /*min-width: 1200px;*/
+    /*background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;*/
+    margin: 0px auto !important;
+    /*width: 80% !important;*/
+    background-color: transparent;
+    /*background-color: white !important;*/
+}
+.mainBackground
+{
+    /*
+    background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;*/
+    /*background-color: white !important;
+    */
+    background-color: transparent;
+}
+.syncButtonSimToDS
+{
+    padding-top: 20%;
+}
+.portlet-content, .portlet-minimized .portlet-content-container {
+    padding: 12px 5px 5px !important;
+}
+.syncTable
+{
+    padding-top: 20em;
+    overflow: hidden;
+}

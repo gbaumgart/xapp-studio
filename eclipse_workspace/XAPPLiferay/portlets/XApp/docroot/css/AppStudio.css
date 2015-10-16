@@ -1,0 +1,179 @@
+
+/***
+*/
+
+.scriptFrame{
+    overflow: hidden;
+}
+.aceCSSEditor{
+    background-color: #fffff0;
+}
+
+.centerTabs
+{
+
+}
+#dsTree{
+    height: auto !important;
+    width: inherit !important;
+}
+
+.contentPanel{
+    background-color: #cccccc !important;
+    background-image: none !important;
+}
+
+.dataSourceBrowser, .styleBrowser, .navigationSettingsView{
+    padding: 0px !important;
+    background-color: #cccccc !important;
+    -webkit-box-shadow: 0 -1px 0 0 #000;
+    -moz-box-shadow: 0 1px 3 0 #000;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 1) !important;
+}
+.dataSourceBrowser{
+
+}
+.dataSourceBrowser .dijitContentPane{
+    padding: 0px !important;
+    height: inherit;
+    min-height: 176px;
+
+}
+
+.newCustomAppDialog{
+    height:300px;
+    width: 400px;
+}
+
+.centerTabBorderContainer
+{
+
+    border-top: 1px solid rgba(51, 51, 51, 0.3);
+
+    background-color: #303030;
+    background-image: -webkit-linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:    -moz-linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:         linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    -webkit-box-shadow: 0 -1px 0 0 #000;
+    -moz-box-shadow: 0 -1px 0 0 #000;
+    box-shadow: 0 -1px 0 0 #000;
+
+}
+
+.bottomTab
+{
+    background-color: #303030;
+    background-image: -webkit-linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:    -moz-linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:         linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+}
+
+
+
+
+.bottomTabHelp{
+    background-color: #303030 !important;
+    background-image: -webkit-linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:    -moz-linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:         linear-gradient(top,#1e1e1e 0%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    -webkit-box-shadow: 0 -1px 0 0 #000;
+    -moz-box-shadow: 0 -1px 0 0 #000;
+    box-shadow: 0 -1px 0 0 #000;
+    padding: 0;
+}
+
+.applicationManagerTab
+{
+    box-shadow: -5px 3px 3px #888888;
+}
+.appPanel
+{
+    background-color: #cccccc;
+}
+#wrapper
+{
+    /*
+    background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;*/
+    background-color: white !important;
+}
+.mainBackground
+{
+    background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;
+}
+.simulatorSyncPane
+{
+    background-color: transparent;
+    background-image: url("../images/transparent.png");
+    background-repeat: repeat-y;
+    color: transparent;
+}
+.syncButtonSimToDS
+{
+    padding-top: 20%;
+}
+
+.syncTable
+{
+    padding-top: 20em;
+    overflow: hidden;
+}
+#loader {
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:#ededed;
+    z-index:999;
+    vertical-align:middle;
+}
+#loaderInner {
+    padding:5px;
+    position:relative;
+    left:0;
+    top:0;
+    width:175px;
+    background:#000000;
+    color:#fff;
+}
+
+
+.contentContainer{
+    background-color: #cccccc !important;
+}
+
+.dataSourceTabContainer, .dataSourceTab, .dataSourceTabLiferay, .wizardContainer
+{
+    background-color: #cccccc !important;
+}
+.dataSourceTabContainer{
+    padding: 0px !important;
+}
+
+.noBGButton .dijitButtonNode{
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+.platformExpanderButton{
+    margin-left: -5px;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.topMainTabs{
+    border: 1px rgba(0, 0, 0, 0.70) solid;
+}
+/***
+    Prevent dojox.mobile.heading H1 margin botttom
+*/
+
+
+body{
+    background: url(../images/xas/media-bg-tile.gif) top left repeat !important;
+
+}
+

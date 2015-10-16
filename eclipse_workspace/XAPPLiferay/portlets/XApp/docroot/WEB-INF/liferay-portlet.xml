@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 6.1.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_6_1_0.dtd">
+<liferay-portlet-app>
+	
+	<portlet>
+		<portlet-name>AppStudioView</portlet-name>
+		<instanceable>true</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<private-session-attributes>false</private-session-attributes>
+		<header-portlet-css>/portlets/ApplicationStudio.css</header-portlet-css>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>QXAppSlideShow</portlet-name>
+		<configuration-action-class>com.liferay.portal.kernel.portlet.DefaultConfigurationAction</configuration-action-class>
+		<instanceable>true</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<header-portlet-css>/portlets/QXAppSlideShow.css</header-portlet-css>
+	</portlet>
+	
+	
+	<portlet>
+		<portlet-name>QXAppRPX</portlet-name>
+		<configuration-action-class>com.liferay.portal.kernel.portlet.DefaultConfigurationAction</configuration-action-class>
+		<instanceable>false</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<private-session-attributes>false</private-session-attributes>
+		<header-portlet-css>/portlets/QXAppRPX.css</header-portlet-css>
+	</portlet>
+	
+	
+	
+	
+	<portlet>
+		<portlet-name>QXAppManager</portlet-name>
+		<instanceable>true</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<header-portlet-css>/portlets/QXAppManager.css</header-portlet-css>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>XAppConnect</portlet-name>
+		<instanceable>true</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<header-portlet-css>/portlets/XAppConnect.css</header-portlet-css>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>QXAppBilling</portlet-name>
+		<instanceable>true</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<header-portlet-css>/portlets/QXAppBilling.css</header-portlet-css>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>QXAppBundles</portlet-name>
+		<instanceable>true</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<header-portlet-css>/portlets/QXAppBundles.css</header-portlet-css>
+	</portlet>
+	
+	
+	
+	<portlet>
+		<portlet-name>QXAppStudioView</portlet-name>
+		<instanceable>true</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<header-portlet-css>/portlets/QXAppStudio.css</header-portlet-css>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>ApplicationAction</portlet-name>
+		<icon>/icon.png</icon>
+		<instanceable>false</instanceable>
+		<private-request-attributes>false</private-request-attributes>
+		<private-session-attributes>false</private-session-attributes>
+		<header-portlet-css>/portlets/ApplicationManager.css</header-portlet-css>
+	</portlet>
+
+	<role-mapper>
+		<role-name>administrator</role-name>
+		<role-link>Administrator</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>guest</role-name>
+		<role-link>Guest</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>power-user</role-name>
+		<role-link>Power User</role-link>
+	</role-mapper>
+	<role-mapper>
+		<role-name>user</role-name>
+		<role-link>User</role-link>
+	</role-mapper>
+</liferay-portlet-app>

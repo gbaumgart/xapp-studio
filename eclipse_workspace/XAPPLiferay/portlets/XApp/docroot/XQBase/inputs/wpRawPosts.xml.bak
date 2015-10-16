@@ -1,0 +1,8 @@
+<?xml version="1.0" ?><list><net.bican.wordpress.Page><categories serialization="custom"><unserializable-parents></unserializable-parents><list><default><size>2</size></default><int>10</int><string>MyBlogCategory</string><string>xxxCategory</string></list></categories><custom__fields serialization="custom"><unserializable-parents></unserializable-parents><list><default><size>0</size></default><int>10</int></list></custom__fields><date__created__gmt>2012-01-25 09:42:53.0 GMT</date__created__gmt><dateCreated>2012-01-25 09:42:53.0 GMT</dateCreated><description>&lt;a href="http://mc007ibi.dyndns.org:8888/wordpress/wp-content/uploads/2012/01/accept.png"&gt;&lt;img class="alignnone size-full wp-image-17" title="accept" src="http://mc007ibi.dyndns.org:8888/wordpress/wp-content/uploads/2012/01/accept.png" alt="" width="16" height="16" /&gt;&lt;/a&gt;My second edit
+
+&amp;nbsp;</description><link>http://mc007ibi.dyndns.org:8888/wordpress/?p=6</link><mt__allow__comments>1</mt__allow__comments><mt__allow__pings>1</mt__allow__pings><mt__excerpt></mt__excerpt><mt__keywords>tagsss</mt__keywords><mt__text__more>sdfgsdfgsdfgsdfg
+&lt;ul&gt;
+	&lt;li&gt;sdfgsdfgsdfg&lt;/li&gt;
+	&lt;li&gt;sdfgsdfgsdfg&lt;/li&gt;
+	&lt;li&gt;sdfgsdfgsdfgsdfg&lt;/li&gt;
+&lt;/ul&gt;</mt__text__more><permaLink>http://mc007ibi.dyndns.org:8888/wordpress/?p=6</permaLink><post__status>publish</post__status><postid>6</postid><title>My Second Post</title><userid>1</userid><wp__author__display__name>admin</wp__author__display__name><wp__author__id>1</wp__author__id><wp__password></wp__password><wp__slug>my-second-post</wp__slug></net.bican.wordpress.Page></list>

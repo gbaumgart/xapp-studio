@@ -1,0 +1,78 @@
+CACHE MANIFEST
+# version 4
+CACHE:
+
+#release JS files
+xasweb/xapp/xapp/run.js
+xasweb/xapp/external/externals.js
+xasweb/xapp/dojo/dojo.js%dojoVersion%
+xasweb/xapp/nls/dojo_ROOT.js
+xasweb/xapp/dojox/mobile/compat.js
+xasweb/xapp/xapp/widgets/nls/TemplatedWidgetBase.js
+xasweb/xapp/dojo/cldr/nls/gregorian.js
+xasweb/xapp/dojo/cldr/nls/en/gregorian.js
+xasweb/xapp/dojox/mobile/_IconItemPane.js
+
+
+
+
+#relase css files 
+xasweb/xapp/xapp/resources/app.css
+xasweb/xapp/dojox/mobile/themes/iphone/iphone.css
+xasweb/xapp/xapp/cssMobile/themes/iphone/gallery.css
+xasweb/xapp/dojox/mobile/themes/common/domButtons/DomButtonRedBadge.css
+xasweb/xapp/dojox/mobile/themes/common/domButtons/DomButtonGrayRoundRect.css
+xasweb/xapp/cssMobile/commons.css
+xasweb/xapp/images/ajax-loader.gif
+
+
+#client?action=getServiceSettings&uuid=%uuid%&appIdentifier=%appId%
+#client?action=getApplication&uuid=%uuid%&appIdentifier=%appId%
+#client?action=getStyles&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%
+client?action=getAppBundle&uuid=%uuid%&appIdentifier=%appId%
+cssTransform?action=getAll&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%&transformResource=true%cssVersion%&file=
+
+
+
+#
+images/share-2.png
+images/calendar-day-1.png
+images/list-2.png
+images/refresh-arrow.png
+images/share-2.png
+images/sync2.png
+images/icons-36-white.png
+images/menu/white/sections.png
+images/menu/white/events.png
+images/menu/white/subSections.png
+images/menu/white/share.png
+images/menu/white/close.png
+
+
+
+
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%&transformResource=true%cssVersion%&file=Default/Default.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%&transformResource=true%cssVersion%&file=ListItems.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%&transformResource=true%cssVersion%&file=Content.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%&transformResource=true%cssVersion%&file=CustomFields.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%&transformResource=true%cssVersion%&file=LaunchItems.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=%uuid%&appIdentifier=%appId%&transformResource=true%cssVersion%&file=Views.css
+
+# all dojo mobile theme files on supported platforms
+
+# demo theme files
+# image files for home page
+
+
+# js files for individual demo
+
+# html files for individual demo
+# other image files
+# workaround for build tool/or loader cannot merge some JS
+
+# JS codes for demonstration for each demo
+# Note here we aim at built version
+
+NETWORK:
+*
+# built on @timestamp@

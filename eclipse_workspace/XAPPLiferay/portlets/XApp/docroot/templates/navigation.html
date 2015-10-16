@@ -1,0 +1,23 @@
+<div id="rootlessTree2" data-dojo-type="dijit.Tree"
+     data-dojo-props="model:continentModel,
+     query:{type:'continent' },showRoot: false,openOnClick:true">
+    <script type="dojo/connect">
+        var menu = dijit.byId("tree_menu");
+        // when we right-click anywhere on the tree, make sure we open the menu
+        menu.bindDomNode(this.domNode);
+
+        console.error("open db");
+        dojo.connect(menu, "_openMyself", this, function(e){
+        // get a hold of, and log out, the tree node that was the source of this open event
+        var tn = dijit.getEnclosingWidget(e.target);
+        console.error("open my self : " + tn);
+
+        // now inspect the data store item that backs the tree node:
+        console.error("item " + tn.item);
+
+        // contrived condition: if this tree node doesn't have any children, disable all of the menu items
+        dojo.forEach(menu.getChildren(), function(i){ i.set('disabled', !tn.item.children); });
+
+        });
+    </script>
+</div>

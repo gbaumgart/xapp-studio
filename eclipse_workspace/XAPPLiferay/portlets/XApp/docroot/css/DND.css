@@ -1,0 +1,165 @@
+.dndDisabledModule
+{
+    border:1px double #ccc;
+    cursor: default;
+    radius:2pt;
+    background-color: rgba(255,0,0,0.5);
+    -moz-border-radius:3pt 3pt;
+    z-index: 90000;
+    overflow: hidden;
+}
+.dndModule
+{
+    border:1px double #ccc;
+    cursor: default;
+    radius:2pt;
+    background-color: rgba(255,0,0,0.5);
+    -moz-border-radius:3pt 3pt;
+    height:44px;
+    width: 100%;
+}
+
+.containerIcon {
+    border:2px dotted #ccc;
+    padding: 0px;
+    cursor: default;
+    radius:8pt;
+    background-color: rgba(0,255,0,0.4);
+    -moz-border-radius:8pt 8pt;
+    height:100px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+}
+
+.containerFlexibleDisabled
+{
+    border:2px dotted #ccc;
+    padding: 0px;
+    cursor: default;
+    radius:8pt;
+    background-color: rgba(255,0,0,0.4);
+    -moz-border-radius:8pt 8pt;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+}
+.containerFlexibleEnabled
+{
+    border:2px dotted #ccc;
+    padding: 0px;
+    cursor: default;
+    radius:8pt;
+    background-color: rgba(0,255,0,0.4);
+    -moz-border-radius:8pt 8pt;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+}
+/*
+html,body{
+	margin:0;
+	padding:0;
+}
+*/
+.cpaneRoot{
+    border:0px solid #666;
+    font:bold 12px Arial;
+    color:#000;
+    background:none;
+    padding:0px;
+    width:320px;
+    height:480px;
+    overflow: hidden;
+}
+
+.dojoxFloatingPaneContent
+{
+    background:none;
+    width:320px;
+    height:480px;
+}
+.dijitContentPaneSingleChild
+{
+    background:none;
+    width:320px;
+    height:480px;
+}
+.cpane{
+	border:1px solid #666;
+	font:bold 12px Arial;
+	color:#000;
+	background:none;
+	padding:0px;
+    width:100px;
+}
+
+.gridContainer {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    margin: 0;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    position: relative;
+    padding-top: 10px;
+    width: 320px;
+    width: 480px;
+}
+
+.gridContainerZone {
+    background-color: transparent;
+    height: 100%;
+    vertical-align: top;
+}
+.gridContainerZone > *{
+	margin: 2px;
+}
+
+
+
+.dj_ie6 .dropIndicator, .dj_ie6 .cpane, .dj_ie6 .dojoxPortlet, .dj_ie6 .cpane, .dj_ie6 .dijitTitlePane{
+	margin: 10px;
+}
+
+.container23 {
+	border:3px solid #ccc;
+	padding: 1em 3em; 
+	cursor: default;
+	radius:8pt;
+	background:#fff;
+	-moz-border-radius:8pt 8pt;
+}
+
+.dojoDndItem { 
+	padding:3px; 
+}
+
+.dojoDndItemOver {
+	background: #ededed;
+	cursor:pointer;
+}
+
+.dojoDndAvatarItem .dojoDndItemOver {
+	background: transparent;
+}
+
+.dragNode{
+	opacity:0.6; 
+	filter:alpha(opacity=60); 
+	-khtml-opacity:0.6; 
+	-moz-opacity:0.6;
+}
+
+.dndOver{
+	color:green;
+	font-weight:bold;
+}
+
+.dndOverNotAccepted{
+	color:red;
+	font-weight:bold;
+	cursor:not-allowed;
+}

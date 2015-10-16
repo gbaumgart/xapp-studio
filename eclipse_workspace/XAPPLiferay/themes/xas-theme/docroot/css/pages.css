@@ -1,0 +1,336 @@
+#content
+{
+    margin: 0 auto;
+    position: relative;
+}
+
+/****
+Pages with multi media stages
+*/
+.home-header-column, .header-column {
+    background: url(../images/xas/media-bg-tile.gif) top left repeat;
+    height: 182px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    box-shadow: 0 0 3px 2px inset;
+    /*background-size: 100% 100%;*/
+}
+
+.header-column-small
+{
+    background: url(../images/xas/media-bg-tile.gif) top left repeat;
+    height: 30px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    box-shadow: 0 0 3px 2px inset;
+    /*background-size: 100% 100%;*/
+}
+
+.home-header-column-inner{
+ margin-top: 3px !important;
+ margin-bottom: 3px !important;
+}
+.header-column DIV {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+.mainStageInner
+{
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/xas/test.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 980px;
+
+}
+/****
+    Home Message
+*/
+.home-message-inner{
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/xas/message_bg.png) no-repeat;
+    background-size: 968px 81px;
+    width: 968px;
+    top: -40px;
+    border-radius: 4px;
+
+}
+.home-message-column
+{
+    /*background-color: #e5e5e5;*/
+    width: 1100px;
+    font-size:12px;
+
+}
+.home-message-column *{
+	font-size:12px !important;
+	line-height: 12 !important;
+}
+#footer-inner{
+    margin: 0 auto;
+    width: 960px !important;
+}
+.copyright-footer{
+
+    color: #ffffff;
+    font-size: 12px;
+    text-align: right;
+    line-height: 1.3em;;
+}
+/***
+    Home main stage
+*/
+.home-stage-inner{
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/xas/test.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 985px;
+    top:-65px;
+    padding-bottom: -65px;
+}
+.home-main-stage
+{
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 4px;
+}
+
+.home-main-column
+{
+    /*padding-left: 25px;*/
+    width: 985px !important;
+    /*http://mc007ibi.dyndns.org:8080/c/portal/update_layout?p_auth=xXv4M22a&p_l_id=32882&p_p_id=82&p_v_l_s_g_id=10728&doAsUserId=&cmd=delete&referer=%2Fc%2Fportal%2Flayout%3Fp_l_id%3D32882%26doAsUserId%3D&refresh=1*/
+}
+
+.home-stage-inner2{
+    margin: 0 auto;
+    position: relative;
+    background: url(../images/xas/test.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    width: 985px;
+    top:-60px;
+    padding-bottom: -65px;
+}
+.home-main-stage2
+{
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 4px;
+}
+
+/****
+    Footer
+*/
+
+
+.footer-content{
+    margin: 0 auto;
+    width: 950px !important;
+}
+.footer-inner{
+    background-color: #404041;
+    width: 100%;
+}
+.footer-main{
+    background-color: #404041;
+    /*margin-top: -70px;*/
+}
+.qxapp-bottom-column,
+.bottom-column{
+    /*min-height: 100px;*/
+    /*height:auto;*/
+    background-color: #404041;
+    color: white;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 13px;
+    /*width: 980px !important;*/
+}
+/*****
+
+
+*/
+
+.mainStage {
+    margin-top:-20px;
+    margin-bottom: 10px;
+}
+.mainStage2 {
+    margin-top:0px !important;
+    margin-bottom: 10px;
+}
+.rightInner{
+    height: 100%;
+}
+.right-column
+{
+    padding-top: 25px;
+    /*padding-top: 40px;
+    background: -moz-linear-gradient(left,  rgba(245,245,245,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(245,245,245,1)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#00ffffff',GradientType=1 );
+  */
+/*
+    background-size: 100% 100%;
+    background-image: url("../images/xas/grad.svg");*/
+
+}
+.main-column
+{
+    /*padding-left: 25px;*/
+    padding-top: 20px;
+    width: 1100px !important;
+}
+#main-content{
+
+    background-color: rgba(255,255,255,0.0);
+    /*
+    margin-left: 13px;
+    margin-right: 12px;*/
+    border-radius: 3px;
+}
+
+
+/****
+    Quick-XApp
+*/
+.qxapp-header-column{
+    background: url(../images/xas/media-bg-tile.gif) top left repeat;
+    height: 130px;
+}
+.qxapp-header-column DIV{
+    margin: 0 auto;
+    position: relative;
+    width: 1080px;
+}
+.qxappStage {
+
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 4px;
+    margin-top: -3em;
+    min-height: 740px;
+    /*margin-left: -13px;
+    margin-right: -13px;
+    */
+}
+.qxappStageInner
+{
+    background: url(../images/xas/test.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 1100px;
+    min-height: 740px;
+}
+.qxapp-column{
+
+}
+.qxapp-column .portlet-column-content
+{
+    margin: 18px;
+    padding: 0;
+}
+
+.left-column-navigation
+{
+
+}
+
+
+
+/****
+    XApp-Studio
+*/
+.xas-header-column{
+    background: url(../images/xas/media-bg-tile.gif) top left repeat;
+    height: 30px;
+}
+.xas-header-column DIV{
+    margin: 0 auto;
+    position: relative;
+    width: 1100px;
+}
+.xas-column{
+    width: inherit !important;
+}
+.xasStage {
+
+    background-color: transparent;
+    border-radius: 4px;
+    margin-top: -3em;
+    min-height: 740px;
+    /*margin-left: -13px;
+    margin-right: -13px;
+    */
+}
+
+.xasStageInner
+{
+    /*background: url(../images/xas/test.png) no-repeat;*/
+    background: url(../images/xas/media-bg-tile.gif) top left repeat;
+    /*background-size: 100% 100%;*/
+    margin: 0 auto;
+    position: relative;
+    /*width: 1100px;*/
+    min-height: 740px;
+}
+.xas-bottom-column
+{
+    /*min-height: 100px;*/
+    /*height:auto;*/
+    background-color: #404041;
+    color: white;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 13px;
+    /*width: 980px !important;*/
+}
+
+.xapp-diagram-manager-Inner
+{
+    /*background: url(../images/xas/test.png) no-repeat;*/
+    background: url(../images/xas/media-bg-tile.gif) top left repeat;
+    /*background-size: 100% 100%;*/
+    /*margin: 0 auto !important;*/
+    position: relative;
+    /*width: 1100px;*/
+    min-height: 800px;
+}
+
+.xapp-diagram-manager-column{
+    /*min-width: 1100px;*/
+    width: 100%;
+}
+
+.xapp-diagram-manager-root{
+
+}
+
+
+/***
+*/
+.xapp-diagram-editor-Inner
+{
+    /*background: url(../images/xas/test.png) no-repeat;*/
+    background: url(../images/xas/media-bg-tile.gif) top left repeat;
+    /*background-size: 100% 100%;*/
+    /*margin: 0 auto !important;*/
+    position: relative;
+    /*width: 1100px;*/
+    /*min-height: 800px;*/
+    width: 100%;
+}
+
+.xapp-diagram-editor-column{
+    height: 800px;
+    /*width: inherit;*/
+}
+
+.xapp-diagram-editor-root{
+
+}

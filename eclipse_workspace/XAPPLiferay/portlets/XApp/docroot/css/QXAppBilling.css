@@ -1,0 +1,102 @@
+.appManagerPanel
+{
+
+}
+.appIcon{
+    box-shadow: 0 0 5px #D7D7D7;
+    height: 55px;
+    width: 55px;
+
+}
+.appIconPreviewNode{
+    width: 70px;
+
+}
+
+body,html{
+    line-height: 1.3;
+    font-size: 13px !important;
+    font-weight: 400;
+}
+
+#loaderBilling {
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:0; left:0;
+    width:1050px;
+    height:750px;
+    max-height:750px;
+    background:transparent;
+    z-index:999;
+    vertical-align:middle;
+}
+#loaderInnerBilling {
+    padding:5px;
+    position:relative;
+    left:0;
+    top:0;
+    width:175px;
+    background:transparent;
+    color:#fff;
+}
+
+.qxPeriodButton{
+    float: right;
+}
+
+.qxPeriodButtonDisabled
+{
+    background-color: #efefef !important;
+    background-image: url('') !important;
+    background-image: -webkit-linear-gradient(bottom, #efefef 0%, #efefef 100%) !important;
+    background-image: -moz-linear-gradient(bottom, #efefef 0%, #efefef 100%) !important;
+    color: #333333;
+
+}
+
+.qxPeriodButtonDisabled *
+{
+    background-color: #efefef !important;
+    color: #979797;
+    background-image: -webkit-linear-gradient(bottom, #efefef 0%, #efefef 100%) !important;
+    background-image: -moz-linear-gradient(bottom, #efefef 0%, #efefef 100%) !important;
+}
+
+.priceText{
+
+    font-size: 28px;
+}
+.pricePeriodText
+{
+    color: #666666;
+}
+
+.discountText{
+    font-size: 17px;
+    color: #E6244F;
+
+}
+
+.couponText{
+    font-size: 14px;
+    color: #666666;
+}
+.centerText{
+    font-size: 22px;
+}
+
+.priceDisabled
+{
+    text-decoration: line-through;
+}
+
+.subscriptionDisabled
+{
+    opacity: 0.7;
+}
+
+.priceTextNew{
+    font-size: 26px;
+    color: #E6244F;
+}

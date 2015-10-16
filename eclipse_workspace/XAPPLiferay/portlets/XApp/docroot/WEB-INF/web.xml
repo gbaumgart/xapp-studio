@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>XApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- filter>
+	<filter-name>CORS</filter-name>
+	<filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
+	<init-param>
+                <param-name>cors.allowOrigin</param-name>
+                <param-value>*</param-value>
+        </init-param>
+	</filter>
+	
+	<filter-mapping>
+        <filter-name>CORS</filter-name>
+        <url-pattern>/*</url-pattern>
+</filter-mapping-->
+
+
+
+
+  
+  <!-- filter>
+  <filter-name>CorsFilter</filter-name>
+  <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+  <init-param>
+    <param-name>cors.allowed.origins</param-name>
+    <param-value>*</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.allowed.methods</param-name>
+    <param-value>GET,POST,HEAD,OPTIONS,PUT</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.allowed.headers</param-name>
+    <param-value>Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.exposed.headers</param-name>
+    <param-value>Access-Control-Allow-Origin,Access-Control-Allow-Credentials</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.support.credentials</param-name>
+    <param-value>true</param-value>
+  </init-param>
+  <init-param>
+    <param-name>cors.preflight.maxage</param-name>
+    <param-value>10</param-value>
+  </init-param>
+</filter>
+
+<filter-mapping>
+  <filter-name>CorsFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping-->
+  
+  <mime-mapping>
+    <extension>manifest</extension>
+    <mime-type>text/cache-manifest</mime-type>
+   </mime-mapping>
+   
+  
+  <!-- janrain :  -->
+  
+  <!-- context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>classpath:META-INF/log4j.properties</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:META-INF/applicationContext*.xml</param-value>
+    </context-param>
+    
+    <filter>
+        <filter-name>flashScopeFilter</filter-name>
+        <filter-class>com.googlecode.janrain4j.samples.demo.FlashScopeFilter</filter-class>
+    </filter>
+    
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    
+    <filter>
+        <filter-name>siteMeshFilter</filter-name>
+        <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>flashScopeFilter</filter-name>
+        <url-pattern>/rpx/*</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <url-pattern>/rpx/*</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>siteMeshFilter</filter-name>
+        <url-pattern>/rpx/*</url-pattern>
+    </filter-mapping>
+    
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    
+    <servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/webmvc-config.xml</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>/rpx</url-pattern>
+    </servlet-mapping-->
+    
+    
+    <servlet>
+        <servlet-name>tokenServlet</servlet-name>
+        <servlet-class>com.googlecode.janrain4j.samples.servlets.basic.TokenServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>signOutServlet</servlet-name>
+        <servlet-class>com.googlecode.janrain4j.samples.servlets.basic.SignOutServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>tokenServlet</servlet-name>
+        <url-pattern>/token</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>signOutServlet</servlet-name>
+        <url-pattern>/sign_out</url-pattern>
+    </servlet-mapping>
+    
+    
+  
+   <context-param>
+		<param-name>wurfl</param-name>
+		<param-value>/liferay/tomcat-7.0.27/webapps/XApp-portlet/wurfl.zip</param-value>
+	</context-param>
+  
+  
+   <listener>
+		<listener-class>
+			net.sourceforge.wurfl.core.web.WURFLServletContextListener
+		</listener-class>
+	</listener>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <jsp-config>
+  	<taglib>
+  		<taglib-uri>http://java.sun.com/portlet_2_0</taglib-uri>
+  		<taglib-location>
+  			/WEB-INF/tld/liferay-portlet.tld
+  		</taglib-location>
+  	</taglib>
+  	
+  	<taglib>
+        <taglib-uri>http://liferay.com/tld/aui</taglib-uri>
+        <taglib-location>/WEB-INF/tld/aui.tld</taglib-location>
+    </taglib>
+    
+    	<taglib>
+			<taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+			<taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+		</taglib>
+  </jsp-config>
+  
+  
+  	<listener>
+    	<listener-class>pmedia.Servlets.HttpSessionCollector</listener-class>
+	</listener>
+  
+  
+  
+  
+  <!-- >servlet>
+    	<display-name>restservlet</display-name>
+    	<servlet-name>restservlet</servlet-name>
+    	
+    	<servlet-class>
+   			com.sun.jersey.spi.container.servlet.ServletContainer
+    	</servlet-class>
+    	
+    	<init-param>
+               <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+               <param-value>true</param-value>
+        </init-param>
+           
+    	<init-param>
+		     <param-name>com.sun.jersey.config.property.packages</param-name>
+		     <param-value>pmedia.service</param-value>
+		</init-param>
+    	
+    	<init-param>
+      		<param-name>com.sun.jersey.config.property.WebPageContentRegex</param-name>
+      		<param-value>/(images|css|jsp|html|js)/.*</param-value>
+  		</init-param>
+    	<load-on-startup>1</load-on-startup>
+    	
+    </servlet>
+    
+    <servlet-mapping>
+    	<servlet-name>restservlet</servlet-name>
+    	<url-pattern>/servlets/*</url-pattern>
+    </servlet-mapping-->
+
+	<!-- servlet>
+		<servlet-name>log4javascript</servlet-name>
+		<servlet-class>uk.co.timdown.log4javascript.Log4javascriptServlet</servlet-class>
+
+
+		<init-param>
+			<param-name>log4j-init-file</param-name>
+			<param-value>/config/log4j.properties</param-value>
+		</init-param>
+
+		<load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+		<servlet-name>log4javascript</servlet-name>
+		<url-pattern>/log4javascript.do</url-pattern>
+	</servlet-mapping-->
+	
+	
+	<!-- servlet>
+		<servlet-name>InitLog4jServlet</servlet-name>
+		<servlet-class>uk.co.timdown.log4javascript.InitLog4jServlet</servlet-class>
+
+		<init-param>
+			<param-name>log4j-init-file</param-name>
+			<param-value>WEB-INF/log4j.properties</param-value>
+		</init-param>
+
+		<load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+		<servlet-name>InitLog4jServlet</servlet-name>
+		<url-pattern>/InitLog4jServlet.do</url-pattern>
+	</servlet-mapping-->
+
+    
+    <servlet>
+        <servlet-name>init</servlet-name>
+        <servlet-class>pmedia.Servlets.InitializationServlet</servlet-class>
+        <init-param>
+            <param-name>database.dir</param-name>
+            <param-value>${webapp.root}/WEB-INF/database</param-value>
+        </init-param>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>${webapp.root}/application.properties</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>
+            org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter
+        </filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>*.action</url-pattern>
+    </filter-mapping>
+
+	<filter>
+		<filter-name>Cache Filter - Resource CSS JSP</filter-name>
+		<filter-class>com.liferay.portal.kernel.servlet.PortalClassLoaderFilter</filter-class>
+		<init-param>
+			<param-name>filter-class</param-name>
+			<param-value>com.liferay.portal.servlet.filters.cache.CacheFilter</param-value>
+		</init-param>
+		<init-param>
+			<param-name>url-regex-pattern</param-name>
+			<param-value>.+/css\.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>pattern</param-name>
+			<param-value>2</param-value>
+		</init-param>
+	</filter>
+
+
+	<filter>
+	    <filter-name>Header Filter</filter-name>
+	    <filter-class>com.liferay.portal.kernel.servlet.PortalClassLoaderFilter</filter-class>
+	    <init-param>
+	        <param-name>filter-class</param-name>
+	        <param-value>com.liferay.portal.servlet.filters.header.HeaderFilter</param-value>
+	    </init-param>
+	    <init-param>
+	        <param-name>Cache-Control</param-name>
+	        <param-value>max-age=1 , public</param-value>
+	    </init-param>
+	</filter>
+
+
+	<filter>
+		<filter-name>Header Filter - CSS JSP</filter-name>
+		<filter-class>com.liferay.portal.kernel.servlet.PortalClassLoaderFilter</filter-class>
+		<init-param>
+			<param-name>filter-class</param-name>
+			<param-value>com.liferay.portal.servlet.filters.header.HeaderFilter</param-value>
+		</init-param>
+		<init-param>
+			<param-name>url-regex-pattern</param-name>
+			<param-value>.+/css\.jsp</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Cache-Control</param-name>
+			<param-value>max-age=3600, public</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Expires</param-name>
+			<param-value>3600</param-value>
+		</init-param>
+	</filter>
+	
+	
+
+	
+	
+
+	<filter-mapping>
+		<filter-name>Header Filter - CSS JSP</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>
+		<filter-name>Header Filter - CSS JSP</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+
+	<filter-mapping>
+		<filter-name>Cache Filter - Resource CSS JSP</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>Header Filter</filter-name>
+		<url-pattern>*.css</url-pattern>
+	</filter-mapping>
+
+    <servlet>
+        <servlet-name>JSCall</servlet-name>
+        <servlet-class>pmedia.Servlets.JSSesssionStoreServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>JSCall</servlet-name>
+        <url-pattern>/servlets/js</url-pattern>
+    </servlet-mapping>
+
+
+    <!--  Data Servlets -->
+
+
+	<servlet>
+        <servlet-name>banner</servlet-name>
+        <servlet-class>pmedia.Servlets.BannerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>banner</servlet-name>
+        <url-pattern>/banner/*</url-pattern>
+    </servlet-mapping>
+
+   <servlet>
+        <servlet-name>forms</servlet-name>
+        <servlet-class>pmedia.Servlets.FormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>forms</servlet-name>
+        <url-pattern>/forms/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>moset</servlet-name>
+        <servlet-class>pmedia.Servlets.MosetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>moset</servlet-name>
+        <url-pattern>/moset/*</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+        <servlet-name>products</servlet-name>
+        <servlet-class>pmedia.Servlets.VMartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>products</servlet-name>
+        <url-pattern>/products/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>articles</servlet-name>
+        <servlet-class>pmedia.Servlets.ArticleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>articles</servlet-name>
+        <url-pattern>/articles/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>cssTransform</servlet-name>
+        <servlet-class>pmedia.Servlets.CSSServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cssTransform</servlet-name>
+        <url-pattern>/cssTransform/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>avangate</servlet-name>
+        <servlet-class>cmm.servlets.AvangateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>avangate</servlet-name>
+        <url-pattern>/avangate/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>content</servlet-name>
+        <servlet-class>pmedia.Servlets.ContentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>content</servlet-name>
+        <url-pattern>/content/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>venue</servlet-name>
+        <servlet-class>pmedia.Servlets.VenueServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>venue</servlet-name>
+        <url-pattern>/venue/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>google</servlet-name>
+        <servlet-class>pmedia.Servlets.GoogleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>google</servlet-name>
+        <url-pattern>/google/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>tooltip</servlet-name>
+        <servlet-class>pmedia.Servlets.TooltipServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tooltip</servlet-name>
+        <url-pattern>/tooltip/*</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>wordpress</servlet-name>
+        <servlet-class>pmedia.Servlets.WordpressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wordpress</servlet-name>
+        <url-pattern>/wordpress/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>utils</servlet-name>
+        <servlet-class>pmedia.Servlets.HTMLUtilsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>utils</servlet-name>
+        <url-pattern>/utils/*</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>rss</servlet-name>
+        <servlet-class>pmedia.Servlets.RSSServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rss</servlet-name>
+        <url-pattern>/rss/*</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>client</servlet-name>
+        <servlet-class>pmedia.Servlets.AppClientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>client</servlet-name>
+        <url-pattern>/client/*</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>gdata</servlet-name>
+        <servlet-class>pmedia.Servlets.GDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>gdata</servlet-name>
+        <url-pattern>/gdata/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>events</servlet-name>
+        <servlet-class>pmedia.Servlets.EventsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>events</servlet-name>
+        <url-pattern>/events/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>locations</servlet-name>
+        <servlet-class>pmedia.Servlets.LocationsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>locations</servlet-name>
+        <url-pattern>/locations/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>translations</servlet-name>
+        <servlet-class>pmedia.Servlets.TranslationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>translations</servlet-name>
+        <url-pattern>/translations/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>resources</servlet-name>
+        <servlet-class>pmedia.Servlets.ResourceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>resources</servlet-name>
+        <url-pattern>/resources/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>admin</servlet-name>
+        <servlet-class>pmedia.Servlets.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/admin/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>pmedia.Servlets.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/search/*</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+     <servlet-name>ImageScaleIcon</servlet-name>
+     <servlet-class>com.jsos.image.ImageScaleServlet</servlet-class>
+     <init-param>
+     <param-name>dir</param-name>
+     <param-value>/liferay/tomcat-7.0.27/webapps/XApp-portlet/icons/</param-value>
+     </init-param>
+     
+     <init-param>
+     <param-name>downloads</param-name>
+     <param-value>/liferay/tomcat-7.0.27/webapps/XApp-portlet/downloads/</param-value>
+     </init-param>
+     
+     <init-param>
+	     <param-name>height</param-name>
+	     <param-value>75</param-value>
+	 </init-param>
+
+	 <init-param>    
+	     <param-name>width</param-name>
+	     <param-value>75</param-value>
+     </init-param>
+     
+     <init-param>
+	     <param-name>cache</param-name>
+	     <param-value>/liferay/tomcat-7.0.27/webapps/XApp-portlet/icons/</param-value>
+     </init-param>
+ 
+ 	</servlet> 
+ 
+ 
+	<servlet-mapping>
+	  <servlet-name>ImageScaleIcon</servlet-name>
+	  <url-pattern>/servlets/ImageScaleIcon</url-pattern>
+	</servlet-mapping>
+    
+     <filter>
+        <filter-name>Proxy</filter-name>
+        <filter-class>net.sf.j2ep.ProxyFilter</filter-class>
+        <init-param>
+        	<param-name>dataUrl</param-name>
+        	<param-value>/config/proxyConfig.xml</param-value>
+        </init-param>
+    </filter>
+    
+
+    <filter-mapping>
+        <filter-name>Proxy</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   <!-- listener>
+    <listener-class>
+      com.google.android.gcm.demo.server.ApiKeyInitializer
+    </listener-class>
+  </listener>
+  
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>
+      com.google.android.gcm.demo.server.RegisterServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UnregisterServlet</servlet-name>
+    <servlet-class>
+      com.google.android.gcm.demo.server.UnregisterServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UnregisterServlet</servlet-name>
+    <url-pattern>/unregister</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SendAllMessagesServlet</servlet-name>
+    <servlet-class>
+      com.google.android.gcm.demo.server.SendAllMessagesServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SendAllMessagesServlet</servlet-name>
+    <url-pattern>/sendAll</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>
+      com.google.android.gcm.demo.server.HomeServlet
+    </servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping-->
+    
+    
+    <!-- LESS Filter -->
+    <!-- >servlet>
+    <servlet-name>less</servlet-name>
+    <servlet-class>com.asual.lesscss.LessServlet</servlet-class>
+    <init-param>
+        <param-name>compress</param-name>
+        <param-value>true</param-value>
+    </init-param>
+    	<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+	    <servlet-name>resource</servlet-name>
+	    <servlet-class>com.asual.lesscss.ResourceServlet</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	
+	<servlet-mapping>
+	    <servlet-name>less</servlet-name>
+	    <url-pattern>*.less</url-pattern>
+	</servlet-mapping-->
+  
+</web-app>

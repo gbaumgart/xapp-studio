@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+
+	<server className="cmx.server.FileServer"
+		domainName="192.168.1.37"
+		isRewriting="true"
+        path="/PMaster/xapp-diagrams-web/oryx/"
+		>
+        
+		<rule className="net.sf.j2ep.rules.DirectoryRule"
+	  		directory="/editor"
+	  	/>
+	  	</server>
+	  	
+	  	<server className="cmx.server.FileServer"
+		domainName="192.168.1.37"
+		isRewriting="true"
+        path="/PMaster/xapp-diagrams-web/backend/"
+		>
+        
+		<rule className="net.sf.j2ep.rules.DirectoryRule"
+	  		directory="/backend"
+	  	/>
+	  	
+	  	
+	</server>
+	
+</config>

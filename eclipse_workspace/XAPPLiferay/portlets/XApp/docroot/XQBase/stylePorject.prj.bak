@@ -1,0 +1,47 @@
+
+<project type="cont" name="stylePorject" expanded="yes" catalog="no" pluginOwner="-1">
+	<file plugId="9" URL="wordpress\posts.xquery">
+		<scenarios>
+			<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" useresolver="yes" url="..\inputs\wpRawPages.xml" outputurl="" processortype="datadirect" tcpport="0" profilemode="0" profiledepth="" profilelength=""
+			          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" host="" port="0" user="" password=""
+			          validateoutput="no" validator="internal" customvalidator="">
+				<advancedProperties name="DocumentURIResolver" value=""/>
+				<advancedProperties name="CollectionURIResolver" value=""/>
+				<advancedProperties name="ModuleURIResolver" value=""/>
+			</scenario>
+		</scenarios>
+		<MapperMetaTag>
+			<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no">
+				<SourceSchema srcSchemaPath="inputs\wpRawPages.xml" srcSchemaRoot="list" AssociatedInstance="" loaderFunction="document" loaderFunctionUsesURI="no"/>
+			</MapperInfo>
+			<MapperBlockPosition>
+				<template name="xquery_body">
+					<block path="articles/flwr" x="185" y="133"/>
+				</template>
+			</MapperBlockPosition>
+			<TemplateContext></TemplateContext>
+			<MapperFilter side="source"></MapperFilter>
+		</MapperMetaTag>
+	</file>
+	<file plugId="3" URL="inputs\wpRawPages.xml" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="9" URL="wordpress\pages.xquery">
+		<scenarios>
+			<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" useresolver="yes" url="..\inputs\wpRawPages.xml" outputurl="" processortype="datadirect" tcpport="0" profilemode="0" profiledepth="" profilelength=""
+			          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" host="" port="0" user="" password=""
+			          validateoutput="no" validator="internal" customvalidator="">
+				<advancedProperties name="DocumentURIResolver" value=""/>
+				<advancedProperties name="CollectionURIResolver" value=""/>
+				<advancedProperties name="ModuleURIResolver" value=""/>
+			</scenario>
+		</scenarios>
+		<MapperMetaTag>
+			<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/>
+			<MapperBlockPosition></MapperBlockPosition>
+			<TemplateContext></TemplateContext>
+			<MapperFilter side="source"></MapperFilter>
+		</MapperMetaTag>
+	</file>
+</project>

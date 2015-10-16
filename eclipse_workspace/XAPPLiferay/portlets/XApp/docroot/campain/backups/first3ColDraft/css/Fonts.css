@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(../images/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+html, body, span
+{
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.mobile body {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 17px;
+}
+
+.claro {
+    color: #131313;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 0.688em;
+}
+
+.mobile body {
+    background-color: #cccccc !important;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+	<server className="cmx.server.FileServer"
+		domainName="192.168.1.37"
+		isRewriting="true"
+        path="/Applications/MAMP/htdocs/CMAC"
+		>
+		
+		<rule className="net.sf.j2ep.rules.AcceptEverythingRule"/>
+		
+	  	
+	</server>
+
+</config>

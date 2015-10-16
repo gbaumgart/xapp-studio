@@ -1,0 +1,48 @@
+<div id="simToolbar" data-dojo-type="dijit.Toolbar">
+
+    <div data-dojo-type="dijit.form.Button"  onclick="sctx.getSimulator().changeDeviceTheme('iPhone');" id="toolbar.phone"
+         data-dojo-props="iconClass:'dijitEditorIcon iconPhone',
+              showLabel:false">iPhone</div>
+
+    <!--div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('iPad');" id="toolbar.iPad"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet' , disabled:true , showLabel:false">iPad</div-->
+
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('iPad');" id="toolbar.iPad"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet' , disabled:true , showLabel:false">iPad</div>
+
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('Android');" id="toolbar.android"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet',disabled:false ,
+              showLabel:false">Android</div>
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('Backberry');" id="toolbar.blackberry"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet',disabled:false ,
+         showLabel:false">Blackberry</div>
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('Backberry');" id="toolbar.custom"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet',disabled:false ,
+              showLabel:false">Custom</div>
+
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getWorkflowManager().openSimulator();" id="toolbar.sync"
+         data-dojo-props="iconClass:'dijitEditorIcon iconSync',
+              showLabel:false">Sync with Appstudio</div>
+
+    <input id="editToggle" type="checkBox" data-dojo-type="dijit.form.CheckBox" data-dojo-attach-point='editToggle' data-dojo-props="
+					checked:false,
+					onChange: function(a){sctx.getWorkflowManager().onSimulatorEditToggle(a);}">
+    <label for="editToggle">Edit</label>
+
+</div>
+<div id="root" data-dojo-attach-point='root' style="padding: 0px;overflow:hidden;visibility:visible;width:320px;height:480px" class="SimulatorIphone">
+</div>
+<div id="progDiv"></div>
+<div id="cacheDiv"></div>
+
+<div id="calPicker" data-dojo-type="dojox.mobile.Opener" style="z-index:2000">
+		<h1 dojoType="dojox.mobile.Heading" label="Date Picker">
+		<div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+			onclick="dijit.byId('calPicker').hide(true)"></div>
+		<div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+			onclick="dijit.byId('calPicker').hide(false)"></div>
+	</h1>
+
+	<div id="spin1" dojoType="dojox.mobile.SpinWheelDatePicker"></div>
+
+</div>

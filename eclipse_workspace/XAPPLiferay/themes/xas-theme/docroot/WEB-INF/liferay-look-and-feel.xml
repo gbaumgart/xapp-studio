@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.2.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_2_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>6.2.0+</version>
+	</compatibility>
+	<theme id="xas" name="xas">
+		<template-extension>ftl</template-extension>
+		<settings>
+			<setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="false"></setting>
+		</settings>
+		<layout-templates>
+			<custom>
+				<layout-template id="home" name="Home">
+					<template-path>/layouttpl/custom/home.tpl</template-path>
+					<wap-template-path>/layouttpl/custom/home.tpl</wap-template-path>
+					<thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+				</layout-template>
+				<layout-template id="features" name="features">
+					<template-path>/layouttpl/custom/features.tpl</template-path>
+					<wap-template-path>/layouttpl/custom/features.tpl</wap-template-path>
+					<thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+				</layout-template>
+				
+				<layout-template id="stage2ColsBottom" name="Stage2ColsBottom">
+					<template-path>/layouttpl/custom/Stage_2Cols_Bottom.tpl</template-path>
+					<wap-template-path>/layouttpl/custom/Stage_2Cols_Bottom.tpl</wap-template-path>
+					<thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+				</layout-template>
+
+                <layout-template id="stage1ColsBottom" name="Stage1ColsBottom">
+                    <template-path>/layouttpl/custom/Stage_1Cols_Bottom.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/Stage_1Cols_Bottom.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+                <layout-template id="stage1Cols1ColsBottom" name="stage1Cols1ColsBottom">
+                    <template-path>/layouttpl/custom/Stage_1Cols_1Cols_Bottom.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/Stage_1Cols_1Cols_Bottom.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+
+                <layout-template id="features2Col" name="features2Col">
+                    <template-path>/layouttpl/custom/Features_2Cols_Bottom.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/Features_2Cols_Bottom.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+
+                <layout-template id="features5Col" name="features5Col">
+                    <template-path>/layouttpl/custom/Features_5Cols_Bottom.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/Features_5Cols_Bottom.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+
+                <layout-template id="QuickXapp" name="QuickXapp">
+					<template-path>/layouttpl/custom/QuickXapp.tpl</template-path>
+					<wap-template-path>/layouttpl/custom/QuickXapp.tpl</wap-template-path>
+					<thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+				</layout-template>
+
+                <layout-template id="XAS" name="XAS">
+                    <template-path>/layouttpl/custom/XAS.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/XAS.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+
+                <layout-template id="xapp-diagrams-manager" name="xapp-diagrams-manager">
+                    <template-path>/layouttpl/custom/xapp-diagrams-manager.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/xapp-diagrams-manager.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+                <layout-template id="xapp-diagrams-editor" name="xapp-diagrams-editor">
+                    <template-path>/layouttpl/custom/xapp-diagrams-editor.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/xapp-diagrams-editor.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+                <layout-template id="XASHome" name="XASHome">
+                    <template-path>/layouttpl/custom/xasHome.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/xasHome.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+                <layout-template id="2LoginCols" name="2LoginCols">
+                    <template-path>/layouttpl/custom/2LoginCols.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/2LoginCols.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+                <layout-template id="1SmallColumnLeft1BigColumRight" name="1SmallColumnLeft1BigColumRight">
+                    <template-path>/layouttpl/custom/1SmallColumnLeft1BigColumRight.tpl</template-path>
+                    <wap-template-path>/layouttpl/custom/1SmallColumnLeft1BigColumRight.tpl</wap-template-path>
+                    <thumbnail-path>/layouttpl/custom/home.png</thumbnail-path>
+                </layout-template>
+
+			</custom>
+		</layout-templates>
+	</theme>
+</look-and-feel>

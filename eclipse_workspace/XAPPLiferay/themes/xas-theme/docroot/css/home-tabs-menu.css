@@ -1,0 +1,73 @@
+/* home-tabs-menu */
+
+.home-tabs-menu * {
+    border: none;
+}
+.home-tabs-menu .nav-menu{
+    background-color: transparent;
+    box-shadow: none;
+    clear: both;
+    border: none;
+    margin-top: 0;
+
+}
+.home-tabs-menu .nav-menu .level-1{
+    background: url(../images/xas/home-sprite.png) no-repeat -2319px -418px;
+    _background-image: url(/images/home-sprite-ie6.png);
+    float: left;
+    margin: 0;
+    min-height: 280px;
+    _height: 335px;
+    padding: 35px 0 0;
+    width: 147px;
+    box-shadow: none;
+    border: none;
+}
+
+.home-tabs-menu .nav-menu .level-1 li {
+    height: 45px;
+    list-style: none;
+    border-bottom: none;
+    border-top: none;
+}
+
+.home-tabs-menu .nav-menu .level-1 a {
+    background: url(../images/xas/home-sprite.png) no-repeat 0 -504px;
+    _background-image: url(/images/home-sprite-ie6.png);
+    cursor: pointer;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding: 1px 0 0 17px;
+    margin-left: 0;
+    width: 130px;
+
+}
+
+.home-tabs-menu .nav-menu .level-1 .first {
+    background-position: 0 -459px;
+}
+
+.home-tabs-menu .nav-menu .level-1 .last {
+    background-position: 0 -549px;
+    height: 50px;
+}
+
+/* Sel */
+
+.home-tabs-menu .nav-menu .level-1 .selected {
+    position: relative;
+}
+
+.home-tabs-menu .nav-menu .level-1 .selected a {
+    background-position: 0 -403px;
+    color: #666;
+    cursor: default;
+    position: absolute;
+    line-height: 46px;
+    height: 52px;
+    left: -6px;
+    text-decoration: none;
+    top: -1px;
+    width: 136px;
+}

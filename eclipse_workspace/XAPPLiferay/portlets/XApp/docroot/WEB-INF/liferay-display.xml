@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE display PUBLIC "-//Liferay//DTD Display 6.1.0//EN" "http://www.liferay.com/dtd/liferay-display_6_1_0.dtd">
+
+<display>
+	
+	<category name="Pearls-Media">
+		<portlet id="ApplicationAction"></portlet>
+		<portlet id="AppStudioView"></portlet>
+		<portlet id="QXAppStudioView"></portlet>
+		<portlet id="QXAppSlideShow"></portlet>
+		<portlet id="QXAppManager"></portlet>
+		<portlet id="QXAppBilling"></portlet>
+		<portlet id="QXAppRPX"></portlet>
+		<portlet id="XAppConnect"></portlet>
+		<portlet id="QXAppBundles"></portlet>
+		
+	</category>
+
+</display>

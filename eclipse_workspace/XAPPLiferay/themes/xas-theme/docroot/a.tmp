@@ -1,0 +1,309 @@
+Sep 9, 2012 3:11:21 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: .:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+Sep 9, 2012 3:11:21 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Sep 9, 2012 3:11:21 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Sep 9, 2012 3:11:21 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 967 ms
+Sep 9, 2012 3:11:21 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Sep 9, 2012 3:11:21 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.23
+Sep 9, 2012 3:11:21 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /liferay/tomcat-7.0.27/conf/Catalina/localhost/ROOT.xml
+Loading jar:file:/liferay/tomcat-7.0.27/webapps/ROOT/WEB-INF/lib/portal-impl.jar!/system.properties
+15:11:23,894 INFO  [EasyConf:122] Refreshed the configuration of all components
+15:11:24,400 INFO  [ConfigurationLoader:56] Properties for /liferay/tomcat-7.0.27/webapps/ROOT/WEB-INF/classes/portal loaded from [file:/liferay/tomcat-7.0.27/webapps/ROOT/WEB-INF/classes/portal-developer.properties, file:/liferay/portal-ide.properties, file:/liferay/portal-setup-wizard.properties, file:/liferay/tomcat-7.0.27/webapps/ROOT/WEB-INF/classes/portal.properties]
+Loading file:/liferay/tomcat-7.0.27/webapps/ROOT/WEB-INF/classes/portal.properties
+Loading file:/liferay/portal-setup-wizard.properties
+Loading file:/liferay/portal-ide.properties
+Loading file:/liferay/tomcat-7.0.27/webapps/ROOT/WEB-INF/classes/portal-developer.properties
+15:11:31,689 INFO  [DialectDetector:80] Determine dialect for MySQL 5
+15:11:31,745 INFO  [DialectDetector:145] Found dialect org.hibernate.dialect.MySQLDialect
+Starting Liferay Portal Community Edition 6.1.0 CE (Paton / Build 6100 / January 6, 2012)
+15:12:02,445 INFO  [BaseDB:409] Database does not support case sensitive queries
+15:12:03,298 INFO  [PluginPackageUtil:1096] Reading plugin package for the root context
+15:12:06,539 INFO  [AutoDeployDir:105] Auto deploy scanner started for /liferay/deploy
+15:12:09,955 INFO  [PluginPackageUtil:1280] Reloading repositories
+15:12:10,201 ERROR [PluginPackageUtil:1298] Unable to load repository http://plugins.liferay.com/official com.liferay.portal.plugin.PluginPackageException: Unable to download file http://plugins.liferay.com/official/liferay-plugin-repository.xml because of response code 404
+15:12:10,207 ERROR [PluginPackageUtil:1298] Unable to load repository http://plugins.liferay.com/community com.liferay.portal.plugin.PluginPackageException: Unable to download file http://plugins.liferay.com/community/liferay-plugin-repository.xml because of response code 404
+15:12:10,216 ERROR [PluginPackageUtil:337] Unable to download file http://plugins.liferay.com/official/liferay-plugin-repository.xml because of response code 404
+15:12:10,221 ERROR [PluginPackageUtil:337] Unable to download file http://plugins.liferay.com/community/liferay-plugin-repository.xml because of response code 404
+Sep 9, 2012 3:12:14 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /liferay/tomcat-7.0.27/conf/Catalina/localhost/XApp-portlet.xml
+Sep 9, 2012 3:12:14 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /liferay/tomcat-7.0.27/webapps/XApp-portlet inside the host appBase has been specified, and will be ignored
+Sep 9, 2012 3:12:14 PM org.apache.catalina.startup.SetContextPropertiesRule begin
+WARNING: [SetContextPropertiesRule]{Context} Setting property 'source' to 'org.eclipse.jst.jee.server:XApp-portlet' did not find a matching property.
+15:12:15,622 INFO  [PluginPackageUtil:1099] Reading plugin package for XApp-portlet
+15:12:15,895 ERROR [HotDeployUtil:114] com.liferay.portal.kernel.deploy.hot.HotDeployException: Error registering plugins for XApp-portlet
+com.liferay.portal.kernel.deploy.hot.HotDeployException: Error registering plugins for XApp-portlet
+	at com.liferay.portal.kernel.deploy.hot.BaseHotDeployListener.throwHotDeployException(BaseHotDeployListener.java:46)
+	at com.liferay.portal.deploy.hot.PluginPackageHotDeployListener.invokeDeploy(PluginPackageHotDeployListener.java:58)
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil._doFireDeployEvent(HotDeployUtil.java:111)
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil._fireDeployEvent(HotDeployUtil.java:188)
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil.fireDeployEvent(HotDeployUtil.java:40)
+	at com.liferay.portal.kernel.servlet.PortletContextListener.doPortalInit(PortletContextListener.java:101)
+	at com.liferay.portal.kernel.util.BasePortalLifecycle.portalInit(BasePortalLifecycle.java:42)
+	at com.liferay.portal.kernel.util.PortalLifecycleUtil.register(PortalLifecycleUtil.java:61)
+	at com.liferay.portal.kernel.util.PortalLifecycleUtil.register(PortalLifecycleUtil.java:53)
+	at com.liferay.portal.kernel.util.BasePortalLifecycle.registerPortalLifecycle(BasePortalLifecycle.java:52)
+	at com.liferay.portal.kernel.servlet.PortletContextListener.contextInitialized(PortletContextListener.java:55)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4765)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5260)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:842)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:649)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1581)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.util.zip.ZipException: invalid entry size (expected 2576285704 but got 3433 bytes)
+	at java.util.zip.ZipInputStream.readEnd(ZipInputStream.java:386)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:156)
+	at java.util.jar.JarInputStream.read(JarInputStream.java:195)
+	at java.util.zip.ZipInputStream.closeEntry(ZipInputStream.java:100)
+	at java.util.zip.ZipInputStream.getNextEntry(ZipInputStream.java:78)
+	at java.util.jar.JarInputStream.getNextEntry(JarInputStream.java:130)
+	at java.util.jar.JarInputStream.getNextJarEntry(JarInputStream.java:167)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:231)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:205)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil.getClassNames(ServletContextUtil.java:56)
+	at com.liferay.portal.kernel.deploy.hot.BaseHotDeployListener.registerClpMessageListeners(BaseHotDeployListener.java:116)
+	at com.liferay.portal.deploy.hot.PluginPackageHotDeployListener.doInvokeDeploy(PluginPackageHotDeployListener.java:122)
+	at com.liferay.portal.deploy.hot.PluginPackageHotDeployListener.invokeDeploy(PluginPackageHotDeployListener.java:55)
+	... 23 more
+15:12:16,327 INFO  [PortletHotDeployListener:614] Registering portlets for XApp-portlet
+15:12:17,575 INFO  [AutoDeployDir:167] Processing xas-theme.xml
+15:12:17,628 INFO  [ThemeExplodedTomcatListener:47] Modifying themes for /liferay/deploy/xas-theme.xml
+  Copying 1 file to /liferay/tomcat-7.0.27/webapps/xas-theme/WEB-INF
+15:12:18,199 INFO  [ThemeExplodedTomcatListener:53] Themes for /liferay/deploy/xas-theme.xml modified successfully
+15:12:18,200 INFO  [BaseExplodedTomcatListener:48] Copying file /liferay/deploy/xas-theme.xml to /liferay/tomcat-7.0.27/conf/Catalina/localhost
+15:12:20,738 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-default.xml]
+15:12:20,961 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-plugin.xml]
+15:12:21,018 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts.xml]
+15:12:21,023 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.ObjectFactory
+15:12:21,023 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.conversion.impl.XWorkConverter
+15:12:21,023 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.TextProvider
+15:12:21,024 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.ActionProxyFactory
+15:12:21,024 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.conversion.ObjectTypeDeterminer
+15:12:21,024 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.mapper.ActionMapper
+15:12:21,025 INFO  [BeanSelectionProvider:42] Choosing bean (jakarta) for interface org.apache.struts2.dispatcher.multipart.MultiPartRequest
+15:12:21,025 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class org.apache.struts2.views.freemarker.FreemarkerManager
+15:12:21,034 INFO  [BeanSelectionProvider:42] Choosing bean (portlet) for interface org.apache.struts2.components.UrlRenderer
+15:12:21,034 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.validator.ActionValidatorManager
+15:12:21,035 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.ValueStackFactory
+15:12:21,035 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionProvider
+15:12:21,035 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionContextFactory
+15:12:21,036 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.PatternMatcher
+15:12:21,036 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.StaticContentLoader
+15:12:21,036 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.UnknownHandlerManager
+15:12:21,037 INFO  [DefaultConfiguration:42] Overriding property struts.i18n.reload - old value: false new value: true
+15:12:21,037 INFO  [DefaultConfiguration:42] Overriding property struts.configuration.xml.reload - old value: false new value: true
+15:12:22,099 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-default.xml]
+15:12:22,129 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-plugin.xml]
+15:12:22,156 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts.xml]
+15:12:22,158 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.ObjectFactory
+15:12:22,158 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.conversion.impl.XWorkConverter
+15:12:22,158 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.TextProvider
+15:12:22,159 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.ActionProxyFactory
+15:12:22,159 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.conversion.ObjectTypeDeterminer
+15:12:22,159 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.mapper.ActionMapper
+15:12:22,160 INFO  [BeanSelectionProvider:42] Choosing bean (jakarta) for interface org.apache.struts2.dispatcher.multipart.MultiPartRequest
+15:12:22,160 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class org.apache.struts2.views.freemarker.FreemarkerManager
+15:12:22,163 INFO  [BeanSelectionProvider:42] Choosing bean (portlet) for interface org.apache.struts2.components.UrlRenderer
+15:12:22,164 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.validator.ActionValidatorManager
+15:12:22,164 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.ValueStackFactory
+15:12:22,165 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionProvider
+15:12:22,165 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionContextFactory
+15:12:22,165 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.PatternMatcher
+15:12:22,166 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.StaticContentLoader
+15:12:22,166 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.UnknownHandlerManager
+15:12:22,166 INFO  [DefaultConfiguration:42] Overriding property struts.i18n.reload - old value: false new value: true
+15:12:22,167 INFO  [DefaultConfiguration:42] Overriding property struts.configuration.xml.reload - old value: false new value: true
+15:12:22,800 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-default.xml]
+15:12:22,839 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-plugin.xml]
+15:12:22,873 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts.xml]
+15:12:22,874 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.ObjectFactory
+15:12:22,875 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.conversion.impl.XWorkConverter
+15:12:22,875 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.TextProvider
+15:12:22,876 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.ActionProxyFactory
+15:12:22,876 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.conversion.ObjectTypeDeterminer
+15:12:22,876 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.mapper.ActionMapper
+15:12:22,877 INFO  [BeanSelectionProvider:42] Choosing bean (jakarta) for interface org.apache.struts2.dispatcher.multipart.MultiPartRequest
+15:12:22,877 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class org.apache.struts2.views.freemarker.FreemarkerManager
+15:12:22,882 INFO  [BeanSelectionProvider:42] Choosing bean (portlet) for interface org.apache.struts2.components.UrlRenderer
+15:12:22,883 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.validator.ActionValidatorManager
+15:12:22,884 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.ValueStackFactory
+15:12:22,884 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionProvider
+15:12:22,884 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionContextFactory
+15:12:22,885 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.PatternMatcher
+15:12:22,885 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.StaticContentLoader
+15:12:22,886 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.UnknownHandlerManager
+15:12:22,886 INFO  [DefaultConfiguration:42] Overriding property struts.i18n.reload - old value: false new value: true
+15:12:22,887 INFO  [DefaultConfiguration:42] Overriding property struts.configuration.xml.reload - old value: false new value: true
+15:12:23,635 ERROR [HotDeployUtil:114] com.liferay.portal.kernel.deploy.hot.HotDeployException: Error registering portlets for XApp-portlet
+com.liferay.portal.kernel.deploy.hot.HotDeployException: Error registering portlets for XApp-portlet
+	at com.liferay.portal.kernel.deploy.hot.BaseHotDeployListener.throwHotDeployException(BaseHotDeployListener.java:46)
+	at com.liferay.portal.deploy.hot.PortletHotDeployListener.invokeDeploy(PortletHotDeployListener.java:118)
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil._doFireDeployEvent(HotDeployUtil.java:111)
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil._fireDeployEvent(HotDeployUtil.java:188)
+	at com.liferay.portal.kernel.deploy.hot.HotDeployUtil.fireDeployEvent(HotDeployUtil.java:40)
+	at com.liferay.portal.kernel.servlet.PortletContextListener.doPortalInit(PortletContextListener.java:101)
+	at com.liferay.portal.kernel.util.BasePortalLifecycle.portalInit(BasePortalLifecycle.java:42)
+	at com.liferay.portal.kernel.util.PortalLifecycleUtil.register(PortalLifecycleUtil.java:61)
+	at com.liferay.portal.kernel.util.PortalLifecycleUtil.register(PortalLifecycleUtil.java:53)
+	at com.liferay.portal.kernel.util.BasePortalLifecycle.registerPortalLifecycle(BasePortalLifecycle.java:52)
+	at com.liferay.portal.kernel.servlet.PortletContextListener.contextInitialized(PortletContextListener.java:55)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4765)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5260)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:842)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:649)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1581)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Caused by: java.util.zip.ZipException: invalid entry size (expected 2576285704 but got 3433 bytes)
+	at java.util.zip.ZipInputStream.readEnd(ZipInputStream.java:386)
+	at java.util.zip.ZipInputStream.read(ZipInputStream.java:156)
+	at java.util.jar.JarInputStream.read(JarInputStream.java:195)
+	at java.util.zip.ZipInputStream.closeEntry(ZipInputStream.java:100)
+	at java.util.zip.ZipInputStream.getNextEntry(ZipInputStream.java:78)
+	at java.util.jar.JarInputStream.getNextEntry(JarInputStream.java:130)
+	at java.util.jar.JarInputStream.getNextJarEntry(JarInputStream.java:167)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:231)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:250)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil._getClassNames(ServletContextUtil.java:205)
+	at com.liferay.portal.kernel.servlet.ServletContextUtil.getClassNames(ServletContextUtil.java:56)
+	at com.liferay.portal.kernel.deploy.hot.BaseHotDeployListener.registerClpMessageListeners(BaseHotDeployListener.java:116)
+	at com.liferay.portal.deploy.hot.PortletHotDeployListener.doInvokeDeploy(PortletHotDeployListener.java:414)
+	at com.liferay.portal.deploy.hot.PortletHotDeployListener.invokeDeploy(PortletHotDeployListener.java:115)
+	... 23 more
+15:12:23,798 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-default.xml]
+15:12:23,830 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts-plugin.xml]
+15:12:23,855 INFO  [XmlConfigurationProvider:42] Parsing configuration file [struts.xml]
+15:12:23,857 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.ObjectFactory
+15:12:23,857 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class com.opensymphony.xwork2.conversion.impl.XWorkConverter
+15:12:23,857 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.TextProvider
+15:12:23,858 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.ActionProxyFactory
+15:12:23,858 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.conversion.ObjectTypeDeterminer
+15:12:23,858 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.mapper.ActionMapper
+15:12:23,858 INFO  [BeanSelectionProvider:42] Choosing bean (jakarta) for interface org.apache.struts2.dispatcher.multipart.MultiPartRequest
+15:12:23,859 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for class org.apache.struts2.views.freemarker.FreemarkerManager
+15:12:23,862 INFO  [BeanSelectionProvider:42] Choosing bean (portlet) for interface org.apache.struts2.components.UrlRenderer
+15:12:23,862 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.validator.ActionValidatorManager
+15:12:23,863 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.ValueStackFactory
+15:12:23,863 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionProvider
+15:12:23,863 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.reflection.ReflectionContextFactory
+15:12:23,864 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.util.PatternMatcher
+15:12:23,864 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface org.apache.struts2.dispatcher.StaticContentLoader
+15:12:23,865 INFO  [BeanSelectionProvider:42] Choosing bean (struts) for interface com.opensymphony.xwork2.UnknownHandlerManager
+15:12:23,865 INFO  [DefaultConfiguration:42] Overriding property struts.i18n.reload - old value: false new value: true
+15:12:23,865 INFO  [DefaultConfiguration:42] Overriding property struts.configuration.xml.reload - old value: false new value: true
+Start init servlet at : /liferay/tomcat-7.0.27/webapps/XApp-portlet/ on path :   env : null
+Sep 9, 2012 3:12:24 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /liferay/tomcat-7.0.27/conf/Catalina/localhost/xapptheme-theme.xml
+Sep 9, 2012 3:12:24 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /liferay/tomcat-7.0.27/webapps/xapptheme-theme inside the host appBase has been specified, and will be ignored
+Sep 9, 2012 3:12:24 PM org.apache.catalina.startup.SetContextPropertiesRule begin
+WARNING: [SetContextPropertiesRule]{Context} Setting property 'source' to 'org.eclipse.jst.jee.server:xapptheme-theme' did not find a matching property.
+Sep 9, 2012 3:12:24 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /liferay/tomcat-7.0.27/webapps/xapptheme-theme does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:140)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4880)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5060)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:842)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:615)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:649)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1581)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+Sep 9, 2012 3:12:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Sep 9, 2012 3:12:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Sep 9, 2012 3:12:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/xapptheme-theme] startup failed due to previous errors
+Sep 9, 2012 3:12:24 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /liferay/tomcat-7.0.27/conf/Catalina/localhost/xas-theme.xml
+Sep 9, 2012 3:12:24 PM org.apache.catalina.startup.HostConfig deployDescriptor
+WARNING: A docBase /liferay/tomcat-7.0.27/webapps/xas-theme inside the host appBase has been specified, and will be ignored
+Sep 9, 2012 3:12:24 PM org.apache.catalina.startup.SetContextPropertiesRule begin
+WARNING: [SetContextPropertiesRule]{Context} Setting property 'source' to 'org.eclipse.jst.jee.server:xas-theme' did not find a matching property.
+15:12:24,484 INFO  [PluginPackageUtil:1099] Reading plugin package for xas-theme
+15:12:24,574 INFO  [ThemeHotDeployListener:172] Registering themes for xas-theme
+15:12:28,093 INFO  [ThemeHotDeployListener:100] 1 theme for xas-theme is available for use
+Sep 9, 2012 3:12:28 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /liferay/tomcat-7.0.27/webapps/.idea
+Sep 9, 2012 3:12:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /liferay/tomcat-7.0.27/webapps/knowledge-base-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/0-knowledge-base-portlet/WEB-INF/classes/service.properties
+Loading file:/liferay/tomcat-7.0.27/temp/0-knowledge-base-portlet/WEB-INF/classes/service.properties
+15:12:31,457 INFO  [PluginPackageUtil:1099] Reading plugin package for knowledge-base-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/0-knowledge-base-portlet/WEB-INF/classes/service.properties
+Loading file:/liferay/tomcat-7.0.27/temp/0-knowledge-base-portlet/WEB-INF/classes/portlet.properties
+Loading file:/liferay/tomcat-7.0.27/temp/0-knowledge-base-portlet/WEB-INF/classes/portlet.properties
+15:12:31,850 INFO  [HookHotDeployListener:1901] Registering hook for knowledge-base-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/0-knowledge-base-portlet/WEB-INF/classes/portal.properties
+15:12:31,941 INFO  [HookHotDeployListener:978] Hook for knowledge-base-portlet is available for use
+15:12:31,943 INFO  [PortletHotDeployListener:614] Registering portlets for knowledge-base-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/0-knowledge-base-portlet/WEB-INF/classes/portlet.properties
+15:12:32,398 INFO  [PortletHotDeployListener:438] 5 portlets for knowledge-base-portlet are available for use
+Sep 9, 2012 3:12:32 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /liferay/tomcat-7.0.27/webapps/mail-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/1-mail-portlet/WEB-INF/classes/service.properties
+Loading file:/liferay/tomcat-7.0.27/temp/1-mail-portlet/WEB-INF/classes/service.properties
+15:12:34,019 INFO  [PluginPackageUtil:1099] Reading plugin package for mail-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/1-mail-portlet/WEB-INF/classes/service.properties
+Loading file:/liferay/tomcat-7.0.27/temp/1-mail-portlet/WEB-INF/classes/portlet.properties
+Loading file:/liferay/tomcat-7.0.27/temp/1-mail-portlet/WEB-INF/classes/portlet.properties
+15:12:34,271 INFO  [HookHotDeployListener:1901] Registering hook for mail-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/1-mail-portlet/WEB-INF/classes/portal.properties
+15:12:34,284 INFO  [HookHotDeployListener:978] Hook for mail-portlet is available for use
+15:12:34,285 INFO  [PortletHotDeployListener:614] Registering portlets for mail-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/1-mail-portlet/WEB-INF/classes/portlet.properties
+15:12:34,391 INFO  [PortletHotDeployListener:433] 1 portlet for mail-portlet is available for use
+Sep 9, 2012 3:12:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /liferay/tomcat-7.0.27/webapps/opensocial-portlet
+15:12:35,579 INFO  [PluginPackageUtil:1099] Reading plugin package for opensocial-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/2-opensocial-portlet/WEB-INF/classes/service.properties
+Loading file:/liferay/tomcat-7.0.27/temp/2-opensocial-portlet/WEB-INF/classes/portlet.properties
+Loading file:/liferay/tomcat-7.0.27/temp/2-opensocial-portlet/WEB-INF/classes/portlet.properties
+15:12:36,905 INFO  [HookHotDeployListener:1901] Registering hook for opensocial-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/2-opensocial-portlet/WEB-INF/classes/portal.properties
+15:12:36,913 INFO  [HookHotDeployListener:978] Hook for opensocial-portlet is available for use
+15:12:36,916 INFO  [PortletHotDeployListener:614] Registering portlets for opensocial-portlet
+Loading file:/liferay/tomcat-7.0.27/temp/2-opensocial-portlet/WEB-INF/classes/portlet.properties
+15:12:37,173 INFO  [PortletHotDeployListener:438] 4 portlets for opensocial-portlet are available for use
+Loading file:/liferay/tomcat-7.0.27/temp/2-opensocial-portlet/WEB-INF/classes/service.properties
+Loading file:/liferay/tomcat-7.0.27/temp/2-opensocial-portlet/WEB-INF/classes/service.properties

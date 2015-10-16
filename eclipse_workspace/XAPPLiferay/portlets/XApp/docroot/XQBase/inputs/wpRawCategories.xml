@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<net.bican.wordpress.Category>
+		<categoryId>3</categoryId>
+		<categoryName>MyBlogCategory</categoryName>
+		<description>MyBlogCategory</description>
+		<htmlUrl>http://mc007ibi.dyndns.org:8888/wordpress/?cat=3</htmlUrl>
+		<parentId>0</parentId>
+		<rssUrl>http://mc007ibi.dyndns.org:8888/wordpress/?feed=rss2&amp;amp;cat=3</rssUrl>
+	</net.bican.wordpress.Category>
+	<net.bican.wordpress.Category>
+		<categoryId>1</categoryId>
+		<categoryName>Uncategorized</categoryName>
+		<description>Uncategorized</description>
+		<htmlUrl>http://mc007ibi.dyndns.org:8888/wordpress/?cat=1</htmlUrl>
+		<parentId>0</parentId>
+		<rssUrl>http://mc007ibi.dyndns.org:8888/wordpress/?feed=rss2&amp;amp;cat=1</rssUrl>
+	</net.bican.wordpress.Category>
+	<net.bican.wordpress.Category>
+		<categoryId>4</categoryId>
+		<categoryName>xxxCategory</categoryName>
+		<description>xxxCategory</description>
+		<htmlUrl>http://mc007ibi.dyndns.org:8888/wordpress/?cat=4</htmlUrl>
+		<parentId>0</parentId>
+		<rssUrl>http://mc007ibi.dyndns.org:8888/wordpress/?feed=rss2&amp;amp;cat=4</rssUrl>
+	</net.bican.wordpress.Category>
+</list>

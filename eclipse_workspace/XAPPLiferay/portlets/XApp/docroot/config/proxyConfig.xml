@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+
+    <!-- server className="net.sf.j2ep.servers.BaseServer" 
+			domainName="soundcloud.com:80" 
+			isRewriting="true"
+			
+			>
+			<rule className="net.sf.j2ep.rules.DirectoryRule"
+		  		directory="/soundcloud"
+		  	/>
+		  	
+	</server-->
+    
+	<!-- server className="net.sf.j2ep.servers.BaseServer" 
+			domainName="192.168.1.37:3000" 
+			isRewriting="true">
+			
+			<rule className="net.sf.j2ep.rules.DirectoryRule"
+		  		directory="/scxapp"
+		  	/>
+		  	
+	</server-->
+
+	<server className="net.sf.j2ep.servers.BaseServer" 
+			domainName="192.168.1.37:80" 
+			isRewriting="true"
+			path="/CMAC"
+			>
+			
+			<rule className="net.sf.j2ep.rules.DirectoryRule"
+		  		directory="/CMAC"
+		  	/>
+		  	
+	</server>
+	
+	<!-- server className="net.sf.j2ep.servers.BaseServer" 
+			domainName="192.168.1.37:8888" 
+			isRewriting="true"
+			path="/ajaxplorer"	
+			>
+			
+			<rule className="net.sf.j2ep.rules.DirectoryRule"
+		  		directory="/ajaxplorer"
+		  	/>
+		  	
+	</server>
+
+	<server className="cmx.server.FileServer"
+		domainName="192.168.1.37"
+		isRewriting="true"
+        path="/PMaster/xasweb/docroot/"
+		>
+
+		<rule className="net.sf.j2ep.rules.DirectoryRule"
+	  		directory="/xasweb"
+	  	/>
+	  	
+	</server-->
+</config>

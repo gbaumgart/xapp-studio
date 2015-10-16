@@ -1,0 +1,130 @@
+#QXAPP-HEADER-CONTEXT
+{
+
+}
+.QXAPP-HEADER-CONTEXT-BUTTON-PARENT{
+    top:25px;
+    text-align: right;
+}
+.ctMainPanel
+{
+    background-color: #EEEEEE !important;
+    top:5 !important;
+    max-width: 480px;
+}
+.mainTab
+{
+    background-color: #EEEEEE;
+}
+
+.simulator-padding-div{
+    background-color: transparent !important;
+}
+
+.simulatorBackground
+{
+    background: url("../images/simulator.png") no-repeat scroll 0 -5px transparent;
+
+/*
+    background: -moz-linear-gradient(left,  rgba(245,245,245,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(245,245,245,1)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,  rgba(245,245,245,1) 0%,rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#00ffffff',GradientType=1 );
+    */
+    min-width: 370px;
+    max-width: 370px;
+    margin-top: 7px;
+}
+
+#main {
+    background: none repeat scroll 0 0 transparent;
+    /*box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);*/
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0 !important;
+    min-width: 700px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 1050px !important;
+}
+
+.panelBorder{
+    -moz-border-bottom-colors: none !important;
+    -moz-border-image: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-color: #EEEEEE #DDDDDD #BBBBBB !important;
+    border-left: 1px solid #DDDDDD !important;
+    border-right: 1px solid #DDDDDD !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5) !important;
+    margin: 10px;
+}
+.panelContainer
+{
+    /*margin-left:10px;*/
+    /*background: none repeat scroll 0 0 #F1F1F1;*/
+}
+.ctNavPanel{
+
+    /*
+    width: 160px;
+    overflow: visible;
+    left:0 !important;
+    padding: 0px !important;
+    background: url("../images/navPanelBackground.png") repeat-y !important;
+    background-size: 150px auto;
+    */
+
+    background-attachment: scroll !important;
+    background-clip: border-box !important;
+    background-color: transparent !important;
+    background-image: url("../images/navPanelBackground.png") !important;
+    /*background-origin: padding-box !important;*/
+    background-position: 0 0 !important;
+    background-repeat: repeat-y !important;
+    background-size: 150px auto;
+    left: 0 !important;
+    overflow: visible;
+    padding: 0 !important;
+    width: 160px;
+}
+
+.designTab
+{
+    height:1024px !important;
+
+}
+
+.panelBackground{
+    background-color: #58585a;
+    /*background: url("../images/mod-bg.png") no-repeat scroll 0 0 #F7F7F7;*/
+    /*background-size: 100% 64px;*/
+    /*margin: 0 0 10px;
+    padding: 10px;
+    */
+}
+
+.appTabSourceView{
+    height:100%;
+}
+
+
+.appFontSettingsView
+{
+    margin-top: 15px;
+    padding-top: 20px !important;
+}
+
+.appTextureSettingsView{
+    overflow: visible;
+    margin-top: 30px;
+}

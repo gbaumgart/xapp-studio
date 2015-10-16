@@ -1,0 +1,1 @@
+/opt/local/bin/convert -define jpeg:size=200x200 $1  -thumbnail $2x$2^ -gravity center -extent $2x$2  $3

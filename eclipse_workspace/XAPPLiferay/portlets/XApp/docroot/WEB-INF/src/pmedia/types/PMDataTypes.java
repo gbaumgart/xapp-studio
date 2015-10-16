@@ -1,0 +1,22 @@
+package pmedia.types;
+
+public enum PMDataTypes
+{
+	DITT_ETYPE,
+    DITT_ESTYPE,
+    DITT_MENU,
+    DITT_SMENU,
+    DITT_SMENU_ARTICLE,
+    DITT_ARTICLE,
+    DITT_LOCATION,
+    DITT_AGENDA,
+    DITT_ROUTE,
+    DITT_JARTICLE,
+    DITT_JEVENT,
+    DITT_JLOCATION,
+    DITT_JSTRING,
+    DITT_JLOCATION_CAT,
+    DITT_JEVENT_CAT,
+    DITT_BANNER,
+    DITT_UNKNOWN,
+}

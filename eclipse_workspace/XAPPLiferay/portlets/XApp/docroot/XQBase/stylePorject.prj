@@ -1,0 +1,91 @@
+
+<project type="cont" name="stylePorject" expanded="yes" catalog="no" pluginOwner="-1">
+	<file plugId="9" URL="wordpress\posts.xquery">
+		<scenarios>
+			<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" useresolver="yes" url="..\inputs\wpRawPosts.xml" outputurl="" processortype="datadirect" tcpport="0" profilemode="0" profiledepth="" profilelength=""
+			          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" host="" port="0" user="" password=""
+			          validateoutput="no" validator="internal" customvalidator="">
+				<advancedProperties name="DocumentURIResolver" value=""/>
+				<advancedProperties name="CollectionURIResolver" value=""/>
+				<advancedProperties name="ModuleURIResolver" value=""/>
+			</scenario>
+		</scenarios>
+		<MapperMetaTag>
+			<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no">
+				<SourceSchema srcSchemaPath="inputs\wpRawPosts.xml" srcSchemaRoot="list" AssociatedInstance="" loaderFunction="document" loaderFunctionUsesURI="no"/>
+			</MapperInfo>
+			<MapperBlockPosition>
+				<template name="xquery_body">
+					<block path="articles/flwr" x="185" y="133"/>
+					<block path="articles/flwr/art/catgories/flwr" x="80" y="170"/>
+				</template>
+			</MapperBlockPosition>
+			<TemplateContext></TemplateContext>
+			<MapperFilter side="source"></MapperFilter>
+		</MapperMetaTag>
+	</file>
+	<file plugId="3" URL="inputs\wpRawPages.xml" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="9" URL="wordpress\pages.xquery">
+		<scenarios>
+			<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" useresolver="yes" url="..\inputs\wpRawPages.xml" outputurl="" processortype="datadirect" tcpport="0" profilemode="0" profiledepth="" profilelength=""
+			          urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" host="" port="0" user="" password=""
+			          validateoutput="no" validator="internal" customvalidator="">
+				<advancedProperties name="DocumentURIResolver" value=""/>
+				<advancedProperties name="CollectionURIResolver" value=""/>
+				<advancedProperties name="ModuleURIResolver" value=""/>
+			</scenario>
+		</scenarios>
+		<MapperMetaTag>
+			<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no">
+				<SourceSchema srcSchemaPath="inputs\wpRawPages.xml" srcSchemaRoot="list" AssociatedInstance="" loaderFunction="document" loaderFunctionUsesURI="no"/>
+			</MapperInfo>
+			<MapperBlockPosition>
+				<template name="xquery_body">
+					<block path="articles/flwr" x="185" y="133"/>
+				</template>
+			</MapperBlockPosition>
+			<TemplateContext></TemplateContext>
+			<MapperFilter side="source"></MapperFilter>
+		</MapperMetaTag>
+	</file>
+	<project type="cont" name="wordpessSQL" expanded="no" catalog="no" pluginOwner="-1">
+		<file plugId="9" URL="wordpress\sql\posts.xquery">
+			<scenarios>
+				<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" useresolver="yes" url="" outputurl="" processortype="datadirect" tcpport="29471536" profilemode="1" profiledepth="" profilelength="100" urlprofilexml=""
+				          commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" host="" port="3408" user="" password="" validateoutput="no"
+				          validator="internal" customvalidator="">
+					<collection name="mysql_localhost_3306" url="jdbc:xquery:mysql://localhost:3306;user=root;password=42622D3D44725F;xmlforest=true;DatabaseName=wordpress;urltype=.xml"/>
+					<advancedProperties name="DocumentURIResolver" value=""/>
+					<advancedProperties name="bSchemaAware" value="true"/>
+					<advancedProperties name="bXml11" value="false"/>
+					<advancedProperties name="CollectionURIResolver" value=""/>
+					<advancedProperties name="bStrip" value="true"/>
+					<advancedProperties name="iValidation" value="0"/>
+					<advancedProperties name="bExtensions" value="true"/>
+					<advancedProperties name="iWhitespace" value="0"/>
+					<advancedProperties name="bTinyTree" value="true"/>
+					<advancedProperties name="bWarnings" value="true"/>
+					<advancedProperties name="bUseDTD" value="false"/>
+					<advancedProperties name="ModuleURIResolver" value=""/>
+				</scenario>
+			</scenarios>
+			<MapperMetaTag>
+				<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/>
+				<MapperBlockPosition>
+					<template name="xquery_body">
+						<block path="articles/flwr" x="128" y="174"/>
+						<block path="articles/flwr/and[1]" x="316" y="76"/>
+						<block path="articles/flwr/and[1]/=[0]" x="270" y="70"/>
+						<block path="articles/flwr/and[1]/=[1]" x="270" y="98"/>
+						<block path="articles/flwr/art/categories/flwr" x="145" y="261"/>
+					</template>
+				</MapperBlockPosition>
+				<TemplateContext></TemplateContext>
+				<MapperFilter side="source"></MapperFilter>
+			</MapperMetaTag>
+		</file>
+	</project>
+</project>

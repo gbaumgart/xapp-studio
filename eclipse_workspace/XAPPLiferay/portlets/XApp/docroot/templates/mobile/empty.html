@@ -1,0 +1,95 @@
+<div id="root" data-dojo-attach-point='root' style="padding: 0px;overflow:hidden;visibility:visible;width:320px;height:480px;max-height:480px" class="SimulatorIphone">
+</div>
+<div id="progDiv"></div>
+<div id="cacheDiv"></div>
+
+<div id="calPicker" lazy='true' data-dojo-type="dojox.mobile.Opener" style="z-index:2000">
+		<h1 dojoType="dojox.mobile.Heading" label="Date Picker">
+		<div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+			onclick="dijit.byId('calPicker').hide(true)"></div>
+		<div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+			onclick="dijit.byId('calPicker').hide(false)"></div>
+	</h1>
+
+	<div id="spin1"></div>
+
+</div>
+<div id="sharePicker" data-dojo-type="dojox.mobile.Opener" data-dojo-props="onShow:onSharePickerOpen">
+    <h1 dojoType="dojox.mobile.Heading" label="Share" class="header1" style="width:250px">
+        <div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+             onclick="dijit.byId('sharePicker').hide(true)"></div>
+        <div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+             onclick="dijit.byId('sharePicker').hide(true)"></div>
+    </h1>
+
+    <div dojoType="dojox.mobile.ScrollableView" selected="true" height="auto">
+        <ul id="sharePickerList" dojoType="dojox.mobile.RoundRectList" select="single" data-dojo-props="">
+            <li id="sharePickerFB" dojoType="dojox.mobile.ListItem" onclick="openFacebookShare('shareUrl','sharePicker','locGallery');dijit.byId('sharePicker').hide(true);">
+                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmc007ibi.dyndns.org%3A8888%2Fwordpress%2F%3Fp%3D6&amp;send=false&amp;layout=button_count&amp;width=200&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=21&amp;appId=167282989995486" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true" style="float:left;"></iframe><span>Post</span>
+            </li>
+            <li id="sharePickerMail" dojoType="dojox.mobile.ListItem" onclick="openMailShare('');dijit.byId('sharePicker').hide(true);">
+                E-Mail
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="sectionPicker" style="width:320px !important" data-dojo-type="xapp.CustomDojo.Opener" data-dojo-props="">
+    
+		<div dojoType="dojox.mobile.ScrollableView" selected="true" height="auto" id="sectionPickerRoot">
+			<ul id="sectionPickerList" dojoType="dojox.mobile.RoundRectList" select="single" data-dojo-props="">
+			</ul>
+		</div>
+	</div>
+<div id="simToolbar" data-dojo-type="dijit.Toolbar">
+
+    <!--
+
+    dojoType="dojox.mobile.SpinWheelDatePicker"
+
+    div data-dojo-type="dijit.form.Button"  onclick="sctx.getSimulator().changeDeviceTheme('iPhone');" id="toolbar.phone"
+         data-dojo-props="iconClass:'dijitEditorIcon iconPhone',
+              showLabel:false">iPhone</div-->
+
+    <!--div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('iPad');" id="toolbar.iPad"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet' , disabled:true , showLabel:false">iPad</div-->
+
+    <!--div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('Android');" id="toolbar.android"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet',disabled:false ,
+              showLabel:false">Android</div>
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('Backberry');" id="toolbar.blackberry"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet',disabled:false ,
+         showLabel:false">Blackberry</div>
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getSimulator().changeDeviceTheme('Backberry');" id="toolbar.custom"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet',disabled:false ,
+              showLabel:false">Custom</div-->
+
+    <div data-dojo-type="dijit.form.Button" onclick="sctx.getWorkflowManager().openSimulator();" id="toolbar.sync"
+         data-dojo-props="iconClass:'dijitEditorIcon iconSync',
+              showLabel:false">Sync with Appstudio</div>
+
+	<div data-dojo-type="dijit.form.Button" onclick="sctx.getWorkflowManager().changeSimulatorPlatform('MOBILE_WEB_APP');" id="toolbar.iphone"
+         data-dojo-props="iconClass:'dijitEditorIcon iconPhone' , disabled:false , showLabel:false">Smartphone</div>
+
+
+	<div data-dojo-type="dijit.form.Button" onclick="sctx.getWorkflowManager().changeSimulatorPlatform('MOBILE_WEB_APP_TABLET');" id="toolbar.iPad"
+         data-dojo-props="iconClass:'dijitEditorIcon iconTablet' , disabled:false , showLabel:false">Tablet</div>
+	
+
+
+    <div data-dojo-type="dijit.form.Button" id="toolbar1.cut" onclick="sctx.getWorkflowManager().sendToDevice()"
+         data-dojo-props="iconClass:'dijitEditorIcon dijitEditorIconRedo',
+              showLabel:false">Send To Device</div>
+              
+     <div data-dojo-type="dijit.form.Button" id="toolbar1.edit" onclick="sctx.getWorkflowManager().enableEditMode()"
+data-dojo-props="iconClass:'dijitEditorIcon dijitEditorIconEdit',disabled:true,
+     showLabel:false">Edit</div>
+
+
+
+
+    <!--input id="editToggle" type="checkBox" data-dojo-type="dijit.form.CheckBox" data-dojo-attach-point='editToggle' data-dojo-props="
+					checked:false,
+					onChange: function(a){sctx.getWorkflowManager().onSimulatorEditToggle(a);}">
+    <label for="editToggle">Edit</label-->
+
+</div>

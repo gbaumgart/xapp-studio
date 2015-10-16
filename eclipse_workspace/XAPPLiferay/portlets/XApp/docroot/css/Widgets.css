@@ -1,0 +1,758 @@
+button, a.btn, input[type="submit"] {
+    background: -moz-linear-gradient(center top , #009BB8, #00778D) no-repeat scroll 0 0 transparent;
+    border: 1px solid #004754;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.45) inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px 14px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.45);
+    text-decoration: none !important;
+}
+button:hover, a.btn:hover, input[type="submit"]:hover {
+    background: -moz-linear-gradient(center top , #00A0BE, #009BB8) no-repeat scroll 0 0 transparent;
+    text-decoration: none;
+}
+button:active, a.btn:active, input[type="submit"]:active {
+    background: none repeat scroll 0 0 #00839B;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45) inset;
+}
+button.act, a.btn.act, input.act[type="submit"] {
+    border-radius: 8px 8px 8px 8px;
+    padding: 5px 12px;
+}
+button.act.neg, a.btn.act.neg, input.act.neg[type="submit"] {
+    background: -moz-linear-gradient(center top , #FDFDFD, #CACACA) no-repeat scroll 0 0 transparent;
+    border: 1px solid #E4E4E4;
+    color: #666666;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+}
+button.act.neg:hover, a.btn.act.neg:hover, input.act.neg[type="submit"]:hover {
+    color: #00778D;
+}
+button.subtle, a.btn.subtle, input.subtle[type="submit"] {
+    background: -moz-linear-gradient(center top , #FDFDFD, #CACACA) no-repeat scroll 0 0 transparent;
+    border: 1px solid #E4E4E4;
+    color: #00778D;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+}
+button.subtle:hover, a.btn.subtle:hover, input.subtle[type="submit"]:hover {
+    border: 1px solid #004C5A;
+}
+button[type="cancel"], a.btn[type="cancel"], input[type="submit"][type="cancel"] {
+    background: -moz-linear-gradient(center top , #FDFDFD, #CACACA) no-repeat scroll 0 0 transparent;
+    border: 1px solid #E4E4E4;
+    color: #666666;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+}
+button[type="cancel"]:hover, a.btn[type="cancel"]:hover, input[type="submit"][type="cancel"]:hover {
+    color: #00778D;
+}
+button.disabled, a.btn.disabled, input.disabled[type="submit"], button[disabled], a.btn[disabled], input[type="submit"][disabled] {
+    background: none repeat scroll 0 0 #E9E9E9;
+    border: medium none;
+    color: #FFFFFF;
+}
+button.delete, a.btn.delete, input.delete[type="submit"], button.error, a.btn.error, input.error[type="submit"] {
+    background: -moz-linear-gradient(center top , #CD0200, #9F0101) no-repeat scroll 0 0 transparent;
+    border: 1px solid #9F0101;
+}
+button.delete:hover, a.btn.delete:hover, input.delete[type="submit"]:hover, button.error:hover, a.btn.error:hover, input.error[type="submit"]:hover {
+    background: -moz-linear-gradient(center top , #9F0101, #CD0200) no-repeat scroll 0 0 transparent;
+}
+button.warning, a.btn.warning, input.warning[type="submit"] {
+    background: -moz-linear-gradient(center top , #FBA633, #DC840E) no-repeat scroll 0 0 transparent;
+    border: 1px solid #9C5E09;
+}
+button.warning:hover, a.btn.warning:hover, input.warning[type="submit"]:hover {
+    background: -moz-linear-gradient(center top , #DC840E, #FBA633) no-repeat scroll 0 0 transparent;
+}
+button + button, .btn + .btn {
+    margin-left: 5px;
+}
+
+.cssBackgroundImagePreview{
+    max-width: 310px;
+    overflow: hidden;
+}
+.marginBG
+{
+    background-color: rgba(10, 10, 255, 0.4);
+}
+.whiteBG{
+    background: #ffffff;
+}
+.paddingTLCorner{
+   border-right: 2px solid #000000;
+   border-bottom: 2px solid #000000;
+}
+.paddingTRCorner{
+    border-left: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+.paddingBLCorner{
+    border-right: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+.paddingBRCorner{
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+.boxShadowPreview{
+    background: url("../images/bgPreview.png") repeat scroll 0 0 transparent;
+    border: 0px solid #CCCCCC;
+    text-align: center;
+    vertical-align: middle;
+}
+.boxShadowPreviewParent
+{
+    background: url("../images/bgPreview.png") repeat scroll 0 0 transparent;
+    text-align: center;
+    vertical-align: middle;
+    border: 0px solid rgba(10, 10, 10, 0.3);
+    overflow: visible;
+}
+.boxShadowPreviewWhite
+{
+    background: #ffffff;
+}
+.boxShadowPreviewInner
+{
+    text-align: center;
+    vertical-align: middle;
+    overflow: visible;
+}
+
+
+.iconVisibleH
+{
+    background-image: url("../images/eyeP.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.ajxplorerDialog{
+    z-index: 999999;
+
+}
+.iconInvisibleH
+{
+    background-image: url("../images/eyePDisabled.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.iconInvisible
+{
+    background-image: url("../images/eyeDisabled.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.iconVisible
+{
+    background-image: url("../images/eye.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.iconTablet
+{
+    background-image: url("../images/iconTablet.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+
+.iconSync
+{
+    background-image: url("../images/sync.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.iconPhone
+{
+    background-image: url("../images/phoneIcon.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+
+.csGoogle
+{
+    background-image: url("../images/googleLogo.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+}
+
+.csVM
+{
+    background-image: url("../images/vmartIcon.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.csLiferay
+{
+    background-image: url("../images/contentIcon.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+}
+.csJoomla {
+    background-image: url("../images/joomla-logo-vert-color.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+
+.csJBanners {
+    background-image: url("../images/icon-16-banner-categories.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.csWordpress {
+    background-image: url("../images/wpLogo.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+
+.csJEvents {
+    background-image: url("../images/jevents.png");
+    background-repeat: no-repeat;
+    height: 18px;
+    text-align: center;
+    width: 18px;
+    background-size: 18px 18px;
+}
+
+.iconPicassa {
+    background-image: url("../images/picassaLogo.png");
+    height: 18px;
+    width: 18px;
+    background-size: 18px 18px;
+}
+.iconYT {
+    background-image: url("../images/ytLogo.png");
+    height: 18px;
+    width: 18px;
+    background-size: 18px 18px;
+}
+
+.iconJSection {
+    background-image: url("../images/icon-16-section.png");
+    height: 16px;
+    width: 16px;
+}
+.iconJCategory {
+    background-image: url("../images/icon-16-category.png");
+    height: 16px;
+    width: 16px;
+}
+.iconJArticle {
+    background-image: url("../images/icon-16-article.png");
+    height: 16px;
+    width: 16px;
+}
+.progressIndicator{
+    height: 50%;
+    width: 80%;
+    padding-left: 45%;
+    padding-top: 5%;
+    display: block;
+}
+
+.progressIndicatorTable{
+    height: 20px;
+    width: 20px;
+    padding-left: 0%;
+    display: block;
+}
+.progressIndicatorGIF{
+    height: 18px;
+    width: 18px;
+}
+
+/*
+.claro .dijitButton .dijitButtonNode, .claro .dijitDropDownButton .dijitButtonNode, .claro .dijitComboButton .dijitButtonNode, .claro .dijitToggleButton .dijitButtonNode {
+    background-image: url("") !important;
+    background-position: center top;
+    background-repeat: repeat-x;
+    border: 1px solid #759DC0;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: #000000;
+    padding: 2px 3px 3px !important;
+}
+*/
+
+
+.widgetExpanderPane
+{
+    margin-top:15px;
+    background-color: #616467;
+    background-size: 100% 100%;
+    color: #ffffff;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 1px;
+
+}
+.expanderRadioLabel{
+    color: #ffffff;
+}
+
+.widgetBorder{
+    -moz-border-bottom-colors: none !important;
+    -moz-border-image: none !important;
+    -moz-border-left-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-top-colors: none !important;
+    border-color: #131316;
+/*    border-color: #EEEEEE #DDDDDD #BBBBBB !important;*/
+    /*border-left: 1px solid #313437 !important;
+    border-right: 1px solid #323437 !important;*/
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-radius: 5px 5px 5px 5px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+    padding-bottom: 3;
+}
+.widgetContainer
+{
+
+    /*margin-left:10px;*/
+    max-width: 400px;
+    padding: 0.0em;
+    overflow: visible;
+    background-color: #505356 !important;
+    /*background-image    : url(../images/xas/editor_tab.png);*/
+    background-size: 100% 100%;
+    background-position : 0 -104px;
+
+}
+.widgetContainerAlternate
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 3px 3px 3px;
+    max-width: 400px;
+    background-color: #2c2f32 !important;
+    box-shadow: 0 0px 0px #888888 ;
+    /*padding-left: 10px;*/
+}
+
+.widgetContainerOld
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 10px 0px 3px;
+    max-width: 400px;
+    border: 1px solid #888888;
+    background-color: #ffffff;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.0em;
+    overflow: visible;
+}
+
+.widgetTab
+{
+
+    /*margin-left:10px;*/
+    border: 0px solid #888888;
+    background-color: #ffffff;
+    background-image: url("../images/tab-bkgInner.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 -3px 3px #888888;
+    padding: 0.3em 0.4em;
+    display: block;
+
+
+}
+.sheetWidgetContainer
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 3px 3px 3px;
+    border: 0px solid #888888;
+    /*background-color: #ffffff;*/
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    /*
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,153,153,1)), color-stop(100%,rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(153,153,153,1) 0%,rgba(0,0,0,1) 100%);
+    */
+}
+
+.templateWizardContainer
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 3px 3px 3px;
+    max-width: 1024px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.3em 0.3em;
+
+}
+.widgetAddButton{
+    background-image: url("../images/buttonPlusBig.png");
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.widgetImageEditButton{
+    background-image: url("../images/paint.png");
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.widgetImageSelectButton
+{
+    background-image: url("../images/library.png");
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.widgetMinusButton{
+    background-image: url("../images/minus.png");
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.buildItemContainer
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 3px 3px 3px;
+    max-width: 700px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.3em 0.3em;
+
+}
+.subscriptionItemContainer
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 3px 3px 3px;
+    max-width: 700px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.3em 0.3em;
+
+}
+.widgetContainerSubscriptionItem
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 3px 3px 3px;
+    max-width: 600px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.3em 0.3em;
+
+}
+/*
+.wizardContainerAlternate
+{
+    border-radius: 3px 3px 3px 3px;
+    max-width: 400px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkgInnerAlternate.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.3em 0.3em;
+}
+.wizardContainer
+{
+    border-radius: 3px 3px 3px 3px;
+    max-width:600px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.3em 0.3em;
+}
+*/
+
+.selectWidget
+{
+
+}
+
+.buildItemTitle{
+    min-width: 250px;
+}
+
+.subscriptionItemTitle{
+    min-width: 150px;
+    max-width: 150px;
+}
+.widgetTitle
+{
+    min-width: 130px;
+    color: #ffffff;
+}
+.buildValue
+{
+    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
+    min-width: 170px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    vertical-align: middle;
+    text-align: center;
+}
+.subscriptionValue
+{
+    border-left: 1px solid #888888;
+    border-right: 1px solid #888888;
+    min-width: 150px;
+    max-width: 150px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    vertical-align: middle;
+    text-align: center;
+}
+.widgetValue
+{
+    border-left: 1px solid #888888;
+    padding-left: 5px;
+    padding-top: 1px;
+    vertical-align: middle;
+    max-width: 100px !important;
+}
+
+.widgetTable
+{
+
+    /*margin-left:10px;*/
+    display: block;
+}
+.SimulatorPane
+{
+    /*margin-left:10px;*/
+    overflow: hidden;
+    padding: 0px;
+    background-color: #303030;
+    background-image: -webkit-linear-gradient(top,#1e1e1e 100%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:    -moz-linear-gradient(top,#1e1e1e 100%, #2a2a2a 8px, #303030 13px, transparent 13px);
+    background-image:         linear-gradient(top,#1e1e1e 100%, #2a2a2a 8px, #303030 13px, transparent 13px);
+}
+.SimulatorIphone
+{
+    /*margin-left:10px;*/
+    border: 1px solid #242424;
+    padding-bottom: 5px;
+    background-color: #303030;
+    background-image: -webkit-linear-gradient(top,#1e1e1e 100%, #2a2a2a 8px, #303030 13px, transparent);
+    background-image:    -moz-linear-gradient(top,#1e1e1e 100%, #2a2a2a 8px, #303030 13px, transparent);
+    background-image:         linear-gradient(top,#1e1e1e 100%, #2a2a2a 8px, #303030 13px, transparent);
+}
+.widgetBase
+{
+	/*margin-left:10px;*/
+    /*width: 80%;*/
+	margin-right:0px;
+	border-radius: 2px 2px 2px 2px;
+    /*border: 1px solid rgba(1,1,1,0.3);*/
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    /*border-radius: 0 8px 8px 8px;*/
+    box-shadow: 0 3px 3px rgba(1,1,1,0.4);
+    /*padding: 0.3em 0.4em;*/
+    display: block;
+}
+.contentSourceType{
+
+}
+.contentSelectorButton{
+
+}
+.mblRoundRectList.dataListContainerWidget
+{
+	
+	
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkg.jpg");
+    background-size: 100% 100%;
+    /*border-radius: 0 8px 8px 8px;*/
+    box-shadow: 0 5px 6px #1a1a1a;
+    /*padding: 0.3em 0.4em;*/
+    display: block;
+}	
+
+.mblRoundRectList.dataListContainerBlack
+{
+
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    background-size: 100% 100%;
+    box-shadow: 0 5px 6px #1a1a1a;
+    display: block;
+    padding-top: 2px;
+}
+.dataPicture
+{
+	padding-left:5px;
+    padding-right:5px;
+	padding-top:5px;
+	padding-bottom:0px;
+	text-align: center;
+    display: block;
+    width: 33%;
+	float:left;
+    overflow: hidden;
+	padding-right: 5px;
+    /*box-shadow: 0 5px 3px #1a1a1a;*/
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 15px;
+	/*margin-right: 15px;*/
+}
+/*
+.dataContent {
+
+}
+*/
+/*
+.dataTextBase
+{
+	padding-left:10px;
+	
+}
+*/
+/*
+.dataLongText
+{
+	font-size:90%;
+	font-weight:normal;
+	padding-bottom:10px;
+	padding-right:10px;
+	color: black;
+}
+*/
+/*
+.dataText0
+{
+	font-size:70%;
+	font-weight:bold;
+	padding-right:50px;
+	color:blue;
+}
+*/
+.dataAddressBlock
+{
+	background-image: -webkit-gradient(linear, center top, center bottom, from(white 90%), to(#d9d9d9));
+	background-image: -webkit-linear-gradient(top, white 90%, #d9d9d9);
+	background-image: -o-linear-gradient(top, white 90%, #d9d9d9);
+	
+	background-image: linear-gradient(top, white 90%, #d9d9d9);
+
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#d9d9d9), to(white 20%));
+	background-image: -webkit-linear-gradient(top, #d9d9d9, white 20%);
+	
+	background-image: -o-linear-gradient(top, #d9d9d9, white 20%);
+	
+	background-image: linear-gradient(top, #d9d9d9, white 20%);
+	
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	
+}
+.dataAddressBase
+{
+	padding-left:10px;
+	font-size:85%;
+	font-weight:normal;
+	color:black;
+	padding-bottom: 8px;
+}
+.dataPostCode 
+{
+    float: left;
+}
+.dataAddressBase .dataCity 
+{
+  float: right;  
+}
+.dataCategory 
+{
+    font-size:80%;
+	font-weight:normal;
+	padding-bottom:10px;
+	color:blue;
+}
+.dataTitle {
+	/*float:left;*/
+  	font-size:100%;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+	padding-top:10px;
+	padding-bottom: 8px;
+}
+
+.dojoxWizardContainer .widgetTitle
+{
+    color: #FFFFFF;
+    min-width: 80px;
+}
+.dojoxWizardContainer .widgetValue
+{
+    color: #FFFFFF;
+    max-width: 250px !important;
+}
+

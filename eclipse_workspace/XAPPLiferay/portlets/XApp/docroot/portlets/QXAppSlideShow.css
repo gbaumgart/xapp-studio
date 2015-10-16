@@ -1,0 +1,23 @@
+#main
+{
+    /*margin: 0px 0px !important;*/
+    position: relative !important;
+    margin-bottom: 10px !important;
+}
+#wrapper
+{
+     margin: 0px auto !important;
+    background-color: transparent;
+}
+.mainBackground
+{
+    /*
+    background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;*/
+    /*background-color: white !important;
+    */
+    background-color: transparent;
+}
+.portlet-content, .portlet-minimized .portlet-content-container {
+    padding: 12px 5px 5px !important;
+}

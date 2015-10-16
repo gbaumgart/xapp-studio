@@ -1,0 +1,27 @@
+.applicationManagerTab
+{
+    box-shadow: -5px 3px 3px #888888;
+}
+#main
+{
+    /*margin: 0px 0px !important;*/
+    position: relative !important;
+    margin-bottom: 10px !important;
+}
+body{
+
+}
+#wrapper
+{
+    /*min-width: 1200px;*/
+    /*background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;*/
+    margin: 0px auto !important;
+    /*width: 80% !important;*/
+    background-color: transparent;
+    /*background-color: white !important;*/
+}
+
+.portlet-content, .portlet-minimized .portlet-content-container {
+    padding: 12px 5px 5px !important;
+}

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+<constant name="struts.devMode" value="true" />
+	<constant name="struts.convention.result.path" value="/"/>
+	<constant name="struts.convention.action.packages"  value="cmx.action,cmb.action,cmm.action" />
+	<constant name="struts.action.excludePattern" value="/services/.*,/servlets/.*,/client/.*"/>
+	  <constant name="struts.enable.SlashesInActionNames" value="true" />
+	
+	
+	<package name="qxappslideshow" extends="struts-portlet-default" namespace="qxappslideshow">
+		
+		<action name="index" class="cmx.action.Struts2Action" method="input">
+			<result name="input">/portlets/QXAppSlideShow.jsp</result>			
+		</action>	
+		
+		<action name="view" class="cmx.action.Struts2Action" method="input">
+			<result name="input">/portlets/QXAppSlideShow.jsp</result>			
+		</action>		
+		
+		
+		<action name="edit" class="cmx.action.Struts2Action">
+			<result name="input">/view/index.jsp</result>
+			<result name="success">/view/result.jsp</result>
+		</action>		
+	</package>
+	
+	<package name="qxapp" extends="struts-portlet-default" namespace="/qxapp">
+		
+		<action name="index" class="cmx.action.Struts2Action" method="input">
+			<result name="input">/portlets/QXAppStudio.jsp</result>			
+		</action>		
+		
+		<action name="edit" class="cmx.action.Struts2Action">
+			<result name="input">/view/index.jsp</result>
+			<result name="success">/view/result.jsp</result>
+		</action>		
+	</package>
+	
+	<package name="view" extends="struts-portlet-default" namespace="/view">
+		
+		<action name="index" class="cmx.action.Struts2Action" method="input">
+			<result name="input">/portlets/QXAppStudio.jsp</result>			
+		</action>		
+		
+		
+		<action name="edit" class="cmx.action.Struts2Action">
+			<result name="input">/view/index.jsp</result>
+			<result name="success">/view/result.jsp</result>
+		</action>		
+	</package>
+	
+	
+	<package name="apps" extends="struts-portlet-default" namespace="/apps">
+				
+		<action name="index" class="cmx.action.ApplicationManagerAction" method="input">
+			<result name="input">/portlets/ApplicationManager.jsp</result>			
+		</action>		
+		
+		<action name="deleteApplication" class="cmx.action.ApplicationManagerAction">
+			<result name="input">/portlets/ApplicationManager.jsp</result>
+			<result name="success">/portlets/ApplicationManager.jsp</result>
+		</action>	
+		
+		<action name="addApplication" class="cmx.action.ApplicationManagerAction">
+			<result name="input">/portlets/ApplicationManager.jsp</result>
+			<result name="success">/portlets/ApplicationManager.jsp</result>
+		</action>	
+		
+		<action name="edit" class="cmx.action.ApplicationManagerAction">
+			<result name="input">/portlets/ApplicationManager.jsp</result>
+			<result name="edit">/portlets/ApplicationManager.jsp</result>
+		</action>		
+		
+		
+	</package>
+
+
+	
+	
+
+    <package name="json" namespace="/" extends="json-default">
+     	
+     	<action name="db" class="cmx.action.dbAction">
+       	 	<result type="json" >
+       	 		<param name="root">e</param>
+       	 		<param name="enableGZIP">true</param>
+       	 	</result>
+     	</action>
+
+     	
+     	<action name="get" class="cmx.action.ApplicationAction">
+       	 	<result type="json" >
+       	 		<param name="root">application</param>
+       	 		<param name="enableGZIP">true</param>
+       	 		<param name="excludeNullProperties">true</param>
+       	 		<param name="includeProperties">
+    				^items\[\d+\]\.name,
+    				^dataSources\[\d+\]\.*,
+    				^dataSources.*,
+    				dataSources.*,
+    				*.dataSources.*,
+    				^ciOverrides.*,
+    				ciOverrides.*,
+    				*.ciOverrides.*
+				</param>       	 		
+       	 	</result>
+     	</action>
+     	
+     	<action name="getTree" class="cmx.action.ContentTreeAction">
+       	 	<result type="json" >
+       	 		<param name="root">application</param>
+       	 		<param name="enableGZIP">true</param>
+       	 		<param name="excludeNullProperties">true</param>
+       	 		<param name="includeProperties">
+    				^items\[\d+\]\.name
+				</param>       	 		
+       	 	</result>
+     	</action>
+     	
+     	<action name="getResource" class="cmx.action.ResourceManagerAction">
+       	 	<result type="json" >
+       	 		<param name="excludeNullProperties">false</param>
+       	 		<param name="includeProperties">
+    				^items\[\d+\]\.*,
+    				*.items.*,
+    				^items.*
+				</param>       	 		
+       	 	</result>
+     	</action>
+     	
+  	</package>
+  	
+  	
+  	<package name="client" namespace="/" extends="struts-default">
+  	
+	  	<action name="getArchive" class="cmx.action.ApplicationAction" method="getArchive">
+			<result name="archive" type="redirect">${externalUrl}</result>
+		</action>
+		
+		<action name="purgeApplication" class="cmx.action.ApplicationAction" method="purgeApplication">
+			<result name="successPurge">applicationPurged.html</result>
+		</action>
+		
+	</package>
+  	
+  	
+  	<package name="RPC" namespace="/" extends="json-default">
+  	
+	    <action name="db2" class="cmx.action.dbAction" method="smd">
+	    
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+
+	    </action>
+	    
+	    
+	    
+	    <action name="XAppConnect" class="cmx.action.XAppConnectAction" method="smd">
+	    
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="Application" class="cmx.action.ApplicationAction" method="smd">
+	    
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	     <action name="StyleManager" class="cmx.action.StyleManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	     <action name="ScriptManager" class="cmx.action.ScriptManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	     <action name="ResourceManager" class="cmx.action.ResourceManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	        </result>
+	    </action>
+	    
+	    
+	    <action name="TemplateManager" class="cmx.action.TemplateManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    
+	     <action name="ApplicationTemplateManager" class="cmq.action.ApplicationTemplateManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+
+	     <action name="ShowcaseManager" class="cmx.action.ShowcaseManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	     <action name="TooltipManager" class="cmx.action.TooltipManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	        </result>
+	    </action>
+	    
+	    
+	    
+	    
+	     <action name="BuildManager" class="cmb.action.BuildManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="SubscriptionManager" class="cmm.action.SubscriptionManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="BundleManager" class="cmm.action.BundleManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="ApplicationManager" class="cmx.action.ApplicationManagerAction" method="smd">
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="ApplicationTree" class="cmx.action.ApplicationTreeAction" method="smd">
+	    
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="ContentManager" class="cmx.action.ContentManagerAction" method="smd">
+	    
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="ContentTree" class="cmx.action.ContentTreeAction" method="smd">
+	    
+	        <interceptor-ref name="json">
+	            <param name="enableSMD">true</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">true</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+	    <action name="ApplicationManagerClient" class="cmx.action.ApplicationManagerAction">
+	    <interceptor-ref name="json">
+	            <param name="enableSMD">false</param>
+	        </interceptor-ref>
+	        <result type="json">
+	             <param name="enableSMD">false</param>
+	             <param name="enableGZIP">true</param>
+	        </result>
+	    </action>
+	    
+    
+	</package>
+	
+	
+
+
+</struts>    

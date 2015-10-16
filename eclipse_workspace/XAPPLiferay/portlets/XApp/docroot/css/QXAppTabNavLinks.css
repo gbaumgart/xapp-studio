@@ -1,0 +1,147 @@
+.appTabLinksView{
+    height:100%;
+    margin: 0px;
+    width: 160px !important;
+}
+
+.appTabNavButtonRoot{
+    height: 60px;
+    width: 150px;
+    background-color: #58585a;
+    cursor: pointer;
+    /*margin: 5px;*/
+}
+.appTabNavButtonMain
+{
+    margin: 0px;
+}
+
+.appTabNavButtonSelected
+{
+    background-color: #3d3d3d;
+}
+.appTabNavButtonSelectedIndicator
+{
+    width: 10px;
+    height: 10px;
+    background-image:url(../images/appTabNavIndicator.png);
+    background-size: 100% 100%;
+    float: right;
+    height: 10px;
+    position: absolute;
+    right: -10px;
+    margin-top: 25px;
+    width: 10px;
+    z-index: 5000;
+}
+
+.appTabNavButtonInner
+{
+    /*background:url(../images/sprite.png) no-repeat 0 0;*/
+
+    background: -moz-linear-gradient(center top , #369ba9, #3CA9B8) no-repeat scroll 0 0 transparent;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: #369ba9;
+
+    background-position:100% -90px;
+    background-position:-20px -90px;
+
+    color: #FFFFFF;
+    height:35px;
+    line-height:30px;
+    font-size:15px;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    -moz-box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    -o-box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:2px;
+    border:0px solid rgba(0,0,0,0.0);
+    position:relative;
+}
+.appTabNavButtonDisabled{
+    opacity: 0.5;
+}
+.appTabNavButtonInner:hover
+{
+    background: -moz-linear-gradient(center top , #00A0BE, #009BB8) no-repeat scroll 0 0 transparent;
+    text-decoration:none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45) inset;
+}
+
+.appTabNavButtonIcon{
+    padding-left: 5px;
+    width: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    float:left;
+    margin-left: 3px;
+    margin-top: 7px;
+    opacity: 0.95;
+    cursor: pointer;
+}
+.appTabNavButtonTitle:hover{
+    text-decoration:underline;
+}
+.appTabNavButtonTitle{
+    margin-left: 10px;
+    color: #fff0f0;
+    line-height: 2.2em;
+    text-shadow: 0 1px 0 #FFFFFF;
+    cursor: text;
+
+}
+/***
+    App Tab Buttons
+*/
+.appTabNavIconNews{
+    background: url("../images/icons/Radio-Tower.png") no-repeat;
+    background-size: 100% 100%;
+}
+.appTabNavIconPlaces
+{
+    background: url("../images/icons/Scanner.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.appTabNavIconBlog
+{
+    background: url("../images/icons/Blog.png") no-repeat;
+    background-size: 100% 100%;
+}
+.appTabNavIconEvents
+{
+    background: url("../images/icons/Calendar-Day-of-Week.png") no-repeat;
+    background-size: 100% 100%;
+}
+.appTabNavIconPictures
+{
+    background: url("../images/icons/Picture.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.appTabNavIconRadio
+{
+    background: url("../images/icons/Radio.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.appTabNavIconVideos
+{
+    background: url("../images/icons/Movie.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.appTabNavIconWeb
+{
+    background: url("../images/icons/Cloud.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.appTabNavIconPodcasts
+{
+    background: url("../images/icons/Music.png") no-repeat;
+    background-size: 100% 100%;
+}

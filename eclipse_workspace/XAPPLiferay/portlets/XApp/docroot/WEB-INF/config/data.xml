@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+
+
+	<server className="net.sf.j2ep.servers.BaseServer" 
+			domainName="192.168.1.37:3000" 
+			isRewriting="true">
+			
+			<rule className="net.sf.j2ep.rules.DirectoryRule"
+		  		directory="/scxapp"
+		  	/>
+		  	
+	</server>
+
+	<server className="net.sf.j2ep.servers.BaseServer" 
+			domainName="192.168.1.37:8888" 
+			isRewriting="true"
+			path="/CMAC"
+			>
+			
+			<rule className="net.sf.j2ep.rules.DirectoryRule"
+		  		directory="/CMAC"
+		  	/>
+		  	
+	</server>
+
+	<server className="net.sf.j2ep.servers.BaseServer" 
+		domainName="192.168.1.37:3131" 
+		isRewriting="true"
+		>
+		
+		<rule className="net.sf.j2ep.rules.Cloud9RewriteRule"
+	  		directory="/cloudtest"
+	  	/>
+	  	
+	</server>
+	
+	
+	<server className="net.sf.j2ep.servers.BaseServer" 
+		domainName="192.168.1.37:8888" 
+		isRewriting="true"
+		>
+		
+		<rule className="net.sf.j2ep.rules.DirectoryRule"
+	  		directory="/apache"
+	  	/>
+	  	
+	</server>
+</config>

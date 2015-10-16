@@ -1,0 +1,266 @@
+
+@import url(QXAppPanels.css);
+
+
+.qxBigButton
+{
+
+}
+.qxBigButton SPAN
+{
+    padding: 1px;
+    font-size: 15px !important;
+    line-height: 1.5em;
+}
+.csPreview
+{
+    background-image: url("../images/preview_eye.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    height: 22px;
+    margin-top: 3px !important;
+    text-align: center;
+    width: 22px;
+}
+.csDownload
+{
+    background-image: url("../images/arrowBlackDown.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    height: 22px;
+    margin-top: 3px !important;
+    text-align: center;
+    width: 22px;
+}
+.csPublish
+{
+    background-image: url("../images/publishUpArrow.png");
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    height: 22px;
+    margin-top: 3px !important;
+    text-align: center;
+    width: 22px;
+}
+
+.appTabSettingPanelTitle{
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.plusButtonBig
+{
+    background: url("../images/buttonPlusBig.png") no-repeat;
+    background-size: 100% 100%;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    cursor: pointer;
+
+}
+.plusButtonSmall {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../images/buttonPlusBig.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    bottom: 13px;
+    cursor: pointer;
+    float: right;
+
+    right: 8px;
+
+    margin-right: 5px;
+
+
+}
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #CCCCCC -moz-use-text-color -moz-use-text-color;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    display: block;
+    height: 1px;
+    margin: 0.3em 0.3;
+    padding: 0;
+}
+
+.contentAdminHr {
+    border-bottom-color: #FFFFFF;
+    border-top-color: #CBCBCB;
+}
+.contentHr {
+    background: none repeat scroll 0 0 #515050;
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #FFFFFF;
+    margin: 1em 5px;
+}
+.modules-separator {
+    width: 210px;
+}
+
+/*
+.claro .dijitDialog {
+    border: 1px solid #759DC0;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.25);
+    background-color: white;
+}
+*/
+
+.applicationManagerTab
+{
+    box-shadow: -5px 3px 3px #888888;
+}
+.appPanel
+{
+
+}
+#wrapper
+{
+    /*
+    background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;*/
+    /*background-color: white !important;*/
+}
+.mainBackground
+{
+    background-image: url("../images/bg4.jpg");
+    background-size: 100% 100%;
+}
+.syncButtonSimToDS
+{
+    padding-top: 20%;
+}
+
+.syncTable
+{
+    padding-top: 20em;
+    overflow: hidden;
+}
+#loader {
+    padding:0;
+    margin:0;
+    position:absolute;
+    top:0; left:0;
+    width:1040px;
+    height:750px;
+    max-height:750px;
+    background:transparent;
+    z-index:999;
+    vertical-align:middle;
+}
+#loaderInner {
+    padding:5px;
+    position:relative;
+    left:0;
+    top:0;
+    width:175px;
+    background:transparent;
+    color:#fff;
+}
+/***
+    Prevent dojox.mobile.heading H1 margin botttom
+*/
+
+
+html,body
+{
+    color: #333333;
+}
+
+
+
+/*  Tab Left Buttons
+*/
+
+
+.leftTabNavButtonRoot{
+    height: 60px;
+    width: 150px;
+    background-color: #58585a;
+    cursor: pointer;
+}
+.leftTabNavButtonMain
+{
+    margin: 0px;
+}
+.leftTabNavButtonSelected
+{
+    background-color: #3d3d3d;
+}
+.leftTabNavButtonSelectedIndicator
+{
+    width: 10px;
+    height: 10px;
+    background-image:url(../images/appTabNavIndicator.png);
+    background-size: 100% 100%;
+    float: right;
+    height: 10px;
+    position: absolute;
+    right: 0px;
+    margin-top: -10px;
+    width: 10px;
+    z-index: 5000;
+}
+
+.leftTabNavButtonInner
+{
+    /*background:url(../images/sprite.png) no-repeat 0 0;*/
+    background: -moz-linear-gradient(center top , #369ba9, #3CA9B8) no-repeat scroll 0 0 transparent;
+    background:linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: #369ba9;
+
+    color: #FFFFFF;
+    height:35px;
+    line-height:30px;
+    font-size:15px;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    -moz-box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    -o-box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    box-shadow:rgba(0, 0, 0, 0.2) 0 1px 3px,inset rgba(255, 255, 255, 0.3) 0 1px 1px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -o-border-radius:4px;
+    border-radius:2px;
+    border:0px solid rgba(0,0,0,0.0);
+    position:relative;
+}
+.leftTabNavButtonInner:hover
+{
+    background: -moz-linear-gradient(center top , #00A0BE, #009BB8) no-repeat scroll 0 0 transparent;
+    text-decoration: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.45) inset;
+}
+
+.leftTabNavButtonIcon{
+    padding-left: 5px;
+    width: 32px;
+    height: 32px;
+    float:left;
+    margin-left: 3px;
+    margin-top: 7px;
+    opacity: 0.95;
+    cursor: pointer;
+}
+.leftTabNavButtonTitle{
+    margin-left: 10px;
+    color: #ffffff;
+    line-height: 2.2em;
+    cursor: text;
+}
+
+.leftTabMainView{
+    float:left;
+    width: auto;
+    max-width: 510px;
+}

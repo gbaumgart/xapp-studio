@@ -1,0 +1,49 @@
+CACHE MANIFEST
+# version 4
+CACHE:
+
+#release JS files
+xasweb/xapp/xapp/run.js
+xasweb/xapp/external/externals.js
+xasweb/xapp/dojo/dojo.js?time=1366292710000
+xasweb/xapp/nls/dojo_ROOT.js
+xasweb/xapp/dojox/mobile/compat.js
+xasweb/xapp/xapp/widgets/nls/TemplatedWidgetBase.js
+xasweb/xapp/dojo/cldr/nls/gregorian.js
+xasweb/xapp/dojo/cldr/nls/en/gregorian.js
+xasweb/xapp/dojox/mobile/_IconItemPane.js
+
+
+#relase css files 
+xasweb/xapp/xapp/resources/app.css
+xasweb/xapp/dojox/mobile/themes/iphone/iphone.css
+xasweb/xapp/xapp/cssMobile/themes/iphone/gallery.css
+xasweb/xapp/dojox/mobile/themes/common/domButtons/DomButtonRedBadge.css
+xasweb/xapp/dojox/mobile/themes/common/domButtons/DomButtonGrayRoundRect.css
+xasweb/xapp/cssMobile/commons.css
+
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsapp1d0&transformResource=true&file=Default/Default.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsapp1d0&transformResource=true&file=ListItems.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsapp1d0&transformResource=true&file=Content.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsapp1d0&transformResource=true&file=CustomFields.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsapp1d0&transformResource=true&file=LaunchItems.css
+cssTransform?action=get&platform=IPHONE_NATIVE&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsapp1d0&transformResource=true&file=Views.css
+
+# all dojo mobile theme files on supported platforms
+
+# demo theme files
+# image files for home page
+
+
+# js files for individual demo
+
+# html files for individual demo
+# other image files
+# workaround for build tool/or loader cannot merge some JS
+
+# JS codes for demonstration for each demo
+# Note here we aim at built version
+
+NETWORK:
+*
+# built on @timestamp@

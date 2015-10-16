@@ -1,0 +1,20 @@
+.applicationManagerTab
+{
+    box-shadow: -5px 3px 3px #888888;
+}
+#main
+{
+    position: relative !important;
+}
+body{
+
+}
+#wrapper
+{
+    margin: 0px auto !important;
+    background-color: transparent;
+}
+.mainBackground
+{
+    background-color: transparent;
+}

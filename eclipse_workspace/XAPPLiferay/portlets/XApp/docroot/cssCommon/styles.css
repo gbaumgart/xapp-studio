@@ -1,0 +1,19 @@
+/*body { padding: 0; margin: 0;  }*/
+/*
+h1 { font-size: 1.3em; padding: 15px 10px; margin: 0; }
+h2 { font-size: 1.1em; padding: 10px; margin: 0; }
+*/
+#MainContent { background: #ffffff; padding-bottom: 30px; }
+
+#MainContentIPAD { background: #ffffff; padding: 10px;}
+#Footer { padding: 10px; border-top: none; } 
+
+.gallery { list-style: none; padding: 0; margin: 0;  background-color: #DDDDDD; }
+.gallery { list-style: none; padding: 0; margin: 0;  background-color: #DDDDDD; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 20%;overflow: hidden; }
+.gallery .galleryLandscape { float: left; width: 33%;box-shadow: 1px 2px 4px #000000; }
+.gallery .galleryLandscapeIPAD { float: left; width: 20%;box-shadow: 1px 2px 4px #000000; padding: 15; }
+.gallery .galleryPortrait { float: left; width: 33%;box-shadow: 1px 2px 4px #000000; }
+.gallery li a { display: block; margin: 4px; border: 0px solid #3c3c3c;overflow: hidden; }
+.gallery li img { display: block; width: 100%; height: auto;overflow: hidden; }

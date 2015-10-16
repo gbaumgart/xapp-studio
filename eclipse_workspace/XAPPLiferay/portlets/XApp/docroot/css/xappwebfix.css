@@ -1,0 +1,102 @@
+.itemTitle {
+
+    font-size: 17px !important;
+    margin-left: 5px !important;
+    margin-top: 10px !important;
+}
+
+.launchItemTitle {
+    font-size: 17px !important;
+    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.7) !important;
+}
+.Title
+{
+    font-size: 21px !important;
+    margin-left: 5px !important;
+}
+
+.Text
+{
+    font-size: 17px !important;
+    margin-left: 5px !important;
+    margin-left: 5px !important;
+}
+.itemCaption {
+    margin-left: 5px !important;
+}
+.itemDetail {
+    margin-left: 5px !important;
+}
+
+.DefaultIcon {
+    border-width: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0pt rgba(0, 0, 0, 0.0) !important;
+}
+.DefaultTitle {
+    font-size: 17px !important;
+    margin-left: 5px !important;
+}
+.WebIcon {
+    border-width: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0pt rgba(0, 0, 0, 0.0) !important;
+}
+
+.WebTitle {
+    font-size: 17px !important;
+    margin-left: 5px !important;
+}
+.MapIcon {
+    border-width: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0pt rgba(0, 0, 0, 0.0) !important;
+}
+.MapTitle {
+    font-size: 17px !important;
+    margin-left: 5px !important;
+}
+.PhoneIcon {
+    border-width: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0pt rgba(0, 0, 0, 0.0) !important;
+}
+
+.PhoneTitle {
+    font-size: 17px !important;
+    margin-left: 5px !important;
+}
+
+
+.itemFooterTextLeft {
+    margin-left: 5px !important;
+}
+.itemFooterTextRight {
+    margin-left: 5px !important;
+}
+
+.mblRoundRectCategory{
+    padding-left: 7px !important;
+}
+
+/***
+
+    Heading and Toolbars
+*/
+.mblHeading {
+    border-bottom: 0px solid #2D3642 !important;
+    border-top: 0px solid #CDD5DF !important;
+}
+.dj_tablet .mblHeading {
+     color: #ffffff;
+ }
+
+.dj_tablet .mblTabBarStandardTab {
+    border-bottom: 0px solid #787E8F !important;
+    border-top: 0px solid #FEFEFE !important;
+}
+.mblTabBar
+{
+    border-bottom: 0px solid #787E8F !important;
+    border-top: 0px solid #FEFEFE !important;
+}

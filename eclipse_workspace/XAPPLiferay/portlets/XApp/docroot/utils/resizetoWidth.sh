@@ -1,0 +1,1 @@
+/opt/local/bin/convert -format PNG32 -background transparent $1 -resize $2x -quality 100 $3

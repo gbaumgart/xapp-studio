@@ -1,0 +1,927 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+
+/*******************************XAPP- ********/
+
+
+
+
+
+    /* Mobile-specific Styles */
+@media only screen and (max-device-width: 480px) {
+    table[class=w0], td[class=w0] {
+        width: 0 !important;
+    }
+
+    table[class=w10], td[class=w10], img[class=w10] {
+        width: 10px !important;
+    }
+
+    table[class=w15], td[class=w15], img[class=w15] {
+        width: 5px !important;
+    }
+
+    table[class=w30], td[class=w30], img[class=w30] {
+        width: 10px !important;
+    }
+
+    table[class=w60], td[class=w60], img[class=w60] {
+        width: 10px !important;
+    }
+
+    table[class=w125], td[class=w125], img[class=w125] {
+        width: 80px !important;
+    }
+
+    table[class=w130], td[class=w130], img[class=w130] {
+        width: 55px !important;
+    }
+
+    table[class=w140], td[class=w140], img[class=w140] {
+        width: 90px !important;
+    }
+
+    table[class=w160], td[class=w160], img[class=w160] {
+        width: 180px !important;
+    }
+
+    table[class=w170], td[class=w170], img[class=w170] {
+        width: 100px !important;
+    }
+
+    table[class=w180], td[class=w180], img[class=w180] {
+        width: 80px !important;
+    }
+
+    table[class=w195], td[class=w195], img[class=w195] {
+        width: 80px !important;
+    }
+
+    table[class=w220], td[class=w220], img[class=w220] {
+        width: 80px !important;
+    }
+
+    table[class=w240], td[class=w240], img[class=w240] {
+        width: 180px !important;
+    }
+
+    table[class=w255], td[class=w255], img[class=w255] {
+        width: 185px !important;
+    }
+
+    table[class=w275], td[class=w275], img[class=w275] {
+        width: 135px !important;
+    }
+
+    table[class=w280], td[class=w280], img[class=w280] {
+        width: 135px !important;
+    }
+
+    table[class=w300], td[class=w300], img[class=w300] {
+        width: 140px !important;
+    }
+
+    table[class=w325], td[class=w325], img[class=w325] {
+        width: 95px !important;
+    }
+
+    table[class=w360], td[class=w360], img[class=w360] {
+        width: 140px !important;
+    }
+
+    table[class=w410], td[class=w410], img[class=w410] {
+        width: 180px !important;
+    }
+
+    table[class=w470], td[class=w470], img[class=w470] {
+        width: 200px !important;
+    }
+
+    table[class=w580], td[class=w580], img[class=w580] {
+        width: 280px !important;
+    }
+
+    table[class=w640], td[class=w640], img[class=w640] {
+        width: 300px !important;
+    }
+
+    table[class*=hide], td[class*=hide], img[class*=hide], p[class*=hide], span[class*=hide] {
+        display: none !important;
+    }
+
+    table[class=h0], td[class=h0] {
+        height: 0 !important;
+    }
+
+    p[class=footer-content-left] {
+        text-align: center !important;
+    }
+
+    #headline p {
+        font-size: 30px !important;
+    }
+
+    .article-content, #left-sidebar {
+        -webkit-text-size-adjust: 90% !important;
+        -ms-text-size-adjust: 90% !important;
+    }
+
+    .header-content, .footer-content-left {
+        -webkit-text-size-adjust: 80% !important;
+        -ms-text-size-adjust: 80% !important;
+    }
+}
+
+    /**************************************************/
+    /*                                                */
+    /*             Big Buttons                        */
+
+    /*** button styles */
+.bt-large, .bt {
+    -moz-transition: background-color 0.25s ease 0s;
+    background: url("images/tile.png") repeat-x scroll 0 -440px #EAEAEA;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.bt, .block .bt {
+    -moz-transition: all 0.25s ease 0s;
+    background: url("images/sprite.png") no-repeat scroll -20px -90px #EAEAEA;
+    border-bottom: 1px solid #555555;
+    border-radius: 4px 4px 4px 4px;
+    border-top: 1px solid #FFFFFF;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    color: #555555;
+    font-size: 13px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 8px;
+    position: relative;
+}
+
+.bt:after, .block .bt:after {
+    content: "";
+    float: right;
+    font-size: 0.4em;
+    margin-left: 5px;
+    margin-right: -5px;
+}
+
+.bt:hover, .block .bt:hover, .bt.bt-large:hover, .block .bt.bt-large:hover {
+    background-color: #FFFFFF;
+}
+
+.bt.disabled, .block .bt.disabled, .bt.disabled:hover, .block .bt.disabled:hover {
+    background: none repeat scroll 0 0 #CBCBCB;
+    border-top-color: #EDEDED;
+    color: #7B7B7B;
+}
+
+.bt.disabled:after, .block .bt.disabled:after, .bt.disabled:hover:after, .block .bt.disabled:hover:after {
+    content: "";
+    margin: 0;
+}
+
+.bt.accent, .block .bt.accent, .bt.accent2, .block .bt.accent2, .bt.clear, .block .bt.clear, .bt.accent3, .block .bt.accent3 {
+    border-top-color: #B0C4CD;
+    color: #FFFFFF;
+    padding: 0 8px;
+    text-shadow: 0 -1px 0 #1F425E;
+
+    background-image: linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -o-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -moz-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%);
+    background-image: -webkit-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -ms-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3698a6), color-stop(1, #3CA9B7));
+
+    background-color: #3698a6;
+}
+
+.bt.accent:hover, .block .bt.accent:hover, .bt.accent2:hover, .block .bt.accent2:hover, .bt.clear:hover, .block .bt.clear:hover, .bt.accent3:hover, .block .bt.accent3:hover {
+    background-color: #7B9CAC;
+}
+
+.bt.accent2, .block .bt.accent2 {
+    border-top-color: #dbaea3;
+
+    background-image: linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -o-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -moz-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%);
+    background-image: -webkit-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -ms-linear-gradient(bottom, #3698a6 0%, #3CA9B7 100%) !important;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3698a6), color-stop(1, #3CA9B7));
+
+    background-color: #3698a6;
+
+    border-top-color: #DBAEA3;
+}
+
+.bt.accent2:hover, .block .bt.accent2:hover {
+    background-color: #C27765;
+}
+
+.bt.download, .block .bt.download {
+    background-position: -468px 0;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 32px 0 48px;
+}
+
+.bt.download .icon, .block .bt.download .icon {
+    left: 0;
+    top: 9px;
+}
+
+.bt.download:after, .block .bt.download:after {
+    content: "";
+    margin: 0;
+}
+
+.bt-wrap {
+    padding: 0 35%;
+}
+
+    /******************* General **************************/
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(images/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+    /*** button styles ***/
+    /* Client-specific Styles */
+#outlook a {
+    padding: 0;
+}
+
+    /* Force Outlook to provide a "view in browser" button. */
+body {
+    width: 100% !important;
+    background-color: #cccccc;
+}
+
+.ReadMsgBody {
+    width: 100%;
+}
+
+.ExternalClass {
+    width: 100%;
+    display: block !important;
+}
+
+    /* Force Hotmail to display emails at full width */
+    /* Reset Styles */
+    /* Add 100px so mobile switch bar doesn't cover street address. */
+body {
+    background-color: #dedede;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+img {
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+    display: block;
+}
+
+br, strong br, b br, em br, i br {
+    line-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 100% !important;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 20px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    /*color: blue !important;*/
+}
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+    color: #d86827;
+!important;
+}
+
+    /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+    color: #d86827 !important;
+}
+
+    /*****      HEADING OVERRIDE    */
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    color: #d86827;
+}
+
+h4 {
+    color: #eba23a;
+
+}
+
+h5 {
+    color: #f1c21a;
+}
+
+    /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+table td, table tr {
+    border-collapse: collapse;
+}
+
+.yshortcuts, .yshortcuts a, .yshortcuts a:link, .yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
+    color: black;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    background: none !important;
+}
+
+    /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+    /* This most probably won't work in all email clients. Don't include <code _tmplitem="65" > blocks in email. */
+code {
+    white-space: normal;
+    word-break: break-all;
+}
+
+#background-table {
+    background-color: #cccccc;
+}
+
+    /* Webkit Elements */
+#top-bar {
+    -moz-border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    color: #ededed;
+}
+
+#top-bar a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer {
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #404041;
+}
+
+    /* Fonts and Content */
+body, td {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.header-content, .footer-content-left, .footer-content-right {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+    /* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
+.header-content {
+    font-size: 12px;
+    color: #ededed;
+}
+
+.header-content a {
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#headline p {
+    color: #444444;
+    font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#headline p a {
+    color: #444444;
+    text-decoration: none;
+}
+
+.article-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: #b0b0b0;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+}
+
+.article-title a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.article-title.with-meta {
+    margin-bottom: 0;
+}
+
+.article-meta {
+    font-size: 13px;
+    line-height: 20px;
+    color: #ccc;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.article-content {
+    font-size: 13px;
+    line-height: 18px;
+    color: #444444;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, Geneva, sans-serif;
+}
+
+.article-content a {
+    color: #2f82de;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article-content img {
+    max-width: 100%
+}
+
+.article-content ol, .article-content ul {
+    margin-top: 0px;
+    margin-bottom: 18px;
+    margin-left: 19px;
+    padding: 0;
+}
+
+.article-content li {
+    font-size: 13px;
+    line-height: 18px;
+    color: #444444;
+}
+
+.article-content li a {
+    color: #2f82de;
+    text-decoration: underline;
+}
+
+.article-content p {
+    margin-bottom: 15px;
+}
+
+.footer-content-left {
+    font-size: 12px;
+    line-height: 15px;
+    color: #ededed;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.footer-content-left a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-content-right {
+    font-size: 11px;
+    line-height: 16px;
+    color: #ededed;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.footer-content-right a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+#body {
+    background-color: #cccccc;
+}
+
+#footer {
+    background-color: #404041;
+    color: #ededed;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#permission-reminder {
+    white-space: normal;
+}
+
+#street-address {
+    color: #b0b0b0;
+    white-space: normal;
+}
+</style>
+<!--[if gte mso 9]>
+<style _tmplitem="65">
+    .article-content ol, .article-content ul {
+        margin: 0 0 0 24px;
+        padding: 0;
+        list-style-position: inside;
+    }
+</style>
+<![endif]--></head>
+
+<body>
+
+
+
+<style type="text/css">
+    #banner {
+        background-color: #ffffff;
+        height: 90px;
+        margin: 0 auto;
+        position: relative;
+
+    }
+
+
+    #heading-inner{
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    #heading {
+        margin-top: 0px;
+        min-height: 40px;
+        float: left;
+        width: 200px;
+    }
+
+    #heading .company-title {
+        margin: 0 auto;
+        position: relative;
+        /*width: 980px;*/
+
+    }
+
+    #headerContent
+    {
+        background: url(images/headingContentBG.png) repeat-x;
+        height: 182px;
+        background-size: 100% 100%;
+    }
+    .home-header-column-inner{
+        margin-top: 3px !important;
+        margin-bottom: 3px !important;
+    }
+    .header-column DIV {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+</style>
+
+<div id="wrapper"><a href="#main-content" id="skip-to-content">Skip to Content</a>
+    <!--div id="heading-sign-in"> <a href="/c/portal/login?p_l_id=32882" id="sign-in" rel="nofollow">Sign In</a> </div-->
+    <header id="banner" role="banner">
+        <div id="heading-inner">
+            <div id="heading">
+                <div class="company-title"><a class="logo custom-logo"
+                                              href="http://www.xapp-studio.com/web/xapp-studio/home;jsessionid=F00D6F74DB0E440AB178B129025716BA?p_auth=3eR0nCiZ&amp;p_p_auth=Uu1Xt8GG&amp;p_p_id=49&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_mode=view&amp;_49_struts_action=%2Fmy_sites%2Fview&amp;_49_groupId=10%2C728&amp;_49_privateLayout=false"
+                                              title="Go to XApp-Sudio"> <img alt="XApp-Sudio"
+                                                                             src="/image/layout_set_logo?img_id=10732&amp;t=1349238545247"
+                                                                             width="200px"> </a></div>
+            </div>
+        </div>
+    </header>
+    <!--div id="headerContent"> </div-->
+    <div id="content">
+        <div id="mainContentOuter">
+            <!--nav class="site-breadcrumbs" id="breadcrumbs"> <h1> <span>Breadcrumbs</span> </h1> <ul class="breadcrumbs breadcrumbs-horizontal lfr-component"> <li class="first"><span><a href="http://xapp-studio.com/;jsessionid=F00D6F74DB0E440AB178B129025716BA">Pearls Media</a></span></li><li><span><a href="/web/xapp-studio;jsessionid=F00D6F74DB0E440AB178B129025716BA">XApp-Sudio</a></span></li><li class="last"><span><a href="http://www.xapp-studio.com/web/xapp-studio/home;jsessionid=F00D6F74DB0E440AB178B129025716BA" >Home</a></span></li> </ul> </nav-->
+            <div class="home" id="main-content" role="main">
+                <div class="portlet-layout">
+                    <div id="column-1" class="portlet-column portlet-column-only aui-w100 home-header-column">
+                        <div class="portlet-dropzone portlet-column-content portlet-column-content-only home-header-column-inner"
+                             id="layout-column_column-1">
+                            <div class="portlet-boundary portlet-boundary_QXAppSlideShow_WAR_XAppportlet_ portlet-static portlet-static-end portlet-borderless "
+                                 id="p_p_id_QXAppSlideShow_WAR_XAppportlet_INSTANCE_OVl8cVd3rP4J_"><span
+                                    id="p_QXAppSlideShow_WAR_XAppportlet_INSTANCE_OVl8cVd3rP4J"></span>
+
+                                <div class="portlet-borderless-container" style="">
+                                    <div class="portlet-body">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-layout">
+                    <div class="home-message-inner">
+                        <div id="column-2" class="portlet-column portlet-column-only aui-w100 home-message-column">
+                            <div class="portlet-dropzone portlet-column-content portlet-column-content-only"
+                                 id="layout-column_column-2">
+                                <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
+                                     id="p_p_id_56_INSTANCE_0hJNnO1eHiIS_"><span id="p_56_INSTANCE_0hJNnO1eHiIS"></span>
+
+                                    <div class="portlet-borderless-container" style="">
+                                        <div class="portlet-body">
+                                            <div class="journal-content-article" id="article_10153_10728_43742_1.7">
+                                                <table style="width: 100%; margin-left: -25px;margin-top: -10px;"
+                                                       border="0" cellpadding="1" cellspacing="1">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td width="100px"><p style="text-align: center; "><span
+                                                                style="color:#696969;"><span style="font-size: 24px; ">&nbsp;</span></span><span
+                                                                style="color:#a9a9a9;"><span
+                                                                style="font-size: 24px; "><span style="font-size:28px;">18</span> </span></span>
+                                                        </p>
+
+                                                            <p style="text-align: center; "><span
+                                                                    style="color:#a9a9a9;">&nbsp; &nbsp;<span
+                                                                    style="font-size:14px;">Sept.</span></span></p></td>
+                                                        <td width="90%"><p><span style="color:#8b4513;">! Website currently in maintenance ! Please ignore all content ! </span>
+                                                        </p>
+
+                                                            <p> &nbsp;</p>
+
+                                                            <p><span style="color: rgb(105, 105, 105);">Joomla &amp; Wordpress XML connector added. Please read more here&nbsp;</span>
+                                                            </p></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p> &nbsp;</p></div>
+                                            <div class="entry-links"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-layout home-main-stage">
+                    <div class="home-stage-inner">
+                        <div id="column-3" class="portlet-column portlet-column-first aui-100 home-main-column">
+                            <div class="portlet-dropzone portlet-column-content portlet-column-content-only"
+                                 id="layout-column_column-3">
+                                <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
+                                     id="p_p_id_56_INSTANCE_D3F2Y426uTAo_"><span id="p_56_INSTANCE_D3F2Y426uTAo"></span>
+
+                                    <div class="portlet-borderless-container" style="">
+                                        <div class="portlet-body">
+                                            <div class="journal-content-article" id="article_10153_10728_43906_2.9">
+                                                <table style="width: 100%; height: 120px" border="0" cellpadding="5"
+                                                       cellspacing="5">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="callout-background" width="33%">
+                                                            <div class="callout">
+                                                                <div class="callout-extraborder"
+                                                                     style="height:auto !important;">
+                                                                    <div class="callout-content"
+                                                                         style="height:auto !important;">
+                                                                        <article class="after-icon-callout"><p
+                                                                                style="text-align: center; "><img alt=""
+                                                                                                                  src="/documents/10191/43928/gears_icon.png/178696cc-927b-44b1-bac7-5821d73405b5?t=1347885408423"
+                                                                                                                  style="width: 70px; height: 69">
+                                                                        </p>
+
+                                                                            <h3 style="text-align: center; "> Quick-
+                                                                                XApp&nbsp; - Studio</h3>
+
+                                                                            <h3 style="text-align: center; "> is ready
+                                                                                !</h3> <br>
+
+                                                                            <p><span style="font-size:14px;">Easy to use and no programming required</span>
+                                                                            </p>
+
+                                                                            <p><span style="font-size: 14px; ">Support for Wordpress, Google Servicess and Joomla</span>
+                                                                            </p>
+
+                                                                            <p> &nbsp;</p></article>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td width="25px"> &nbsp;</td>
+                                                        <td class="callout-background" width="33%">
+                                                            <div class="callout">
+                                                                <div class="callout-extraborder"
+                                                                     style="height:auto !important;">
+                                                                    <div class="callout-content"
+                                                                         style="height:auto !important;">
+                                                                        <article class="after-icon-callout"><p
+                                                                                style="text-align: center; "><img alt=""
+                                                                                                                  src="/documents/10191/43928/gear_single_button.png/f033aee1-08c7-44a5-a649-0d26e5c560e5?t=1347886983818"
+                                                                                                                  style="width: 65px; height: 65px; ">
+                                                                        </p> <h4 style="text-align: center; "> XApplix
+                                                                            is out</h4>
+
+                                                                            <p><span style="font-size:14px;">You can test &nbsp;your applications directly in our portal application "XAppolix". Download from the App-Store <a
+                                                                                    href="http://bitly.com/xappolix2">here</a> !</span>
+                                                                            </p>
+
+                                                                            <p> &nbsp;</p>
+
+                                                                            <p style="text-align: center; "><a
+                                                                                    href="http://bitly.com/xappolix2"><span
+                                                                                    style="font-size:14px;"><img alt=""
+                                                                                                                 src="/documents/10191/43928/app-store.png/1c2cddf3-e303-421d-97d6-43a6a1ef1c46?t=1347903874624"
+                                                                                                                 style="width: 128px; height: 42px; "></span></a>
+                                                                            </p></article>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td width="25px"> &nbsp;</td>
+                                                        <td class="callout-background" width="33%">
+                                                            <div class="callout">
+                                                                <div class="callout-extraborder"
+                                                                     style="height:auto !important;">
+                                                                    <div class="callout-content"
+                                                                         style="height:auto !important;">
+                                                                        <article class="after-icon-callout"><p
+                                                                                style="text-align: center; "><img alt=""
+                                                                                                                  src="/documents/10191/43928/gear_icon_single_yellow.png/e859fa84-4306-4fb7-b94a-8dbfc8871ca6?t=1347890369655"
+                                                                                                                  style="width: 67px; height: 67px; ">
+                                                                        </p> <h5 style="text-align: center; "> Example
+                                                                            Applications</h5>
+
+                                                                            <p><span
+                                                                                    style="font-size: 14px; line-height: 24px; ">Try our example applications <a
+                                                                                    href="../web/xapp-studio/example-applications">here</a></span>
+                                                                            </p>
+
+                                                                            <p> &nbsp;</p>
+
+                                                                            <p> &nbsp;</p></article>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p> &nbsp;</p></div>
+                                            <div class="entry-links"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portlet-layout footer-main">
+                    <div id="column-4" class="portlet-column portlet-column-only aui-w100 bottom-column">
+                        <div class="portlet-dropzone portlet-column-content portlet-column-content-only"
+                             id="layout-column_column-4">
+                            <div class="portlet-boundary portlet-boundary_56_ portlet-static portlet-static-end portlet-borderless portlet-journal-content "
+                                 id="p_p_id_56_INSTANCE_IhM4O4YeUcSV_"><span id="p_56_INSTANCE_IhM4O4YeUcSV"></span>
+
+                                <div class="portlet-borderless-container" style="">
+                                    <div class="portlet-body">
+                                        <div class="journal-content-article" id="article_10153_10728_43729_3.9">
+                                            <div class="footer-content">
+
+                                                <table style="width: 100%; " border="0" cellpadding="1" cellspacing="1">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td style="vertical-align: top;" width="18%"><p
+                                                                style="border-bottom: 1px solid #595959; margin-bottom: 8px; padding-bottom: 11px;">
+                                                            <span style="color:#999999;"><span style="font-size: 12px;">Quick-XApp</span></span>
+                                                        </p>
+
+                                                            <p><span style="color:#ffffff;"><span
+                                                                    style="font-size: 14px;"> <a
+                                                                    style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                    href="/web/xapp-studio/downloads">&gt;&gt;
+                                                                Downloads</a></span></span><span
+                                                                    style="font-size: 14px;"></span></p>
+
+                                                            <p><span style="color:#ffffff;"><span
+                                                                    style="font-size: 14px;">&gt;&gt; FAQ</span></span>
+                                                            </p></td>
+                                                        <td style="" width="25px"> &nbsp;</td>
+                                                        <td style="vertical-align: top;" width="20%"><p
+                                                                style="border-bottom: 1px solid #595959; margin-bottom: 8px; padding-bottom: 11px;">
+                                                            <span style="color:#999999;"><span style="font-size: 12px;">XApp Studio</span></span>
+                                                        </p>
+
+                                                            <p>
+                                                                <a style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                   href="../xapp-studio/downloads"><span
+                                                                        style="color: rgb(255, 255, 255);">&gt;&gt; Downloads</span></a>
+                                                                &nbsp;</p>
+
+                                                            <p>
+                                                                <a style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                   href="/web/xapp-studio/faq"><span
+                                                                        style="color: rgb(255, 255, 255);">&gt;&gt; FAQ</span></a>
+                                                            </p>
+
+                                                            <p>
+                                                                <a style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                   href="/web/xapp-studio/kb"><span
+                                                                        style="color: rgb(255, 255, 255);">&gt;&gt; Documentation</span></a>
+                                                            </p>
+
+                                                            <p>
+                                                                <a style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                   href="/web/xapp-studio/developers"><span
+                                                                        style="color: rgb(255, 255, 255);">&gt;&gt; Developers</span></a>
+                                                            </p>
+
+                                                            <p>
+                                                                <a style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                   href="/web/xapp-studio/change-log"><span
+                                                                        style="color: rgb(255, 255, 255);">&gt;&gt; Changelog</span></a>
+                                                            </p></td>
+                                                        <td style="" width="25px"> &nbsp;</td>
+                                                        <td style="vertical-align: top;" width="18%"><p
+                                                                style="border-bottom: 1px solid #595959; margin-bottom: 8px; padding-bottom: 11px;">
+                                                            <span style="color:#999999;"><span style="font-size: 12px;">Social</span></span>
+                                                        </p>
+
+                                                            <p><span style="color:#ffffff;"><span
+                                                                    style="font-size: 14px;"> <a
+                                                                    style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                    href="http://www.facebook.com/XAppStudio">&gt;&gt;
+                                                                Facebook</a></span></span></p>
+
+                                                            <p><span style="color:#ffffff;"><span
+                                                                    style="font-size: 14px;"> <a
+                                                                    style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                    href="https://twitter.com/PearlsMedia">&gt;&gt;
+                                                                Twitter</a></span></span></p></td>
+                                                        <td style="" width="25px"> &nbsp;</td>
+                                                        <td style="vertical-align: top;" width="18%"><p
+                                                                style="border-bottom: 1px solid #595959; margin-bottom: 8px; padding-bottom: 11px;">
+                                                            <span style="color:#999999;"><span style="font-size: 12px;">About</span></span>
+                                                        </p>
+
+                                                            <p>
+                                                                <a style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                   href="/web/xapp-studio/contact"><span
+                                                                        style="color:#ffffff;">&gt;&gt; Contact</span></a>
+                                                            </p></td>
+                                                        <td style="" width="25px"> &nbsp;</td>
+                                                        <td style="vertical-align: top;" width="18%"><p
+                                                                style="border-bottom: 1px solid #595959; margin-bottom: 8px; padding-bottom: 11px;">
+                                                            <span style="color:#999999;"><span style="font-size: 12px;">More</span></span>
+                                                        </p>
+
+                                                            <p><span style="font-size:14px;"> <a
+                                                                    style="text-decoration: none;color: rgb(255, 255, 255);"
+                                                                    href="/group/control_panel/manage?p_p_auth=YEYTPDf1&amp;p_p_id=2&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;p_p_mode=view&amp;doAsGroupId=10728&amp;refererPlid=33729&amp;_2_struts_action=%2Fmy_account%2Fedit_user"><span
+                                                                    style="color: rgb(255, 255, 255);">&gt;&gt; My Account</span></a></span>
+                                                            </p></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="entry-links"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="#" id="hrefFm" method="post" name="hrefFm"><span></span></form>
+        </div>
+    </div>
+    <footer id="footer" role="contentinfo">
+        <div id="footer-inner"><span
+                class="copyright-footer"> © Copyright XAPP Studio 2009-2012. All rights reserved. </span></div>
+    </footer>
+</div>
+
+</body>
+</html>

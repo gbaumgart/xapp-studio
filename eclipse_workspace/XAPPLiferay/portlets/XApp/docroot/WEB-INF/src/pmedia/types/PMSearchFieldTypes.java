@@ -1,0 +1,15 @@
+package pmedia.types;
+
+public enum PMSearchFieldTypes
+{
+	PM_SFT_TITLE,
+	PM_SFT_CATEGORY,
+	PM_SFT_DESCRIPTION,
+	PM_SFT_DESCRIPTION_EXTRA,
+	PM_SFT_CITY,
+	PM_SFT_TYPE,
+	PM_SFT_SUBTYPE,
+	PM_SFT_ICON,
+	PM_SFT_CAT_ID,
+	PM_SFT_ID,
+}

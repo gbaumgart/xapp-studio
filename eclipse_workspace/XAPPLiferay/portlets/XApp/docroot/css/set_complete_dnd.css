@@ -1,0 +1,76 @@
+.cpane{
+	border:0px solid #666;
+	font:bold 12px Arial;
+	color:#000;
+	background:#FFF;
+	padding:1px;
+	height:100px;
+}
+.dojoxDragHandle
+{
+    border: 0px solid #000000 !important;
+}
+.gridContainerZone:focus{
+    border: 0px solid #000000 !important;
+}
+.gridContainer
+{
+    overflow: visible !important;
+}
+.gridContainerZone > *{
+	margin: 0px !important;
+    outline: none;
+}
+
+.dj_ie6 .dropIndicator, .dj_ie6 .cpane, .dj_ie6 .dojoxPortlet, .dj_ie6 .cpane, .dj_ie6 .dijitTitlePane{
+	margin: 0px;
+    outline: none;
+
+}
+.dropIndicator{
+    border:0px dashed #BFBFBF !important;
+    height: 100%;
+}
+
+.dropIndicator > div{
+    background-color:#FFF;
+}
+
+.container {
+	border:0px solid #ccc;
+	cursor: default;
+	radius:0pt;
+	/*background:#fff;*/
+}
+
+.dojoDndItem
+{
+	/*padding:3px;*/
+}
+
+.dojoDndItemOver {
+	background: #ededed;
+	cursor:pointer;
+}
+
+.dojoDndAvatarItem .dojoDndItemOver {
+	background: transparent;
+}
+
+.dragNode{
+	opacity:0.6; 
+	filter:alpha(opacity=60); 
+	-khtml-opacity:0.6; 
+	-moz-opacity:0.6;
+}
+
+.dndOver{
+	color:green;
+	font-weight:bold;
+}
+
+.dndOverNotAccepted{
+	color:red;
+	font-weight:bold;
+	cursor:not-allowed;
+}

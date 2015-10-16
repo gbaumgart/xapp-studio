@@ -1,0 +1,15 @@
+package pmedia.types;
+
+public enum PMSearchSourceType
+{
+	PMSST_LOCATIONS,
+	PMSST_CATEGORIES,
+	PMSST_ARTICLES,
+	PMSST_EVENTS,
+	PMSST_YOUTUBE,
+	PMSST_MAPS,
+	PMSST_PORTALS,
+	PMSST_CUSTOM,
+	PMSST_UNKOWN,
+	
+}

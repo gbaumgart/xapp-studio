@@ -1,0 +1,43 @@
+
+.dijitValidationContainer{
+    height: 0px;
+}
+.dijitValidationInner{
+    height: 0px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+}
+.dijitBorderContainer-dijitContentPane {
+    background-color: transparent;
+    padding: 8px;
+}
+.claro .dijitSplitterV, .claro .dijitGutterV {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    width: 0px !important;
+}
+.claro h1 {
+    font-size: 1.545em;
+    margin-bottom: 0px !important;
+}
+.claro .dijitDialogPaneContent{
+    height: auto !important;
+    overflow: visible !important;
+}
+.claro .dijitDialogPaneContent DIV
+{
+    /*height: auto !important;*/
+}
+
+.dijitToggleButtonHover .dijitButtonNode {
+    background-color: #24616F;
+    color: #000000;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.dijitFileInputReal{
+    left: 0 !important;
+}

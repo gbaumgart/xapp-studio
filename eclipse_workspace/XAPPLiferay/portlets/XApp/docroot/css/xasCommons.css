@@ -1,0 +1,100 @@
+/***
+
+    Shared CSS amongst various CM applications (QuickXApp,XAS)
+*/
+
+.DataWizardDlg
+{
+    height:90%;
+    width: 800px;
+    max-width: 800px;
+    max-height: 735px;
+    min-height: 635px;
+}
+
+.ContentEditWizardDlg
+{
+    height:90%;
+    width: 700px;
+}
+
+.wizardContainerAlternate
+{
+    /*margin-left:10px;*/
+    border-radius: 3px 3px 3px 3px;
+    max-width: 440px;
+    border: 1px solid #888888;
+    background-color: #E7E7E7;
+    background-image: url("../images/tab-bkgInnerAlternate.jpg");
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    padding: 0.3em 0.3em;
+}
+.wizardContainer
+{
+    border: 0px solid #888888;
+    background-color: #E7E7E7;
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    box-shadow: 0 0px 0px #888888 ;
+    overflow-y: visible !important;
+}
+.dataSourceTabContainer
+{
+    height:620px !important;
+    max-height:620px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dataSourceTab
+{
+    height:570px !important;
+    max-height:570px !important;
+}
+.dataSourceTabTreeView
+{
+    height:540px !important;
+    max-height:540px !important;
+}
+.dataSourceTree
+{
+    height:480px !important;
+    overflow: auto !important;
+}
+.dataSourceTreeLiferay
+{
+    height:500px !important;
+    overflow: auto !important;
+    width: 100%;
+}
+
+.dataSourceTabTreeViewLiferay{
+    height:570px !important;
+    max-height:570px !important;
+}
+.dojoxWizardContainer{
+    overflow:visible !important;
+}
+
+.dataSourceTabLiferay
+{
+
+}
+
+.widgetDeleteButton
+{
+    background-image: url("../images/delete.png");
+    background-size: 100% 100%;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.widgetMinusButton{
+    background-image: url("../images/minus.png");
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}

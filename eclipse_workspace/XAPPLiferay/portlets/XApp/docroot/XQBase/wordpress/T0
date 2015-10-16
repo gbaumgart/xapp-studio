@@ -1,0 +1,14 @@
+
+<articles v="3">
+	<art owner="1" created="2012-01-25 09:42:53.0 GMT" id="6">
+		<title>My Second Post</title>
+		<introtext><![CDATA[<a href="http://mc007ibi.dyndns.org:8888/wordpress/wp-content/uploads/2012/01/accept.png"><img class="alignnone size-full wp-image-17" title="accept" src="http://mc007ibi.dyndns.org:8888/wordpress/wp-content/uploads/2012/01/accept.png" alt="" width="16" height="16" /></a>My second edit
+
+&nbsp;]]>
+		</introtext>
+		<catgories>
+			<category idStr="MyBlogCategory"/>
+			<category idStr="xxxCategory"/>
+		</catgories>
+	</art>
+</articles>

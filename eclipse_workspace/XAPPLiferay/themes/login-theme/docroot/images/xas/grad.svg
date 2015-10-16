@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <defs>
+            <linearGradient id="ui-bg-grad" x1="0%" x2="100%" y1="0%" y2="0%">
+                <stop offset="0%" stop-color="rgba(245,245,245,1)" />
+                <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+            </linearGradient>
+        </defs>
+        <rect fill="url(#ui-bg-grad)" x="0" y="8px" width="90%" height="95%"/>
+    </g>
+</svg>

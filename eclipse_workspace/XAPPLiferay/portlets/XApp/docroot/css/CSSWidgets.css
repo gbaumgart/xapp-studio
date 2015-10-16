@@ -1,0 +1,2618 @@
+#bp-cont *:focus {
+    outline: medium none;
+}
+@font-face {
+    font-family: "Droid Sans";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Droid Sans"), url("http://themes.googleusercontent.com/font?kit=POVDFY-UUf0WFR9DIMCU8g") format("truetype");
+}
+#bp-cont div, #bp-cont input, #bp-cont textarea, #bp-cont center, #bp-cont span, #bp-cont applet, #bp-cont object, #bp-cont iframe, #bp-cont h1, #bp-cont h2, #bp-cont h3, #bp-cont h4, #bp-cont h5, #bp-cont h6, #bp-cont p, #bp-cont blockquote, #bp-cont pre, #bp-cont a, #bp-cont abbr, #bp-cont acronym, #bp-cont address, #bp-cont big, #bp-cont cite, #bp-cont code, #bp-cont del, #bp-cont dfn, #bp-cont em, #bp-cont font, #bp-cont img, #bp-cont ins, #bp-cont kbd, #bp-cont q, #bp-cont s, #bp-cont samp, #bp-cont small, #bp-cont strike, #bp-cont strong, #bp-cont b, #bp-cont sub, #bp-cont sup, #bp-cont tt, #bp-cont var, #bp-cont dd, #bp-cont dl, #bp-cont dt, #bp-cont li, #bp-cont ol, #bp-cont ul, #bp-cont fieldset, #bp-cont form, #bp-cont label, #bp-cont legend, #bp-cont table, #bp-cont caption, #bp-cont tbody, #bp-cont tfoot, #bp-cont thead, #bp-cont tr, #bp-cont th, #bp-cont td {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    box-shadow: 0 0 0 #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    height: auto;
+    letter-spacing: 0;
+    line-height: 11px;
+    list-style-image: none;
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    vertical-align: baseline;
+    width: auto;
+}
+#bp-cont a img, #bp-cont a:link img, #bp-cont a:visited img {
+    border: 0 none;
+}
+#bp-cont table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#bp-cont ol, #bp-cont ul {
+    list-style: none outside none;
+}
+.bp-toggle-btn:link, .bp-toggle-btn:visited {
+    background: url("http://bluepeneditor.com/current/program/images1.0/bp-toggle.png") no-repeat scroll left top transparent;
+    display: block;
+    height: 61px;
+    position: fixed;
+    right: 30px;
+    text-decoration: none;
+    top: 30px;
+    width: 49px;
+}
+.bp-toggle-btn-inactive:link, .bp-toggle-btn-inactive:visited {
+    background: url("http://bluepeneditor.com/current/program/images1.0/bp-toggle-inactive.png") no-repeat scroll left top transparent;
+}
+#bp-cont {
+}
+#bp-cont a:link, #bp-cont a:visited {
+    color: #000000;
+}
+#bp-cont #bp-panel {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    width: 300px;
+    z-index: 2147470000;
+}
+#bp-cont .bp-title {
+    height: 43px;
+    width: 309px;
+}
+#bp-cont .bp-panel-active .bp-title-left, #bp-cont .bp-panel-alert .bp-title-left, #bp-cont .bp-title-left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 43px;
+    width: 15px;
+}
+#bp-cont .bp-panel-active .bp-title-left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-active.png");
+}
+#bp-cont #bp-dialog-holder .bp-title-left, #bp-cont .bp-panel-alert .bp-title-left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-alert.png");
+}
+#bp-cont .bp-panel-active .bp-title-repeat, #bp-cont .bp-panel-alert .bp-title-repeat, #bp-cont .bp-title-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-title-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    display: inline;
+    float: left;
+    height: 43px;
+    width: 278px;
+}
+#bp-cont .bp-panel-active .bp-title-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-title-repeat-active.png");
+}
+#bp-cont #bp-dialog-holder .bp-title-repeat, #bp-cont .bp-panel-alert .bp-title-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-title-repeat-alert.png");
+}
+#bp-cont .bp-title-text {
+    color: #000000;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    font-family: "Droid Sans",Arial;
+    font-size: 13px;
+    font-weight: normal;
+    height: 34px;
+    line-height: 36px;
+    margin-left: 13px;
+    padding-top: 7px;
+    width: 205px;
+}
+#bp-cont .bp-title-logo {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-main.png");
+    background-position: 0 19px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    width: 180px;
+}
+#bp-cont .bp-title-info {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-info-icon.png");
+    background-position: 0 19px;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    width: 198px;
+}
+#bp-cont .bp-title-backup {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-backup-icon.png");
+    background-position: 0 19px;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    width: 198px;
+}
+#bp-cont .bp-title-help {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-help-icon.png");
+    background-position: 0 17px;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    width: 190px;
+}
+#bp-cont .bp-title-btns {
+    display: inline;
+    float: left;
+    width: 58px;
+}
+#bp-cont #bp-btn-log {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-minimize.gif");
+    background-position: 50% 18px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 31px;
+    margin-top: 7px;
+    width: 18px;
+}
+#bp-cont .bp-btn-minimize {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-minimize.gif");
+    background-position: 50% 18px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 31px;
+    margin-top: 7px;
+    width: 18px;
+}
+#bp-cont .bp-btn-close {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-close.png");
+    background-position: 50% 15px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 31px;
+    margin-top: 7px;
+    width: 18px;
+}
+#bp-cont .bp-panel-active .bp-title-right, #bp-cont .bp-panel-alert .bp-title-right, #bp-cont .bp-title-right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners.png");
+    background-position: -16px 0;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 43px;
+    width: 15px;
+}
+#bp-cont .bp-panel-active .bp-title-right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-active.png");
+}
+#bp-cont #bp-dialog-holder .bp-title-right, #bp-cont .bp-panel-alert .bp-title-right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-alert.png");
+}
+#bp-cont .bp-panel-active .bp-repeat, #bp-cont .bp-panel-alert .bp-repeat, #bp-cont .bp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+    padding: 0 13px 2px;
+    position: relative;
+    width: 282px;
+}
+#bp-cont .bp-panel-active .bp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-active.png");
+}
+#bp-cont .bp-panel-alert .bp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-alert.png");
+}
+#bp-cont .bp-panel-active .bp-repeat-outer, #bp-cont .bp-panel-alert .bp-repeat-outer, #bp-cont .bp-repeat-outer {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+    padding: 0;
+    width: 308px;
+}
+#bp-cont .bp-panel-active .bp-repeat-outer {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-active.png");
+}
+#bp-cont .bp-panel-alert .bp-repeat-outer {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-alert.png");
+}
+#bp-cont .bp-panel-active .bp-repeat-inner, #bp-cont .bp-panel-alert .bp-repeat-inner, #bp-cont .bp-repeat-inner {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-mark.png");
+    background-position: 0 -100px;
+    background-repeat: repeat-x;
+    padding: 0 13px 2px;
+    position: relative;
+    width: 282px;
+}
+#bp-cont .bp-tab-btn {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-title.gif");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #000000;
+    display: block;
+    font-family: "Droid Sans",Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 14px;
+    width: 268px;
+}
+#bp-cont .bp-tab-btn:hover {
+    background-position: 0 -53px;
+    color: #FFFFFF;
+}
+#bp-cont .bp-tab-btn span {
+    color: #000000;
+    display: inline;
+    float: right;
+    font-family: "Droid Sans",Arial;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 26px;
+    padding-right: 11px;
+    text-align: right;
+    width: 20px;
+}
+#bp-cont .bp-tab-content {
+    display: none;
+}
+#bp-cont .bp-repeat-inner h2, #bp-cont .bp-repeat h2 {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-title-bg.gif");
+    background-position: left top;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #E3E4E4;
+    border-top: 1px solid #E3E4E4;
+    color: #26A9E0;
+    font-family: "Droid Sans",Arial;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+    margin-bottom: 1px;
+    padding: 0 0 0 14px;
+}
+#bp-cont .bp-repeat-inner h2 span, #bp-cont .bp-repeat h2 span {
+    color: #221F20;
+    font-size: 10px;
+}
+#bp-cont .bp-fieldset {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-fieldset-bg.gif");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#bp-cont #bp-state-table {
+    margin-top: 1px;
+}
+#bp-cont #bp-background-selection-btns {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95px;
+}
+#bp-cont .bp-slider-title-inactive {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-title.gif");
+    background-position: 0 -26px;
+    background-repeat: repeat-x;
+    color: #231F20;
+    display: block;
+    font-family: "Droid Sans",Arial;
+    font-size: 11px;
+    font-weight: normal;
+    height: 27px;
+    line-height: 27px;
+    overflow: hidden;
+    padding-left: 14px;
+    width: 268px;
+}
+#bp-cont .bp-slider-title-inactive .bp-shortcut-key {
+    color: #231F20;
+}
+#bp-cont .bp-slider-title-active .bp-shortcut-key {
+    color: #FFFFFF;
+}
+#bp-cont .bp-slider-title-inactive:hover {
+    background-position: 0 -53px;
+    color: #FFFFFF;
+}
+#bp-cont .bp-slider-title-active {
+    background-position: 0 -53px;
+    color: #FFFFFF !important;
+}
+#bp-cont .bp-shortcut-key {
+    color: #FFFFFF;
+    float: right;
+    font-family: "Droid Sans",Arial;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+    padding-right: 11px;
+    padding-top: 8px;
+    text-align: right;
+    width: 30px;
+}
+#bp-cont .bp-slider-content {
+    display: none;
+}
+#bp-cont .bp-input-title {
+    display: inline;
+    float: left;
+    width: 122px;
+}
+#bp-cont .bp-input-title-medium {
+    display: inline;
+    float: left;
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    padding-left: 15px;
+    width: 93px;
+}
+#bp-cont .bp-input-holder-medium {
+    display: inline;
+    float: left;
+    height: 20px;
+    margin-bottom: 2px;
+    width: 166px;
+}
+#bp-cont .bp-input-title {
+    display: inline;
+    float: left;
+    line-height: 20px;
+    margin-bottom: 2px;
+    padding-left: 15px;
+    width: 61px;
+}
+#bp-cont .bp-input-holder {
+    display: inline;
+    float: left;
+    height: 20px;
+    margin-bottom: 2px;
+    width: 199px;
+}
+#bp-cont .bp-color-select {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-controllers.png");
+    background-position: 0 -88px;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 166px;
+}
+#bp-cont .bp-color-input {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 10px;
+    height: 18px;
+    padding-left: 5px;
+    width: 137px;
+}
+#bp-cont .bp-color-select-btn {
+    display: inline;
+    float: right;
+    height: 20px;
+    width: 20px;
+}
+#bp-cont .bp-color-select-hover {
+    background-position: -168px -88px;
+}
+#bp-cont .bp-popup-bg {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-controllers.png");
+    background-position: 0 -22px;
+    background-repeat: no-repeat;
+}
+#bp-cont .bp-popup-bg-hover {
+    background-position: -201px -22px;
+}
+#bp-cont .bp-slider-bg {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-controllers.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+#bp-cont .bp-slider-bg-hover {
+    background-position: -201px 0;
+}
+#bp-cont .bp-popup-bg-medium {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-controllers.png");
+    background-position: 0 -66px;
+    background-repeat: no-repeat;
+}
+#bp-cont .bp-popup-bg-medium-hover {
+    background-position: -168px -66px;
+}
+#bp-cont .bp-slider-bg-medium {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-controllers.png");
+    background-position: 0 -44px;
+    background-repeat: no-repeat;
+}
+#bp-cont .bp-slider-bg-medium-hover {
+    background-position: -168px -44px;
+}
+#bp-cont .bp-select {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 10px;
+    height: 18px;
+    padding-left: 5px;
+    width: 141px;
+}
+#bp-cont .bp-drag {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 10px;
+    height: 18px;
+    padding-right: 5px;
+    text-align: right;
+    width: 118px;
+}
+#bp-cont .bp-drag-wide {
+    width: 150px;
+}
+#bp-cont .bp-drag-unit {
+    background-color: transparent;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 10px;
+    height: 20px;
+    margin-left: 23px;
+    text-align: center;
+    width: 20px;
+}
+#bp-cont .bp-slider-btn {
+    cursor: n-resize;
+    height: 18px;
+}
+#bp-cont #bp-box-holder {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-title-bg.gif");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 1px;
+}
+#bp-cont #bp-box-properties-holder {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-box.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 116px;
+    margin: 10px auto;
+    position: relative;
+    width: 250px;
+}
+#bp-cont #bp-box-properties-holder table tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+#bp-cont .bp-box-popup-input {
+    background-color: transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 11px;
+    font-weight: normal;
+    height: 17px;
+    line-height: 17px;
+    padding-right: 3px;
+    text-align: right;
+    width: 29px;
+}
+#bp-cont .bp-box-input {
+    background-color: transparent;
+    border: 0 none;
+    color: #333333;
+    font-family: "Droid Sans",Arial;
+    font-size: 11px;
+    font-weight: normal;
+    height: 17px;
+    left: 0;
+    line-height: 17px;
+    padding-right: 3px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 29px;
+}
+#bp-cont #margin-top-view {
+    left: 100px;
+    top: 0;
+}
+#bp-cont #margin-right-view {
+    left: 223px;
+    top: 50px;
+}
+#bp-cont #margin-bottom-view {
+    left: 100px;
+    top: 98px;
+}
+#bp-cont #margin-left-view {
+    left: -8px;
+    top: 50px;
+}
+#bp-cont #padding-view {
+    left: 29px;
+    top: 34px;
+}
+#bp-cont #padding-top-view {
+    left: 100px;
+    top: 33px;
+}
+#bp-cont #padding-right-view {
+    left: 178px;
+    top: 50px;
+}
+#bp-cont #padding-bottom-view {
+    left: 100px;
+    top: 67px;
+}
+#bp-cont #padding-left-view {
+    left: 32px;
+    top: 50px;
+}
+#bp-cont .bp-box-input-unit {
+    background-color: transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-left: 23px;
+    text-align: center;
+    width: 14px;
+}
+#bp-cont #bp-box-properties-holder a:link, #bp-cont #bp-box-properties-holder a:visited {
+    color: #676767;
+    font-family: "Droid Sans",Arial;
+    font-size: 10px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+#bp-cont #bp-box-properties-holder a:hover {
+    color: #000000;
+}
+#bp-cont #bp-margin-all a:link, #bp-cont #bp-margin-all a:visited {
+    cursor: n-resize;
+    display: block;
+    height: 17px;
+    line-height: 17px;
+    width: 20px;
+}
+#bp-cont #bp-margin-top {
+    height: 17px;
+    line-height: 17px;
+    width: 210px;
+}
+#bp-cont #bp-margin-top a:link, #bp-cont #bp-margin-top a:visited {
+    left: 85px;
+    top: -3px;
+}
+#bp-cont #bp-margin-righttop {
+    height: 17px;
+    line-height: 17px;
+    width: 20px;
+}
+#bp-cont #bp-margin-left {
+    height: 80px;
+    line-height: 80px;
+    width: 20px;
+}
+#bp-cont #bp-margin-left a:link, #bp-cont #bp-margin-left a:visited {
+    left: -35px;
+    top: 48px;
+}
+#bp-cont #bp-border-all a:link, #bp-cont #bp-border-all a:visited {
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    width: 19px;
+}
+#bp-cont #bp-border-all a:link input, #bp-cont #bp-border-all a:visited input {
+    background-color: transparent;
+    display: block;
+    font: 9px/1.5em Arial;
+    height: 15px;
+    text-align: center;
+    width: 19px;
+}
+#bp-cont #bp-border-top a:link, #bp-cont #bp-border-top a:visited {
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    width: 172px;
+}
+#bp-cont #bp-border-top a:link input, #bp-cont #bp-border-top a:visited input {
+    background-color: transparent;
+    display: block;
+    font: 9px/1.5em Arial;
+    height: 15px;
+    text-align: center;
+    width: 172px;
+}
+#bp-cont #bp-border-righttop {
+    height: 15px;
+    line-height: 15px;
+    width: 19px;
+}
+#bp-cont #bp-margin-right {
+    height: 80px;
+    line-height: 80px;
+    width: 20px;
+}
+#bp-cont #bp-margin-right a:link, #bp-cont #bp-margin-right a:visited {
+    left: 196px;
+    top: 48px;
+}
+#bp-cont #bp-border-left a:link, #bp-cont #bp-border-left a:visited {
+    display: block;
+    height: 53px;
+    line-height: 53px;
+    width: 19px;
+}
+#bp-cont #bp-border-left a:link input, #bp-cont #bp-border-left a:visited input {
+    background-color: transparent;
+    display: block;
+    font: 9px/1.5em Arial;
+    height: 53px;
+    text-align: center;
+    width: 19px;
+}
+#bp-cont #bp-padding-all a:link, #bp-cont #bp-padding-all a:visited {
+    cursor: n-resize;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+}
+#bp-cont #bp-padding-top {
+    height: 16px;
+    line-height: 16px;
+    width: 140px;
+}
+#bp-cont #bp-padding-top a:link, #bp-cont #bp-padding-top a:visited {
+    left: 85px;
+    top: 30px;
+}
+#bp-cont #bp-padding-righttop {
+    height: 16px;
+    line-height: 16px;
+    width: 16px;
+}
+#bp-cont #bp-border-right a:link, #bp-cont #bp-border-right a:visited {
+    display: block;
+    height: 53px;
+    line-height: 53px;
+    width: 19px;
+}
+#bp-cont #bp-border-right a:link input, #bp-cont #bp-border-right a:visited input {
+    background-color: transparent;
+    display: block;
+    font: 9px/1.5em Arial;
+    height: 53px;
+    text-align: center;
+    width: 19px;
+}
+#bp-cont #bp-padding-left {
+    height: 22px;
+    line-height: 22px;
+    width: 16px;
+}
+#bp-cont #bp-padding-left a:link, #bp-cont #bp-padding-left a:visited {
+    left: 4px;
+    top: 48px;
+}
+#bp-cont #bp-dimensions {
+    height: 22px;
+    line-height: 22px;
+    width: 140px;
+}
+#bp-cont #bp-padding-right {
+    height: 22px;
+    line-height: 22px;
+    width: 16px;
+}
+#bp-cont #bp-padding-right a:link, #bp-cont #bp-padding-right a:visited {
+    left: 158px;
+    top: 48px;
+}
+#bp-cont #bp-padding-bottom {
+    height: 15px;
+    line-height: 15px;
+    width: 140px;
+}
+#bp-cont #bp-padding-bottom a:link, #bp-cont #bp-padding-bottom a:visited {
+    left: 85px;
+    top: 64px;
+}
+#bp-cont #bp-border-bottom a:link, #bp-cont #bp-border-bottom a:visited {
+    display: block;
+    height: 12px;
+    line-height: 12px;
+    width: 172px;
+}
+#bp-cont #bp-border-bottom a:link input, #bp-cont #bp-border-bottom a:visited input {
+    background-color: transparent;
+    display: block;
+    font: 9px/1.5em Arial;
+    height: 12px;
+    text-align: center;
+    width: 172px;
+}
+#bp-cont #bp-margin-bottom {
+    height: 19px;
+    line-height: 19px;
+    width: 210px;
+}
+#bp-cont #bp-margin-bottom a:link, #bp-cont #bp-margin-bottom a:visited {
+    left: 85px;
+    top: 95px;
+}
+#bp-cont .bp-textarea {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 12px;
+    font-weight: normal;
+    height: 236px;
+    line-height: 18px;
+    padding: 0 0 0 18px;
+    width: 260px;
+}
+#bp-cont #bp-box-properties-holder .bp-box-controller {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-box-controller.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    cursor: n-resize;
+    display: none;
+    height: 16px;
+    left: 0;
+    padding: 3px 0 3px 3px;
+    position: absolute;
+    top: 0;
+    width: 71px;
+}
+#bp-cont #bp-uploading-files-template {
+    display: none;
+}
+#bp-cont .bp-uploading-file {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-uploading-file.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 27px;
+    margin: 0 auto 3px;
+    padding: 11px 15px 0;
+    width: 246px;
+}
+#bp-cont .bp-uploading-file-progressbar {
+    background-color: #C6C5C5;
+    font-size: 2px;
+    height: 2px;
+    line-height: 2px;
+    margin-top: 4px;
+    padding: 1px;
+}
+#bp-cont .bp-uploading-file-stripe {
+    background-color: #26A9E0;
+    font-size: 2px;
+    height: 2px;
+    line-height: 2px;
+    width: 0;
+}
+#bp-cont .bp-footer {
+    height: 41px;
+    width: 309px;
+}
+#bp-cont .bp-panel-active .bp-footer-left, #bp-cont .bp-panel-alert .bp-footer-left, #bp-cont .bp-footer-left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners.png");
+    background-position: 0 -44px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 41px;
+    width: 15px;
+}
+#bp-cont .bp-panel-active .bp-footer-left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-active.png");
+}
+#bp-cont #bp-dialog-holder .bp-footer-left, #bp-cont .bp-panel-alert .bp-footer-left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-alert.png");
+}
+#bp-cont .bp-panel-active .bp-footer-repeat, #bp-cont .bp-panel-alert .bp-footer-repeat, #bp-cont .bp-footer-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-footer-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    display: inline;
+    float: left;
+    height: 41px;
+    width: 279px;
+}
+#bp-cont .bp-panel-active .bp-footer-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-footer-repeat-active.png");
+}
+#bp-cont #bp-dialog-holder .bp-footer-repeat, #bp-cont .bp-panel-alert .bp-footer-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-footer-repeat-alert.png");
+}
+#bp-cont .bp-panel-alert .bp-footer-repeat-drag, #bp-cont .bp-panel-active .bp-footer-repeat-drag, #bp-cont .bp-footer-repeat-drag {
+    width: 262px;
+}
+#bp-cont .bp-panel-active .bp-footer-right, #bp-cont .bp-panel-alert .bp-footer-right, #bp-cont .bp-footer-right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners.png");
+    background-position: -17px -44px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 41px;
+    width: 15px;
+}
+#bp-cont .bp-panel-active .bp-footer-right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-active.png");
+}
+#bp-cont #bp-dialog-holder .bp-footer-right, #bp-cont .bp-panel-alert .bp-footer-right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-panel-corners-alert.png");
+}
+#bp-cont .bp-panel-active .bp-footer-right-drag, #bp-cont .bp-panel-alert .bp-footer-right-drag, #bp-cont .bp-footer-right-drag {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-footer-right-drag.png");
+    background-position: left top;
+    width: 31px;
+}
+#bp-cont .bp-panel-active .bp-footer-right-drag {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-footer-right-drag-active.png");
+}
+#bp-cont .bp-panel-alert .bp-footer-right-drag {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-footer-right-drag-alert.png");
+}
+#bp-cont #bp-overlay {
+    background-color: #FFFFFF;
+    color: #343434;
+    display: none;
+    font: 12px/18px "Droid Sans",Arial;
+    height: 212px;
+    left: 12px;
+    opacity: 0.7;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    width: 277px;
+    z-index: 2147460000;
+}
+#bp-cont #bp-message {
+    background-color: #FFFFFF;
+    color: #343434;
+    display: none;
+    font: 12px/18px "Droid Sans",Arial;
+    height: 212px;
+    left: 12px;
+    opacity: 0.9;
+    overflow: auto;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    width: 277px;
+    z-index: 2147460000;
+}
+#bp-cont .bp-message-line {
+    border-bottom: 1px solid #EBEBEC;
+    color: #000000;
+    font: 10px/12px Arial;
+    padding: 3px 7px;
+}
+#bp-cont #bp-dialog-holder {
+    display: none;
+    left: 50px;
+    position: absolute;
+    top: 17px;
+    width: 215px;
+    z-index: 2147483600;
+}
+#bp-cont .bp-panel-active .bp-dialog-title, #bp-cont .bp-panel-alert .bp-dialog-title, #bp-cont .bp-dialog-title {
+    width: 215px;
+}
+#bp-cont .bp-panel-active .bp-dialog-title-repeat, #bp-cont .bp-panel-alert .bp-dialog-title-repeat, #bp-cont .bp-dialog-title-repeat {
+    width: 180px;
+}
+#bp-cont .bp-panel-aactive #bp-dialog-title, #bp-cont .bp-panel-alert #bp-dialog-title, #bp-cont #bp-dialog-title {
+    width: 140px;
+}
+#bp-cont .bp-dialog-btns {
+    width: 18px;
+}
+#bp-cont #bp-dialog-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-dialog-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+    padding: 1px 13px;
+    width: 189px;
+}
+#bp-cont #bp-dialog-content p {
+    line-height: 15px;
+    padding: 7px 6px;
+}
+#bp-cont .bp-dialog-item {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-dialog-item.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    display: block;
+    height: 22px;
+    margin-bottom: 1px;
+    padding: 0 10px;
+    width: 163px;
+}
+#bp-cont .bp-dialog-item-active {
+    background-position: 0 -22px;
+    color: #FFFFFF;
+}
+#bp-cont .bp-dialog-item:hover {
+    background-position: 0 -22px;
+    color: #FFFFFF;
+}
+#bp-cont .bp-dialog-item, #bp-cont .bp-dialog-item a:link, #bp-cont .bp-dialog-item a:visited {
+    color: #4A4949;
+    font-family: "Droid Sans",Arial;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 20px;
+}
+#bp-cont .bp-dialog-item a:hover {
+    color: #FFFFFF;
+}
+#bp-cont .bp-dialog-dragger {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-dialog-dragger.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: inline;
+    float: right;
+    line-height: 12px;
+    padding: 0 20px 2px 0;
+    width: 114px;
+}
+#bp-cont .bp-dialog-input {
+    border: 1px solid #CCCCCC;
+    font-size: 10px;
+    height: 17px;
+    line-height: 12px;
+    padding: 1px 5px;
+    text-align: right;
+    width: 75px;
+}
+#bp-cont .bp-dialog-input-unit {
+    border: 1px solid #CCCCCC;
+    font-size: 10px;
+    height: 17px;
+    line-height: 17px;
+    padding: 1px 0;
+    text-align: center;
+    width: 21px;
+}
+#bp-cont .bp-dialog-item:hover .bp-dialog-input {
+    border: 1px solid #000000;
+    color: #000000;
+}
+#bp-cont .bp-dialog-item:hover .bp-dialog-input-unit {
+    border: 1px solid #000000;
+    color: #000000;
+}
+#bp-cont .bp-dialog-color-btn {
+}
+#bp-cont .bp-panel-active #bp-dialog-footer, #bp-cont .bp-panel-alert #bp-dialog-footer, #bp-cont #bp-dialog-footer {
+    width: 215px;
+}
+#bp-cont .bp-panel-active .bp-dialog-footer-repeat, #bp-cont .bp-panel-alert .bp-dialog-footer-repeat, #bp-cont .bp-dialog-footer-repeat {
+    width: 181px;
+}
+#bp-cont #bp-dialog-btn-ok {
+    color: #4A4949;
+    font-family: "Droid Sans",Arial;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 31px;
+    padding: 8px 10px 6px;
+}
+#bp-cont #bp-dialog-btn-cancel {
+    color: #9C9E9F;
+    font-family: "Droid Sans",Arial;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 31px;
+    padding: 8px 80px 6px 10px;
+}
+#bp-cont #bp-toolbar {
+    left: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 30px;
+    width: 55px;
+    z-index: 2147460000;
+}
+#bp-cont #bp-toolbar-overlay {
+    background-color: #FFFFFF;
+    display: none;
+    height: 120px;
+    left: 0;
+    margin-left: 7px;
+    margin-top: 36px;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 42px;
+}
+#bp-cont #bp-toolbar-top {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-toolbar-top.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 55px;
+}
+#bp-cont #bp-toolbar-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-toolbar-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+    padding: 2px 10px;
+    width: 35px;
+}
+#bp-cont .bp-toolbar-btn {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 5px 0;
+    width: 35px;
+}
+#bp-cont .bp-toolbar-btn-active {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons-hover.png");
+    background-repeat: no-repeat;
+    display: block;
+    margin: 5px 0;
+    width: 35px;
+}
+#bp-cont #bp-select-layer {
+    background-position: 10px -332px;
+    height: 18px;
+}
+#bp-cont .bp-select-layer {
+    background-position: 10px -332px;
+    display: inline !important;
+    height: 1px;
+    padding-left: 30px;
+    padding-top: 6px;
+}
+#bp-cont #bp-icon-css-editor {
+    background-position: 8px -421px;
+    height: 7px;
+}
+#bp-cont #bp-icon-font-props {
+    background-position: 10px -429px;
+    height: 19px;
+}
+#bp-cont #bp-icon-box-props {
+    background-position: 50% -144px;
+    height: 19px;
+}
+#bp-cont #bp-icon-position-props {
+    background-position: 9px -313px;
+    height: 19px;
+}
+#bp-cont #bp-ruler-horizontal-creator {
+    background-position: 7px -109px;
+    height: 10px;
+}
+#bp-cont #bp-ruler-vertical-creator {
+    background-position: 13px -120px;
+    height: 23px;
+}
+#bp-cont #bp-debug-mode-btn {
+    background-position: 9px -185px;
+    height: 21px;
+}
+#bp-cont #bp-toggle-info-win {
+    background-position: 10px -449px;
+    height: 17px;
+}
+#bp-cont #bp-toggle-help-win {
+    background-position: 10px -467px;
+    height: 17px;
+}
+#bp-cont #bp-toggle-backup-win {
+    background-position: 13px -500px;
+    height: 17px;
+}
+#bp-cont #bp-undo-btn {
+    background-position: 10px -533px;
+    height: 17px;
+}
+#bp-cont #bp-redo-btn {
+    background-position: 10px -550px;
+    height: 17px;
+}
+#bp-cont #bp-toolbar-save-btn {
+    background-position: 11px -567px;
+    height: 17px;
+}
+#bp-cont #bp-toolbar-feedback-btn {
+    background-position: 6px -585px;
+    height: 21px;
+}
+#bp-cont #bp-toggle-gesture-mode-btn {
+    background-position: 13px -515px;
+    height: 17px;
+}
+#bp-cont .bp-toolbar-separator {
+    background-color: #DEDEDE;
+    font-size: 1px;
+    height: 1px;
+    line-height: 1px;
+}
+#bp-cont #bp-toolbar-bottom {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-toolbar-bottom.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 55px;
+}
+#bp-cont #bp-info-win {
+    display: none;
+    left: 87px;
+    position: absolute;
+    top: 430px;
+    width: 309px;
+    z-index: 2147460000;
+}
+#bp-cont #bp-mouse-pos-x, #bp-cont #bp-mouse-pos-y {
+    margin: 3px 0 3px 3px;
+    text-align: right;
+}
+#bp-cont #bp-mouse-pos-x span, #bp-cont #bp-mouse-pos-y span {
+    display: inline;
+    float: left;
+    width: 10px;
+}
+#bp-cont #bp-coordinates {
+    background-position: left center;
+}
+#bp-cont #bp-coordinates span {
+    font-size: 10px;
+    font-weight: normal;
+}
+#bp-cont #bp-edited-box {
+    padding: 10px 15px;
+}
+#bp-cont #bp-select-css-file-label:link, #bp-cont #bp-select-css-file-label:visited {
+    display: inline;
+    float: left;
+    width: 30px;
+}
+#bp-cont #bp-select-css-file:link, #bp-cont #bp-select-css-file:visited {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-browse.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    font: 12px/10px Arial;
+    height: 15px;
+    text-align: center;
+    width: 15px;
+}
+#bp-cont #bp-edited-file {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    width: 205px;
+}
+#bp-cont #bp-edited-style-label {
+    display: inline;
+    float: left;
+    width: 30px;
+}
+#bp-cont #bp-edited-style {
+    display: inline;
+    float: left;
+    width: 205px;
+}
+#bp-cont #bp-newstyle-btn {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons.png");
+    background-position: 0 -58px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin: 7px 20px 7px 57px;
+    padding-left: 20px;
+    width: 58px;
+}
+#bp-cont #bp-newstyle-btn:hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons-hover.png");
+}
+#bp-cont #bp-deletestyle-btn {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons.png");
+    background-position: 0 -77px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin: 7px 0;
+    padding-left: 20px;
+    width: 70px;
+}
+#bp-cont #bp-deletestyle-btn:hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons-hover.png");
+}
+#bp-cont .bp-newstyle-item-btn {
+    color: #A7A9AC;
+}
+#bp-cont .bp-newstyle-hover:link, #bp-cont .bp-newstyle-hover:visited {
+    color: #E5541F;
+}
+#bp-cont #bp-new-style-textarea {
+    border: 1px solid #CCCCCC;
+    color: #FFB900;
+    font: bold 12px/1.5em Arial;
+    height: 130px;
+    margin-top: 3px;
+    padding: 5px;
+    width: 250px;
+}
+#bp-cont #bp-infowin-holder {
+    height: 29px;
+    padding-left: 5px;
+    position: relative;
+    width: 245px;
+}
+#bp-cont #bp-infowin-text-default {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-dot-green.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 29px;
+    left: 0;
+    line-height: 29px;
+    margin-left: 15px;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+}
+#bp-cont #bp-infowin-text-message {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-dot-green.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: none;
+    height: 29px;
+    left: 0;
+    line-height: 29px;
+    margin-left: 15px;
+    overflow: hidden;
+    padding-left: 15px;
+    position: absolute;
+    top: 0;
+}
+#bp-cont #bp-font-browser {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 230px;
+    width: 309px;
+    z-index: 2147460000;
+}
+#bp-cont #bp-font-browser-holder {
+    background-color: #FFFFFF;
+    height: 565px;
+    overflow: auto;
+    z-index: 2147483647;
+}
+#bp-cont #bp-font-browser-scroller {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bluePen-googleFonts.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 7548px;
+}
+#bp-cont .bp-font-family-link:link, #bp-cont .bp-font-family-link:visited {
+    border: 1px solid #FFFFFF;
+    display: block;
+    height: 32px;
+    width: 263px;
+}
+#bp-cont .bp-font-family-link:hover {
+    border: 1px solid #DFDFDF;
+}
+#bp-cont .bp-errorhandling-panel {
+    display: none;
+    left: 50%;
+    margin-left: -205px;
+    position: absolute;
+    top: 150px;
+    width: 410px;
+    z-index: 2147460000;
+}
+#bp-cont .bp-errorp-title {
+    width: 410px;
+}
+#bp-cont .bp-panel-alert .bp-errorp-title-repeat, #bp-cont .bp-panel-active .bp-errorp-title-repeat, #bp-cont .bp-panel .bp-errorp-title-repeat {
+    width: 378px;
+}
+#bp-cont .bp-errorp-text {
+    width: 325px;
+}
+#bp-cont .bp-errorp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-colorp.png");
+}
+#bp-cont .bp-panel-active .bp-errorp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-colorp-active.png");
+}
+#bp-cont .bp-panel-alert .bp-errorp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-colorp-alert.png");
+}
+#bp-cont .bp-panel-alert .bp-errorp-repeat, #bp-cont .bp-panel-active .bp-errorp-repeat, #bp-cont .bp-panel .bp-errorp-repeat {
+    padding-top: 1px;
+    width: 383px;
+}
+#bp-cont .bp-panel-alert .bp-errorp-footer, #bp-cont .bp-panel-active .bp-errorp-footer, #bp-cont .bp-panel .bp-errorp-footer {
+    width: 410px;
+}
+#bp-cont .bp-panel-alert .bp-errorp-footer-repeat, #bp-cont .bp-panel-active .bp-errorp-footer-repeat, #bp-cont .bp-panel .bp-errorp-footer-repeat {
+    padding-right: 30px;
+    width: 349px;
+}
+#bp-cont .bp-colorpicker-holder {
+    display: none;
+    left: 150px;
+    position: absolute;
+    top: 50px;
+    width: 410px;
+    z-index: 2147460000;
+}
+#bp-cont .bp-colorp-title {
+    width: 410px;
+}
+#bp-cont .bp-panel-alert .bp-colorp-title-repeat, #bp-cont .bp-panel-active .bp-colorp-title-repeat, #bp-cont .bp-panel .bp-colorp-title-repeat {
+    width: 378px;
+}
+#bp-cont .bp-colorp-text {
+    width: 325px;
+}
+#bp-cont .bp-colorp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-colorp.png");
+}
+#bp-cont .bp-panel-active .bp-colorp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-colorp-active.png");
+}
+#bp-cont .bp-panel-alert .bp-colorp-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-repeat-colorp-alert.png");
+}
+#bp-cont .bp-panel-alert .bp-colorp-repeat, #bp-cont .bp-panel-active .bp-colorp-repeat, #bp-cont .bp-panel .bp-colorp-repeat {
+    padding-top: 1px;
+    width: 383px;
+}
+#bp-cont .bp-panel-alert .bp-colorp-footer, #bp-cont .bp-panel-active .bp-colorp-footer, #bp-cont .bp-panel .bp-colorp-footer {
+    width: 410px;
+}
+#bp-cont .bp-panel-alert .bp-colorp-footer-repeat, #bp-cont .bp-panel-active .bp-colorp-footer-repeat, #bp-cont .bp-panel .bp-colorp-footer-repeat {
+    padding-right: 30px;
+    width: 349px;
+}
+#bp-cont .bp-selected-color {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-colorp-selected.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 14px;
+    width: 367px;
+}
+#bp-cont .bp-selected-color span {
+    display: inline;
+    float: left;
+    font: 10px/31px Arial;
+    width: 80px;
+}
+#bp-cont .bp-transparent:link, #bp-cont .bp-transparent:visited {
+    display: inline;
+    float: left;
+    height: 11px;
+    margin: 10px 0 0 5px;
+    padding: 0;
+    width: 11px;
+}
+#bp-cont .bp-colorp-preview-input {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-colorp-preview-input.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: 0 none;
+    display: inline;
+    float: left;
+    font: 10px/19px Arial;
+    height: 19px;
+    margin: 6px 0 0;
+    padding: 0 0 0 7px;
+    width: 111px;
+}
+#bp-cont .bp-colorp-preview {
+    display: inline;
+    float: right;
+    height: 13px;
+    margin-right: 26px;
+    margin-top: 10px;
+    width: 40px;
+}
+#bp-cont .bp-colorp-preview-live {
+    display: inline;
+    float: right;
+    height: 13px;
+    margin-top: 10px;
+    width: 40px;
+}
+#bp-cont .bp-saturation-value {
+    display: inline;
+    float: left;
+    height: 200px;
+    margin-left: 15px;
+    width: 200px;
+}
+#bp-cont .bp-saturation-img {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/colorpicker/sv.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 200px;
+    position: relative;
+    width: 200px;
+}
+#bp-cont .bp-saturation-crosshair {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/colorpicker/crosshairs.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-size: 0;
+    height: 21px;
+    left: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+}
+#bp-cont .bp-hue {
+    display: inline;
+    float: left;
+    height: 200px;
+    margin-left: 12px;
+    position: relative;
+    width: 15px;
+}
+#bp-cont .bp-hue-img {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/colorpicker/h.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 15px;
+}
+#bp-cont .bp-hue-position {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/colorpicker/position.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-size: 0;
+    height: 8px;
+    left: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+#bp-cont .bp-saved-colors {
+    display: inline;
+    float: left;
+    margin-left: 13px;
+    width: 115px;
+}
+#bp-cont .bp-colorp-archive-top {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-colorp-archive-top.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 46px;
+    width: 115px;
+}
+#bp-cont .bp-saved-color {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-colorp-archive-item.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 19px;
+    margin-top: 3px;
+    width: 115px;
+}
+#bp-cont .bp-set-color {
+    color: #CAC9CA;
+    display: inline;
+    float: left;
+    font-family: "Droid Sans",Arial;
+    font-size: 11px;
+    font-weight: normal;
+    height: 19px;
+    line-height: 18px;
+    opacity: 0.3;
+    padding-left: 30px;
+    width: 27px;
+}
+#bp-cont .bp-get-color {
+    color: #CAC9CA;
+    display: inline;
+    float: left;
+    font-family: "Droid Sans",Arial;
+    font-size: 11px;
+    font-weight: normal;
+    height: 19px;
+    line-height: 18px;
+    opacity: 0.3;
+    padding-left: 8px;
+    width: 49px;
+}
+#bp-cont .bp-debugger-holder {
+    bottom: 0;
+    display: none;
+    left: 100px;
+    position: fixed;
+    width: 610px;
+    z-index: 2147460000;
+}
+#bp-cont .bp-debugger-title {
+    width: 610px;
+}
+#bp-cont .bp-debugger-title-repeat {
+    width: 578px;
+}
+#bp-cont .bp-debugger-text {
+    width: 500px;
+}
+#bp-cont .bp-debugger-repeat {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-debugger-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+    width: 583px;
+}
+#bp-cont #bp-debugger-content {
+    padding: 0;
+}
+#bp-cont .bp-info {
+    border-bottom: 1px solid #DFDFE0;
+    padding: 3px 15px;
+}
+#bp-cont #bp-help-win {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 400px;
+    width: 291px;
+    z-index: 2147460000;
+}
+#bp-cont #bp-help-results {
+}
+#bp-cont .bp-help-result {
+    padding: 8px 20px;
+}
+#bp-cont #bp-help-results h1 {
+    color: #26A9E0;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+}
+#bp-cont #bp-help-results p {
+    color: #231F20;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 15px;
+    padding: 5px 0;
+    text-align: justify;
+}
+#bp-cont #bp-help-results .hr {
+    background-color: #E8E8E8;
+    font-size: 1px;
+    height: 1px;
+    line-height: 1px;
+}
+#bp-cont #bp-help-results .bp-more {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-more.gif");
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #7A7979;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 18px;
+    padding-left: 10px;
+}
+#bp-cont #bp-help-footer .bp-bluepen-link {
+    padding-left: 17px;
+    text-align: left;
+}
+#bp-cont #bp-backup-win {
+    display: none;
+    left: 431px;
+    position: absolute;
+    top: 174px;
+    width: 309px;
+    z-index: 2147460000;
+}
+#bp-cont #bp-backup-list {
+    padding: 3px 7px;
+}
+#bp-cont #bp-newselector-win {
+    display: none;
+    left: 431px;
+    position: absolute;
+    top: 174px;
+    width: 309px;
+    z-index: 2147460000;
+}
+#bp-cont #bp-newselector-content {
+    background-color: #FAFAFA;
+    padding: 7px 10px;
+}
+#bp-cont #bp-newselector-fileselector {
+    margin-bottom: 10px;
+}
+#bp-cont #bp-newselector-content .bp-file-selector:link, #bp-cont #bp-newselector-content .bp-file-selector:visited {
+    background-color: #ECEDED;
+    border-radius: 3px 3px 3px 3px;
+    display: block;
+    margin-top: 2px;
+    padding: 5px 7px;
+}
+#bp-cont #bp-newselector-content .bp-file-selector:hover {
+    background-color: #CCCCCC;
+    text-decoration: none;
+}
+#bp-cont #bp-newselector-fileselector .active:link, #bp-cont #bp-newselector-fileselector .active:visited {
+    background-color: #2AA9E0;
+}
+#bp-cont .bp-scroller-holder {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 282px;
+}
+#bp-cont .bp-scroller-slide {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 282px;
+}
+#bp-cont .bp-scroller-slider-holder {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-slider.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 12px;
+}
+#bp-cont .bp-scroller-up-btn, #bp-cont .bp-scroller-down-btn {
+    display: block;
+    height: 150px;
+    text-decoration: none;
+    width: 12px;
+}
+#bp-cont .bp-scroller-up {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-scroller-up.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: none;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 282px;
+}
+#bp-cont .bp-scroller-up:hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-scroller-up-h.png");
+}
+#bp-cont .bp-scroller-down {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-scroller-down.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    bottom: 0;
+    display: none;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    width: 282px;
+}
+#bp-cont .bp-scroller-down:hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-scroller-down-h.png");
+}
+#bp-cont .bp-row-odd, #bp-cont .bp-row-even {
+    background-position: left top;
+    background-repeat: repeat-x;
+    height: 21px;
+    line-height: 21px;
+    margin-bottom: 1px;
+    overflow: hidden;
+    padding-left: 15px;
+    width: 267px;
+}
+#bp-cont .bp-row-odd {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-row-odd.gif");
+}
+#bp-cont .bp-row-even {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-row-even.gif");
+}
+#bp-cont .bp-row-odd span, #bp-cont .bp-row-even span {
+    line-height: 21px;
+    overflow: hidden;
+    text-decoration: line-through;
+    width: 250px;
+}
+#bp-cont .bp-row-odd b, #bp-cont .bp-row-even b {
+    display: inline;
+    float: right;
+    width: 42px;
+}
+#bp-cont .bp-row-hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-row-hover.gif");
+}
+#bp-cont .bp-row-title {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-rowtitle.gif");
+    background-position: left top;
+    background-repeat: repeat-x;
+    height: 24px;
+    margin-bottom: 1px;
+}
+#bp-cont .bp-row-title a:link, #bp-cont .bp-row-title a:visited {
+    color: #26A9E0;
+    display: block;
+    font-family: "Droid Sans",Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 23px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 15px;
+    width: 267px;
+}
+#bp-cont .bp-row-title-active {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-rowtitle-active.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 24px;
+    margin-bottom: 1px;
+}
+#bp-cont .bp-row-title-active a:link, #bp-cont .bp-row-title-active a:visited {
+    color: #26A9E0;
+    display: block;
+    font-family: "Droid Sans",Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 23px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-left: 15px;
+    width: 267px;
+}
+#bp-cont .bp-row-odd a:link, #bp-cont .bp-row-odd a:visited, #bp-cont .bp-row-even a:link, #bp-cont .bp-row-even a:visited {
+    display: block;
+    float: left;
+    line-height: 21px;
+    width: 235px;
+}
+#bp-cont #bp-state-table .bp-row-odd a:link, #bp-cont #bp-state-table .bp-row-odd a:visited, #bp-cont #bp-state-table .bp-row-even a:link, #bp-cont #bp-state-table .bp-row-even a:visited {
+    display: block;
+    float: left;
+    line-height: 21px;
+    width: 223px;
+}
+#bp-cont .bp-row-active:link, #bp-cont .bp-row-active:visited {
+    color: #1D99CF;
+}
+#bp-cont .bp-row-active, #bp-cont .bp-row-active a:link, #bp-cont .bp-row-active a:visited {
+    color: #26A9E0;
+    font-weight: bold;
+}
+#bp-cont .bp-line-color-preview {
+    border: 1px solid #7C7C7C;
+    text-decoration: none !important;
+}
+#bp-cont #bp-tooltip {
+    display: none;
+    left: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 2147483600;
+}
+#bp-cont #bp-tooltip table {
+    height: 38px;
+}
+#bp-cont .bp-tooltip-left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-tooltip-left.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 38px;
+    line-height: 0;
+    width: 9px;
+}
+#bp-cont .bp-tooltip-left-arrow {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-tooltip-left-arrow.png");
+    width: 24px;
+}
+#bp-cont .bp-tooltip-content {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-tooltip-content.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 11px;
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 7px;
+    vertical-align: top;
+}
+#bp-cont .bp-tooltip-right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-tooltip-right.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 38px;
+    line-height: 0;
+    width: 9px;
+}
+#bp-cont .bp-tooltip-right-arrow {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-tooltip-right-arrow.png");
+    width: 24px;
+}
+#bp-cont #bp-img-preview {
+    display: none;
+    left: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 2147483600;
+}
+#bp-cont #bp-file-preview {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 273px;
+    width: 273px;
+}
+#bp-cont #bp-file-preview-size {
+    line-height: 29px;
+    text-align: center;
+}
+#bp-cont #bp-top-message {
+    background-color: #FFA200;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px #000000;
+    color: #000000;
+    display: none;
+    font: 12px/1.5em Arial;
+    left: 50%;
+    padding: 3px 7px;
+    position: fixed;
+    top: 20px;
+}
+#bp-cont #bp-top-message-holder {
+    display: none;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    width: 400px;
+    z-index: 2147483600;
+}
+#bp-cont #bp-top-message-top {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-top-message-top.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 12px;
+    font-weight: normal;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 35px;
+    width: 365px;
+}
+#bp-cont #bp-top-message-holder #bp-top-message {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-top-message-repeat.png");
+    background-position: left top;
+    background-repeat: repeat-y;
+    font-size: 12px;
+    padding: 0 35px 10px;
+    width: 330px;
+}
+#bp-cont .bp-top-message {
+    border-bottom: 1px solid #CCCCCC;
+    font: 13px/1.4em Arial;
+    padding: 7px 0;
+}
+#bp-cont .bp-error-message {
+    background-color: #FFEFEF;
+    border: 1px solid #FFCFCF;
+    border-radius: 3px 3px 3px 3px;
+    color: #000000;
+    display: block;
+    font: 12px/1.5em Arial;
+    margin: 1px 2px 1px 0;
+    padding: 3px 7px;
+}
+#bp-cont #bp-errorp-content {
+    font: 12px/1.5em Arial;
+    text-align: center;
+}
+#bp-cont #bp-error-response {
+    display: block;
+    font: 12px/1.5em Arial;
+    padding: 10px 25px;
+}
+#bp-cont #bp-error-response label {
+    display: inline;
+    float: left;
+    font: 12px/26px Arial;
+    width: 63px;
+}
+#bp-cont #bp-error-response #bp-error-response-name, #bp-cont #bp-error-response #bp-error-response-email, #bp-cont #bp-error-response #bp-error-response-message {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    display: inline;
+    float: left;
+    font: 12px/1.5em Arial;
+    margin: 2px 0 7px;
+    padding: 3px 7px;
+    width: 250px;
+}
+#bp-cont #bp-error-response #bp-error-response-message {
+    height: 150px;
+}
+#bp-cont #bp-top-message-bottom {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-top-message-bottom.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    width: 400px;
+}
+#bp-cont .bp_hover {
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 2147450000;
+}
+#bp-cont .bp_hover_top {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/hover-border-horizontal.jpg");
+    background-repeat: repeat;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    height: 1px;
+    line-height: 1px;
+    z-index: 2147450000;
+}
+#bp-cont .bp_hover_right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/hover-border-vertical.jpg");
+    background-repeat: repeat;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 1px;
+    z-index: 2147450000;
+}
+#bp-cont .bp_hover_bottom {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/hover-border-horizontal.jpg");
+    background-position: left bottom;
+    background-repeat: repeat;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    height: 1px;
+    line-height: 1px;
+    z-index: 2147450000;
+}
+#bp-cont .bp_hover_left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/hover-border-vertical.jpg");
+    background-repeat: repeat;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 1px;
+    z-index: 2147450000;
+}
+#bp-cont .bp_padding_hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-padding-bg.jpg");
+    background-repeat: repeat;
+    height: 10px;
+    opacity: 0.75;
+    position: absolute;
+    width: 10px;
+    z-index: 2147450000;
+}
+#bp-cont .bp_hover_padding_top {
+    background-color: #8869A6;
+    border-bottom: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    height: 1px;
+    line-height: 1px;
+}
+#bp-cont .bp_hover_padding_right {
+    background-color: #8869A6;
+    border-right: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 1px;
+}
+#bp-cont .bp_hover_padding_bottom {
+    background-color: #8869A6;
+    border-top: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    height: 1px;
+    line-height: 1px;
+}
+#bp-cont .bp_hover_padding_left {
+    background-color: #8869A6;
+    border-right: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 1px;
+}
+#bp-cont .bp_margin_hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-margin-bg.jpg");
+    background-repeat: repeat;
+    height: 10px;
+    opacity: 0.75;
+    position: absolute;
+    width: 10px;
+    z-index: 2147450000;
+}
+#bp-cont .bp_hover_margin_top {
+    background-color: #EEFC80;
+    border-bottom: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    height: 1px;
+    line-height: 1px;
+}
+#bp-cont .bp_hover_margin_right {
+    background-color: #EEFC80;
+    border-right: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: "Droid Sans",Arial;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 1px;
+}
+#bp-cont .bp_hover_margin_bottom {
+    background-color: #EEFC80;
+    border-top: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: 1px;
+    font-weight: normal;
+    height: 1px;
+    line-height: 1px;
+}
+#bp-cont .bp_hover_margin_left {
+    background-color: #EEFC80;
+    border-right: 0 solid #B00000;
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 1px;
+}
+#bp-cont .bp_hover_text * {
+    margin: 0;
+    padding: 0;
+}
+#bp-cont .bp_hover_text {
+    display: none;
+    left: 0;
+    opacity: 0.85 !important;
+    position: absolute !important;
+    top: 0;
+    z-index: 2147450000 !important;
+}
+#bp-cont .bp_hover_text .bp_hover_text_left {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/layer-hover-title-left.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: 1px;
+    font-weight: normal;
+    height: 0;
+    line-height: 1px;
+    width: 2px;
+}
+#bp-cont .bp_hover_text_left img {
+    height: 20px;
+    width: 2px;
+}
+#bp-cont .bp_hover_text .bp_hover_text_content {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/layer-hover-title-content.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: 10px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0 10px;
+}
+#bp-cont .bp_hover_text .bp_hover_text_content b {
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 20px;
+}
+#bp-cont .bp_hover_text .bp_hover_text_right {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/layer-hover-title-right.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: 1px;
+    font-weight: normal;
+    line-height: 1px;
+    width: 2px;
+}
+#bp-cont .bp_hover_text .bp_hover_text_right img {
+    height: 20px;
+    width: 2px;
+}
+.bp-ruler-horizontal {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/ruler-horizontal.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #7A8FBC;
+    border-top: 1px solid #7A8FBC;
+    cursor: ns-resize;
+    height: 28px;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    z-index: 2147450001;
+}
+.bp-ruler-vertical {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/ruler-vertical.png");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    border-left: 1px solid #7A8FBC;
+    border-right: 1px solid #7A8FBC;
+    cursor: ew-resize;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    width: 29px;
+    z-index: 2147450001;
+}
+#bp-cont #bp-embed-font-btn, #bp-cont #bp-save-btn {
+    color: #26A9E0;
+    display: inline;
+    float: left;
+    font-family: Corbel;
+    font-size: 13px;
+    font-weight: normal;
+    height: 37px;
+    line-height: 30px;
+    text-align: center;
+    width: 56px;
+}
+#bp-cont #bp-embed-font-btn {
+    font-weight: bold;
+    width: 115px;
+}
+#bp-cont #bp-embed-font-cancel-btn, #bp-cont #bp-cancel-btn {
+    color: #000000;
+    display: inline;
+    float: left;
+    font-family: Corbel;
+    font-size: 12px;
+    font-weight: normal;
+    height: 37px;
+    line-height: 30px;
+    width: 60px;
+}
+#bp-cont #bp-embed-font-cancel-btn {
+    color: #999999;
+}
+#bp-cont .bp-bluepen-link {
+    color: #B3B5B6;
+    display: inline;
+    float: left;
+    font-family: Corbel;
+    font-size: 12px;
+    font-weight: normal;
+    height: 37px;
+    line-height: 30px;
+    text-align: right;
+    width: 120px;
+}
+#bp-cont .bp-btn-move {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons.png");
+    background-position: 0 -27px;
+    background-repeat: no-repeat;
+    line-height: 16px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+#bp-cont .bp-btn-move:hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons-h.png");
+    text-decoration: none;
+}
+#bp-cont #bp-setdimensions-tobg, #bp-cont #bp-element-indicator-btn, #bp-cont #bp-dimension-correction-btn, #bp-cont #bp-offset-move, #bp-cont #bp-bg-pos-2d, #bp-cont #bp-dimensions-move, #bp-cont #bp-update-textarea, #bp-cont #bp-reload-files {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons.png");
+    background-position: 0 -351px;
+    background-repeat: no-repeat;
+    display: block;
+    line-height: 16px;
+    margin: 0 0 7px 10px;
+    padding-left: 18px;
+    width: 42px;
+}
+#bp-cont a.bp-filemanager-file-preview:link, #bp-cont a.bp-filemanager-file-preview:visited {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons.png");
+    background-position: 0 -484px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: right;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 3px;
+    margin-top: 2px;
+    text-decoration: none;
+    width: 18px;
+}
+#bp-cont #bp-setdimensions-tobg:hover, #bp-cont #bp-element-indicator-btn:hover, #bp-cont #bp-dimension-correction-btn:hover, #bp-cont #bp-offset-move:hover, #bp-cont #bp-bg-pos-2d:hover, #bp-cont #bp-dimensions-move:hover, #bp-cont #bp-update-textarea:hover, #bp-cont #bp-reload-files:hover, #bp-cont .bp-filemanager-file-preview:hover {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-icons-hover.png");
+}
+#bp-cont #bp-setdimensions-tobg {
+    background-position: 0 -351px;
+    display: inline;
+    float: left;
+    line-height: 12px;
+    margin-left: 12px;
+    margin-top: 2px;
+    width: 50px;
+}
+#bp-cont #bp-element-indicator-btn {
+    background-position: 0 -370px;
+    display: inline;
+    float: left;
+    line-height: 11px;
+    margin-left: 17px;
+    margin-top: 3px;
+    padding-left: 16px;
+    width: 72px;
+}
+#bp-cont #bp-dimension-correction-btn {
+    background-position: 0 -42px;
+    display: inline;
+    float: left;
+    line-height: 16px;
+    margin-left: 11px;
+    margin-top: 1px;
+    width: 55px;
+}
+#bp-cont #bp-offset-move {
+    background-position: 0 -27px;
+    display: inline;
+    float: right;
+    line-height: 13px;
+    margin: 7px 3px 0;
+    width: 35px;
+}
+#bp-cont #bp-dimensions-move {
+    background-position: 0 -27px;
+    display: inline;
+    float: right;
+    line-height: 13px;
+    margin: 7px 3px 0;
+    width: 35px;
+}
+#bp-cont .bp-ok-btn {
+    color: #26A9E0;
+    display: inline;
+    float: right;
+    font-family: Corbel;
+    font-size: 12px;
+    font-weight: normal;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 50px;
+}
+#bp-cont .bp-cancel-btn {
+    color: #9C9E9F;
+    display: inline;
+    float: right;
+    font-family: Corbel;
+    font-size: 12px;
+    font-weight: normal;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    width: 40px;
+}
+#bp-cont .bp-transparent {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-transparent.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-size: 1px;
+    height: 1px;
+    line-height: 1px;
+    padding-left: 11px;
+    padding-top: 11px;
+    vertical-align: middle;
+    width: 1px;
+}
+#bp-cont #bp-bg-pos-2d {
+    background-position: 0 -27px;
+    display: inline;
+    float: right;
+    line-height: 13px;
+    margin: 7px 3px 0;
+    width: 35px;
+}
+#bp-cont #bp-update-textarea {
+    background-position: 0 -405px;
+    line-height: 13px;
+    margin: 7px 0 0 15px;
+    width: 70px;
+}
+#bp-cont #bp-reload-files {
+    background-position: 0 -405px;
+    display: inline;
+    float: left;
+    line-height: 13px;
+    margin: 5px 108px 0 15px;
+    width: 70px;
+}
+#bp-cont #bp-file-upload-flash {
+    margin-top: 3px;
+}
+#bp-cont .bp-clear {
+    clear: both;
+    color: #FFFFFF;
+    font-family: Corbel;
+    font-size: 0;
+    font-weight: normal;
+    line-height: 0;
+}
+#bp-cont .bp-btn-ok {
+    color: #221F20;
+    font-family: Corbel;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+#bp-cont .bp-btn-cancel {
+    color: #221F20;
+    font-family: Corbel;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 3px 10px;
+}
+#bp-cont .bp-checkbox-inactive:link, #bp-cont .bp-checkbox-inactive:visited {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-checkbox.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    width: 20px;
+}
+#bp-cont .bp-checkbox-active:link, #bp-cont .bp-checkbox-active:visited {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-checkbox.png");
+    background-position: 0 -21px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    width: 20px;
+}
+#bp-cont a.bp-checkbox2-inactive:link, #bp-cont a.bp-checkbox2-inactive:visited {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-checkbox2.png");
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 3px;
+    width: 20px;
+}
+#bp-cont a.bp-checkbox2-active:link, #bp-cont a.bp-checkbox2-active:visited {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-checkbox2.png");
+    background-position: 0 -10px;
+    background-repeat: no-repeat;
+    display: inline;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 3px;
+    width: 20px;
+}
+#bp-cont .bp-blue {
+    color: #26A9E0 !important;
+}
+#bp-cont #bp-highlight {
+    background-color: #E65720;
+    left: -100px;
+    position: absolute;
+    top: -100px;
+    z-index: 2147483600;
+}
+#bp-msg-rendering {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-msg-rendering.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: none;
+    height: 36px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -23px;
+    padding-left: 15px;
+    padding-top: 11px;
+    position: fixed;
+    top: 50%;
+    width: 185px;
+}
+#bp-infobox {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-preloader-bg.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 212px;
+    left: 50%;
+    margin-left: -163px;
+    margin-top: -106px;
+    position: fixed;
+    top: 50%;
+    width: 326px;
+    z-index: 2147483600;
+}
+#bp-infobox-spinner {
+    display: block;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
+    width: 24px;
+}
+#bp-infobox-text {
+    color: #26A9E0;
+    font: 14px/32px Arial;
+    text-align: center;
+}
+#bp-infobox-version {
+    color: #8A9CA7;
+    font: 10px/24px Arial;
+    text-align: center;
+}
+#bp-infobox-version span {
+    color: #FFFFFF;
+    padding-right: 7px;
+}
+#bp-infobox-maker {
+    color: #8A9CA7;
+    font: 10px/14px Arial;
+    padding-left: 60px;
+    padding-top: 6px;
+}
+#bp-page-overlay {
+    background-color: #000000;
+    height: 500px;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#bp-cont .bp-dn {
+    display: none;
+}
+.bp-flash-marker {
+    visibility: hidden;
+}
+.bp-flash-holder {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-flash-marker.jpg");
+    background-position: center center;
+    background-repeat: repeat;
+}
+#bp-cont .bp-on {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-on.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    line-height: 21px;
+}
+#bp-cont .bp-off {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-off.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    line-height: 21px;
+}
+#bp-cont #bp-help-message-holder {
+    background-color: #FF8200;
+    border: 1px solid #CCCCCC;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 10px #000000;
+    left: 50%;
+    margin-left: -250px;
+    padding: 10px;
+    position: fixed;
+    top: -7px;
+    width: 500px;
+    z-index: 2147471000;
+}
+#bp-cont #bp-help-message-close:link, #bp-cont #bp-help-message-close:visited {
+    color: #FFFFFF;
+    display: block;
+    font: 10px/1.5em Arial;
+    text-align: right;
+}
+#bp-cont .bp-help-step {
+    background-color: #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    color: #000000;
+    display: none;
+    font: 13px/1.5em Arial;
+    padding: 7px;
+}
+#bp-cont .bp-help-step img {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+#bp-cont #bp-help-step-counter {
+    color: #FFFFFF;
+    font: bold 16px/1.5em Arial;
+}
+#bp-cont .bp-emarker {
+    background-image: url("http://bluepeneditor.com/current/program/images1.0/bp-emarker.gif");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 10px;
+    left: -100px;
+    position: absolute;
+    top: -100px;
+    width: 10px;
+    z-index: 2147450000;
+}
+#bp-cont #bp-emarker-lt {
+    background-position: 0 0;
+    cursor: move;
+}
+#bp-cont #bp-emarker-rt {
+    background-position: -10px 0;
+}
+#bp-cont #bp-emarker-rb {
+    background-position: -10px -10px;
+    cursor: se-resize;
+}
+#bp-cont #bp-emarker-lb {
+    background-position: 0 -10px;
+}
+#bp-cont #bp-help-first-step {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 194px;
+}
